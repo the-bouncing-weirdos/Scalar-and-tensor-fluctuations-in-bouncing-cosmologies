@@ -1,0 +1,578 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass jcappub
+\begin_preamble
+\pdfoutput=1
+\renewcommand\[{\begin{equation}}
+\renewcommand\]{\end{equation}} 
+\renewcommand*\arraystretch{1.5}
+\end_preamble
+\use_default_options true
+\begin_modules
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement th
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Unbraiding the Bounce 
+\end_layout
+
+\begin_layout SubHeader
+preprint number 
+\end_layout
+
+\begin_layout Author
+David A.
+ Dobre
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+Andrei V.
+ Frolov,
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a,b
+\end_layout
+
+\end_inset
+
+Jos
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e} T.
+ G
+\backslash
+'{a}
+\end_layout
+
+\end_inset
+
+lvez Ghersi,
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+Sabir Ramazanov,
+\end_layout
+
+\begin_layout Author
+and 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+Alexander Vikman
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+Department of Physics, Simon Fraser University, 
+\end_layout
+
+\begin_layout Affiliation
+8888 University Drive, Burnaby, British Columbia V5A 1S6, Canada
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+
+Perimeter Institute for Theoretical Physics,
+\end_layout
+
+\begin_layout Affiliation
+31 Caroline Street North, Waterloo, Ontario, N2L 2Y5, Canada
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+
+\lang english
+CEICO-Central European Institute for Cosmology and Fundamental Physics,
+ 
+\end_layout
+
+\begin_layout Affiliation
+Institute of Physics, the Academy of Sciences of the Czech Republic, 
+\begin_inset Newline newline
+\end_inset
+
+Na Slovance 2, 182 21 Prague 8, Czech Republic
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Email
+ddobre@sfu.ca
+\end_layout
+
+\begin_layout Email
+frolov@sfu.ca
+\end_layout
+
+\begin_layout Email
+joseg@sfu.ca
+\end_layout
+
+\begin_layout Email
+ramazanov@fzu.cz
+\end_layout
+
+\begin_layout Email
+vikman@fzu.cz
+\end_layout
+
+\begin_layout Abstract
+We study a recently proposed by Ijjas and Steinhardt particular realization
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ of the cosmological bounce scenario.
+ First, we reveal the exact construction of the Lagrangian used in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+.
+ This explicit construction allowed us to study other cosmological solutions
+ in this theory.
+ In particular we found solutions with superluminal speed of sound and discuss
+ the consequences of this feature for a possible UV-completion.
+ Further, following the originally constructed background history, we evaluated
+ the tensor and scalar spectra during the bouncing phase characterized by
+ the violation of null (and strong) energy condition.
+ We found that the change of the speed of sound is the cause of the dominance
+ of the tensor power spectrum over the scalar part through most of the bounce.
+ Moreover, we observe that none of the spectra evaluated across the bouncing
+ phase is scale invariant.
+ In addition to this, we present our results for particle production by
+ showing the evolution of the occupation number of scalar fluctuations through
+ the bounce.
+ 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Since 2011 it is well known that scalar-tensor theories with Kinetic Gravity
+ Braiding (which are also called first two terms of Horndeski or simple
+ generalized Galileons) allow for 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Qiu:2011cy,Easson:2011zy"
+
+\end_inset
+
+ a classical bouncing evolution manifestly free from ghost and gradient
+ instabilities around the bounce.
+ The possibility of the bounce in such systems was briefly mentioned in
+ Moreover, in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2011zy"
+
+\end_inset
+
+ it was demonstrated that one can easily construct spatially flat bouncing
+ universes, without ghosts and gradient instabilities and with bouncing
+ solutions of a non-vanishing measure.
+ Moreover, in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2011zy"
+
+\end_inset
+
+ it was demonstrated that there is a continuum of such minimally coupled
+ theories of the type of Kinetic Gravity Braiding.
+ This Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2011zy"
+
+\end_inset
+
+ provided inequalities on two free functions of kinetic term present in
+ Lagrangian of the theory, which are sufficient to guaranty a healthy bounce.
+ It was also showed that this setup also works in a presence (in fact unavoidabl
+e) of the normal matter - like radiation etc.
+ In one of examples ("Hot G-Bounce") it was even showed that such a bouncing
+ universes can smoothly transit to the radiation dominated stage.
+ In this work it was also discussed that there is always a singularity (either
+ in the gravitational or acoustic metric).
+ 
+\end_layout
+
+\begin_layout Standard
+In 2016, Ijjas and Steinhardt proposed a particular realization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ of the cosmological bounce scenario in a particular subclass of these theories.
+ For convenience we denote this realization as 
+\emph on
+IS-bounce
+\emph default
+.
+ The IS-bounce was claimed to be free from ghost and gradient instabilities
+ and free from superluminal propagation of perturbations.
+ The explicit case of the IS-bounce uses a class of Kinetic Gravity Braiding
+ theories with explicitly strongly 
+\emph on
+broken
+\emph default
+ shift-symmetry 
+\begin_inset Formula $\phi\rightarrow\phi+c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+S=\frac{1}{2}\int d^{4}x\,\sqrt{-g}\left(k\left(\phi\right)\left(\partial\phi\right)^{2}+\frac{1}{2}q\left(\phi\right)\left(\partial\phi\right)^{4}+\left(\partial\phi\right)^{2}\Box\phi\right)\,,\label{eq:IS_Lagrangian}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\left(\partial\phi\right)^{2}\equiv g^{\mu\nu}\partial_{\mu}\phi\partial_{\nu}\phi\equiv2X\,,\qquad\Box\phi\equiv g^{\mu\nu}\nabla_{\mu}\nabla_{\nu}\phi\,,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\nabla_{\mu}$
+\end_inset
+
+ is 
+\lang english
+the usual Levi-Civita connection
+\lang american
+ 
+\lang english
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Further we use: the standard notation 
+\begin_inset Formula $\sqrt{-g}\equiv\sqrt{-\text{det}g_{\mu\nu}}$
+\end_inset
+
+ where 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+ is the metric, the signature convention 
+\begin_inset Formula $\left(+,-,-,-\right)$
+\end_inset
+
+ (contrary to 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+), and the units 
+\begin_inset Formula $c=\hbar=1$
+\end_inset
+
+, 
+\begin_inset Formula $M_{\text{Pl}}=\left(8\pi G_{\text{N}}\right)^{-1/2}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\lang american
+.
+ The scalar field is supposed to be minimally coupled to gravity.
+ Hence the theory is defined by two free functions 
+\begin_inset Formula $k\left(\phi\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q\left(\phi\right)$
+\end_inset
+
+.
+ The authors of IS-bounce pustulated a particular fairly simple cosmological
+ bouncing evolution 
+\begin_inset Formula 
+\[
+H\left(t\right)=H_{0}t\,\exp\left(-F\left(t-t_{*}\right)^{2}\right)\,,
+\]
+
+\end_inset
+
+and proposed an 
+\begin_inset Quotes eld
+\end_inset
+
+inverse method
+\begin_inset Quotes erd
+\end_inset
+
+ to find free functions 
+\begin_inset Formula $k\left(\phi\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q\left(\phi\right)$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_Lagrangian"
+
+\end_inset
+
+ which can realize the cosmological evolution 
+\end_layout
+
+\begin_layout Section
+Superluminality 
+\end_layout
+
+\begin_layout Section
+Perturbations
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acknowledgments
+\end_layout
+
+\end_inset
+
+ The work of A.V.
+ and S.R.
+ was supported by the funds from Project CoGraDS - CZ.02.1.01/0.0/0.0/15_003/0000437
+ from the European Regional Development Fund and the Czech Ministry of Education
+, Youth and Sports (M
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+v{S}
+\end_layout
+
+\end_inset
+
+MT).
+ A.V.
+ also acknowledges support from the J.
+ E.
+ Purkyn
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+v{e}
+\end_layout
+
+\end_inset
+
+ Fellowship of the Czech Academy of Sciences.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "IS_bounce"
+options "bibtotoc,utphys"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

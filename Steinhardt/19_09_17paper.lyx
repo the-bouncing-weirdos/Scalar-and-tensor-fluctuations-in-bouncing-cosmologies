@@ -1,0 +1,6510 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass jcappub
+\begin_preamble
+\pdfoutput=1
+\renewcommand\[{\begin{equation}}
+\renewcommand\]{\end{equation}} 
+\renewcommand*\arraystretch{1.5}
+\end_preamble
+\use_default_options true
+\begin_modules
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement th
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+The Phantom of the New Oscillatory Cosmological Phase
+\end_layout
+
+\begin_layout SubHeader
+YITP-16-90
+\end_layout
+
+\begin_layout Author
+Damien A.
+ Easson
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+and Alexander Vikman
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+b,c
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+Department of Physics & Beyond Center for Fundamental Concepts in Science,
+\begin_inset Newline newline
+\end_inset
+
+Arizona State University, Tempe, AZ 85287-1504, USA
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+
+Institute of Physics, the Academy of Sciences of the Czech Republic, 
+\begin_inset Newline newline
+\end_inset
+
+Na Slovance 2, 182 21 Prague 8, Czech Republic
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+Yukawa Institute for Theoretical Physics, Kyoto University, Kyoto 606-8502,
+ Japan
+\end_layout
+
+\begin_layout Email
+easson@asu.edu
+\end_layout
+
+\begin_layout Email
+vikman@fzu.cz
+\end_layout
+
+\begin_layout Abstract
+We study a recently
+\emph on
+ 
+\emph default
+proposed new cosmological phase where a scalar field moves periodically
+ in an expanding spatially-flat Friedmann universe.
+ This phase corresponds to a limit cycle of the equations of motion and
+ can be considered as a cosmological realization of a 
+\begin_inset Quotes eld
+\end_inset
+
+time-crystal
+\begin_inset Quotes erd
+\end_inset
+
+.
+ We show that this phase is only possible, provided the Null Energy Condition
+ is violated and the so-called Phantom Divide is crossed.
+ We prove that in general k-essence models: i) this crossing causes infinite
+ growth of quantum perturbations on short scales, and ii) exactly periodic
+ solutions are only possible, provided the limit cycle encircles a singularity
+ in the phase plane.
+ The configurations neighboring this singular curve in the phase space are
+ linearly unstable on one side of the curve and superluminal on the other
+ side.
+ Moreover, the increment of the instability is infinitely growing for each
+ mode by approaching the singularity, while for the configurations on the
+ other side, the sound speed is growing without limit.
+ We illustrate our general results by analytical and numerical studies of
+ a particular class of such k-essence models.
+ 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Usually the appearance of a periodic structure in space is attributed to
+ formation of ordinary crystals.
+ By analogy, the authors of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shapere:2012nq"
+
+\end_inset
+
+ suggested to use the name 
+\begin_inset Quotes eld
+\end_inset
+
+time-crystals
+\begin_inset Quotes erd
+\end_inset
+
+ for the systems with vacuum solutions which are exactly periodic in time.
+ In cosmology such vacuum solutions can be interesting in context of Dark
+ Energy and early stages of Inflation.
+ On the quantum level this idea was further elaborated in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Wilczek:2012jt"
+
+\end_inset
+
+.
+ However, a cosmological expansion usually works as a friction and dissipates
+ energy, so that an exactly periodic motion is impossible.
+ Indeed, a usual system will finally approach an equilibrium static configuratio
+n with minimal energy density.
+ However, in some non-canonical cases, the lowest possible available configurati
+on can still be non-static and correspond to a motion.
+ In particular, this is the case for the ghost condensate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ArkaniHamed:2003uy"
+
+\end_inset
+
+.
+ This is also the basis for the original k-inflation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ArmendarizPicon:1999rj"
+
+\end_inset
+
+ attractor.
+ Thus the solution with the lowest energy level can spontaneously break
+ the time-translation invariance.
+ Due to the shift-symmetry of the ghost condensate, this spontaneous symmetry
+ breaking still results there in the time-independent and Lorentz-invariant
+ energy momentum tensor (EMT).
+ The latter corresponds to the normal de Sitter vacuum with some cosmological
+ constant.
+ It is rather interesting to consider wether one can spontaneously break
+ time-translational invariance even on the level of the EMT so that the
+ vacuum configuration is different from the de Sitter spacetime.
+ Here we mean that this non-trivial solution should be valid for very long
+ times up to the asymptotic future.
+ In particular, if the motion in this vacuum state is periodic, with the
+ period 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+, then the continuous time translation invariance, 
+\begin_inset Formula $t\rightarrow t+c$
+\end_inset
+
+ with 
+\begin_inset Formula $c$
+\end_inset
+
+ real, is only broken to the level of a discrete subgroup 
+\begin_inset Formula $t\rightarrow t+n\mathcal{T}$
+\end_inset
+
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is an integer.
+ The recent work 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+ proposed an interesting new phase of cosmological matter with these properties.
+ In this phase a scalar field periodically moves in the constantly expanding
+ universe.
+ This oscillatory phase was realized by a non-canonical scalar field theory
+ of the k-essence type 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ArmendarizPicon:1999rj,ArmendarizPicon:2000ah,ArmendarizPicon:2000dh,Chiba:1999ka"
+
+\end_inset
+
+, see the next section for details.
+ A similar idea of an oscillating dark energy was studied in e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Feng:2004ff,Nojiri:2006ww"
+
+\end_inset
+
+.
+ While quasi-periodic oscillations and their finite duration in non-minimally
+ coupled scalar-tensor theories with a canonical kinetic term were considered
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arefeva:2012sqa,Skugoreva:2014gka,Pozdeeva:2016cja"
+
+\end_inset
+
+.
+ On top of that a periodically evolving universe with the positive spatial
+ curvature was in the focus of the works 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Harrison:1967zz,1990MNRAS.243..252K"
+
+\end_inset
+
+.
+ Later in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dabrowski:1995ae,Graham:2011nb"
+
+\end_inset
+
+ it was showed that these solutions can be realized by a canonical scalar
+ field with negative potential.
+ In this paper we discuss weather it is possible to realize a time-crystal
+ in a spatially-flat cosmological setup with a minimally coupled k-essence.
+ 
+\end_layout
+
+\begin_layout Section
+NEC violation is needed for a limit cycle 
+\end_layout
+
+\begin_layout Standard
+A presence of exactly periodic motion with the period 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+, in particular, requires that the energy density is periodic 
+\begin_inset Formula $\varepsilon\left(t+\mathcal{T}\right)=\varepsilon\left(t\right)$
+\end_inset
+
+.
+ If at 
+\begin_inset Formula $t$
+\end_inset
+
+ the energy density was decreasing, then somewhere between 
+\begin_inset Formula $t$
+\end_inset
+
+ and 
+\begin_inset Formula $t+\mathcal{T}$
+\end_inset
+
+ the energy density should start to increase to compensate this reduction.
+ And vice versa: for the originally increasing energy density there should
+ be a moment between 
+\begin_inset Formula $t$
+\end_inset
+
+ and 
+\begin_inset Formula $t+\mathcal{T}$
+\end_inset
+
+ where the energy density should start to decrease.
+ Thus anyway during each cycle there are time intervals on which the energy
+ density is growing and on which it is decreasing.
+ Further, the conservation of energy in a Friedmann universe requires 
+\begin_inset Formula 
+\begin{equation}
+\dot{\varepsilon}=-3H\left(\varepsilon+p\right)\,,\label{eq:energy_conservation}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $H$
+\end_inset
+
+ is the Hubble parameter and 
+\begin_inset Formula $p$
+\end_inset
+
+ is the effective pressure of the oscillatory matter.
+ Hence, in an expanding universe (with 
+\begin_inset Formula $H>0$
+\end_inset
+
+) the energy density can grow, only if the effective enthalpy density 
+\begin_inset Formula $\varepsilon+p$
+\end_inset
+
+ is negative.
+ The negative sign of 
+\begin_inset Formula $\varepsilon+p$
+\end_inset
+
+ implies a violations of the Null Energy Condition (NEC) which states that
+ for all null vectors 
+\begin_inset Formula $n^{\mu}$
+\end_inset
+
+ the energy-momentum tensor should satisfy 
+\begin_inset Formula $T_{\mu\nu}n^{\mu}n^{\nu}\geq0$
+\end_inset
+
+.
+ In turn, a violation of the NEC necessarily implies that the Hamiltonian
+ density of the system is unbounded from below - for each constant there
+ are such local values of the initial data that the energy density is more
+ negative than this constant, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sawicki:2012pz"
+
+\end_inset
+
+.
+ In other words a violation of NEC implies that the system has to possess
+ configurations with arbitrary negative energy densities.
+ For a recent discussion of NEC violation see e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Rubakov:2014jja"
+
+\end_inset
+
+.
+ Clearly, in a collapsing universe, a decrease in energy density would require
+ an NEC violation as well.
+ In cosmology, matter which violates NEC is often referred to as Phantom
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Caldwell:1999ew"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+On the other hand, the time derivative of the energy density can change
+ the sign, provided 
+\begin_inset Formula $H$
+\end_inset
+
+ changes sign.
+ In this case the spatially-flat Friedmann universe has to be able to evolve
+ from expansion to contraction and then from contraction to expansion.
+ The latter transition corresponds to a bounce.
+ It is well known that a bounce of a spatially-flat Friedmann universe requires
+ a violation of NEC.
+ Indeed, the transition from contraction to expansion at time 
+\begin_inset Formula $t_{b}$
+\end_inset
+
+ requires 
+\begin_inset Formula $H\left(t_{b}\right)=\dot{a}/a=0$
+\end_inset
+
+.
+ Using the Friedmann equations 
+\begin_inset Formula 
+\begin{equation}
+H^{2}=\frac{1}{3}\varepsilon\,,\label{eq:Friedmann_1}
+\end{equation}
+
+\end_inset
+
+and
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Except of the last section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Particular_Model"
+
+\end_inset
+
+ we use the reduced Planck units with 
+\begin_inset Formula $M_{\text{Pl}}=\left(8\pi G_{\text{N}}\right)^{-1/2}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\dot{H}=-\frac{1}{2}\left(\varepsilon+p\right)\,,\label{eq:Friedmann_2}
+\end{equation}
+
+\end_inset
+
+we obtain that at transition from contraction with 
+\begin_inset Formula $H<0$
+\end_inset
+
+ to expansion with 
+\begin_inset Formula $H>0$
+\end_inset
+
+ one has 
+\begin_inset Formula $\dot{H}>0$
+\end_inset
+
+ and therefore 
+\begin_inset Formula $\varepsilon+p<0$
+\end_inset
+
+ so that NEC is violated again.
+ Hence we conclude that a violation of NEC is necessary to realize an exactly
+ periodic oscillatory cosmological phase.
+ Moreover, due to the periodicity the system should be able to evolve through
+ the so-called Phantom Divide (PD) - the border of the NEC-violating region.
+ This border corresponds to the equation of state parameter 
+\begin_inset Formula $w=p/\varepsilon=-1$
+\end_inset
+
+.
+ The dynamical transition through 
+\begin_inset Formula $w=-1$
+\end_inset
+
+ should cyclicly happen in both directions from above and from below.
+ 
+\end_layout
+
+\begin_layout Standard
+It is well known that systems of k-essence type cannot dynamically violate
+ NEC and cross the Phantom Divide 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vikman:2004dc"
+
+\end_inset
+
+, see also 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hu:2004kh,Caldwell:2005ai,Xia:2007km"
+
+\end_inset
+
+ and for the review 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cai:2009zp,Nesseris:2006er"
+
+\end_inset
+
+.
+ Note that the pathologies associated with the crossing of the Phantom Divide
+ are more severe than those problems 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hsu:2004vr,Buniy:2005vh,Buniy:2006xf,Dubovsky:2005xd,Abramo:2005be"
+
+\end_inset
+
+ arising just due to the violation of NEC.
+ Below in the next section 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "sec:Refreshing-k-essence-and"
+
+\end_inset
+
+ we will refresh some basic facts about k-essence and provide simple arguments
+ against a smooth transition of a k-essence field through the Phantom Divide.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally it is useful to consider the average of 
+\begin_inset Formula $w+1$
+\end_inset
+
+ over some time interval 
+\begin_inset Formula $T=t_{f}-t_{i}$
+\end_inset
+
+.
+ Using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:energy_conservation"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Friedmann_1"
+
+\end_inset
+
+ under the assumption that 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ between 
+\begin_inset Formula $t_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{f}$
+\end_inset
+
+ we obtain 
+\begin_inset Formula 
+\[
+\left\langle w\left(t\right)+1\right\rangle _{T}=\frac{1}{T}\int_{t_{i}}^{t_{f}}dt\left(1+w\left(t\right)\right)=-\frac{1}{T}\int_{t_{i}}^{t_{f}}dt\frac{\dot{\varepsilon}}{\varepsilon\sqrt{3\varepsilon}}=\frac{1}{T}\sqrt{\frac{4}{3}}\left(\frac{1}{\sqrt{\varepsilon\left(t_{f}\right)}}-\frac{1}{\sqrt{\varepsilon\left(t_{i}\right)}}\right)\,.
+\]
+
+\end_inset
+
+If the time interval 
+\begin_inset Formula $T$
+\end_inset
+
+ is a multiple of the period of oscillations 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+, then 
+\begin_inset Formula $\left\langle w\left(t\right)+1\right\rangle _{T}=0$
+\end_inset
+
+.
+ Thus such an oscillatory stage can be interesting to model inflation and
+ dark energy.
+ 
+\end_layout
+
+\begin_layout Section
+Refreshing k-essence and why cannot it cross the Phantom Divide
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Refreshing-k-essence-and"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Here we will collect and discuss basic mostly well known facts about k-essence
+ which is a noncanonical, minimally coupled to gravity scalar field whose
+ dynamics is described by the action 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S=\int d^{4}x\,\sqrt{-g}\,p\left(\varphi,X\right)\,,\label{eq:action_general}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\begin{equation}
+X=\frac{1}{2}g^{\mu\nu}\varphi_{,\mu}\varphi_{,\nu}\,.\label{eq:X}
+\end{equation}
+
+\end_inset
+
+In cosmological applications the field is only slightly inhomogeneous and
+ anisotropic so that 
+\begin_inset Formula $\varphi_{,\mu}$
+\end_inset
+
+ is timelike, hence throughout the paper we assume that 
+\begin_inset Formula $X>0$
+\end_inset
+
+, as our signature convention 
+\begin_inset Formula $\left(+,-,-,-\right)$
+\end_inset
+
+.
+ This class of theories was introduced in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ArmendarizPicon:1999rj"
+
+\end_inset
+
+ (see also 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ArmendarizPicon:2000dh,ArmendarizPicon:2000ah,Chiba:1999ka"
+
+\end_inset
+
+).
+ The corresponding EMT is 
+\begin_inset Formula 
+\begin{equation}
+T_{\mu\nu}=p_{,X}\varphi_{,\mu}\varphi_{,\nu}-pg_{\mu\nu}\,,\label{eq:EMT_General}
+\end{equation}
+
+\end_inset
+
+for every timelike 
+\begin_inset Formula $\varphi_{,\mu}$
+\end_inset
+
+ this EMT takes a form of a perfect fluid 
+\begin_inset Formula 
+\begin{equation}
+T_{\mu\nu}=\left(\varepsilon+p\right)u_{\mu}u_{\nu}-pg_{\mu\nu}\,,\label{eq:EMT_Fluid}
+\end{equation}
+
+\end_inset
+
+with the four velocity 
+\begin_inset Formula 
+\begin{equation}
+u_{\mu}=\frac{\varphi_{,\mu}}{\sqrt{2X}}\,,\label{eq:Velocity}
+\end{equation}
+
+\end_inset
+
+pressure 
+\begin_inset Formula $p$
+\end_inset
+
+ and the energy density 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon=2Xp_{,X}-p.\label{eq:Energy_density}
+\end{equation}
+
+\end_inset
+
+Hence for all null vectors 
+\begin_inset Formula $n^{\mu}$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\begin{equation}
+T_{\mu\nu}n^{\mu}n^{\nu}=p_{,X}\left(\varphi_{,\mu}n^{\mu}\right)^{2}=\frac{\varepsilon+p}{2X}\left(\varphi_{,\mu}n^{\mu}\right)^{2}\,.\label{eq:NEC_k}
+\end{equation}
+
+\end_inset
+
+The Null Energy Condition requires 
+\begin_inset Formula $T_{\mu\nu}n^{\mu}n^{\nu}\geq0$
+\end_inset
+
+ or 
+\begin_inset Formula $p_{,X}\geq0$
+\end_inset
+
+.
+ Thus to change the sign of 
+\begin_inset Formula $T_{\mu\nu}n^{\mu}n^{\nu}$
+\end_inset
+
+ the system has to change the sign of 
+\begin_inset Formula $p_{,X}$
+\end_inset
+
+ or for time-like derivatives to change the sign of the enthalpy density
+ 
+\begin_inset Formula $\varepsilon+p$
+\end_inset
+
+.
+ In particular, if the transition is smooth, then at the Phantom Divide
+ 
+\begin_inset Formula $p_{,X}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Around any time-like, 
+\begin_inset Formula $X>0$
+\end_inset
+
+, background (in particular around cosmological backgrounds 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Garriga:1999vw"
+
+\end_inset
+
+) the perturbations propagate with the speed given by 
+\begin_inset Formula 
+\begin{equation}
+c_{\text{S}}^{2}=\left(\frac{\partial p}{\partial\varepsilon}\right)_{\varphi}=\frac{p_{,X}}{\varepsilon_{,X}}\,.\label{eq:sound}
+\end{equation}
+
+\end_inset
+
+ The small perturbations of k-essence around any background propagate in
+ an effective (contravariant) metric 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Babichev:2007dw"
+
+\end_inset
+
+ which is conformally equivalent to 
+\begin_inset Formula 
+\[
+G_{\mu\nu}=p_{,X}g_{\mu\nu}+p_{,XX}\varphi_{,\mu}\varphi_{,\nu}\,,
+\]
+
+\end_inset
+
+see also 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Babichev:2007dw,ArmendarizPicon:2005nz,Bruneton:2006gf,Bruneton:2007si"
+
+\end_inset
+
+, see also 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Moncrief:1980,Bilic:1999sq"
+
+\end_inset
+
+ for the relativistic acoustic geometry in closely related irrotational
+ perfect fluids.
+ The equation of motion is 
+\begin_inset Formula 
+\begin{equation}
+G^{\mu\nu}\nabla_{\mu}\nabla_{\nu}\varphi+\varepsilon_{,\varphi}=0\,.\label{eq:covariant_equation_of_motion}
+\end{equation}
+
+\end_inset
+
+The positivity of the right hand side of the expression 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:sound"
+
+\end_inset
+
+ guaranties that this equation of motion is a hyperbolic quasilinear PDE.
+ Note that hyperbolicity guaranties that Cauchy problem is well posed and
+ evolution is predictable till some moment of time.
+ However, it was demonstrated that breakdown of predictability due to the
+ formation of caustics is a rather generic phenomenon, see recent discussion
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Babichev:2016hys,Mukohyama:2016ipl,deRham:2016ged,Tanahashi:2017kgn"
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Most recently it was speculated 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Babichev:2017lrx"
+
+\end_inset
+
+ that k-essence could be UV completed by a canonical complex scalar U(1)
+ field.
+ This UV completion would eliminates the formation of caustics as a problem.
+ 
+\end_layout
+
+\end_inset
+
+.
+ In cosmology the equation of motion reduces to 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon_{,X}\ddot{\varphi}+3H\dot{\varphi}p_{,X}+\varepsilon_{,\varphi}=0\,,\label{eq:equation_of_motion_cosmology}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $H$
+\end_inset
+
+ is given by the first Friedmann equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Friedmann_1"
+
+\end_inset
+
+ with the energy density 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Energy_density"
+
+\end_inset
+
+.
+ Instead of 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ one can use 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ and 
+\begin_inset Formula $p$
+\end_inset
+
+ as independent variables.
+ In this case the Jacobian is 
+\begin_inset Formula $J=p_{,\varphi}\varepsilon_{,\dot{\varphi}}-\varepsilon_{,\varphi}p_{,\dot{\varphi}}$
+\end_inset
+
+.
+ The dynamical equation on energy density is 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:energy_conservation"
+
+\end_inset
+
+ with the Hubble parameter given by the first Friedmann equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Friedmann_1"
+
+\end_inset
+
+.
+ While the dynamical equation for the pressure is 
+\begin_inset Formula 
+\begin{equation}
+\dot{p}=-\frac{1}{\varepsilon_{,X}}\left(6XHp_{,X}^{2}+p_{,\varphi}\varepsilon_{,\dot{\varphi}}-\varepsilon_{,\varphi}p_{,\dot{\varphi}}\right)\,,\label{eq:derivative_of_pressure}
+\end{equation}
+
+\end_inset
+
+where the Hubble parameter is expressed through the energy density by the
+ first Friedmann equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Friedmann_1"
+
+\end_inset
+
+ and all other quantities should be expressed through 
+\begin_inset Formula $\left(\varepsilon,p\right)$
+\end_inset
+
+ using implicit function theorem.
+ Unfortunately this description is only valid outside of the 
+\begin_inset Formula $\dot{\varphi}=0$
+\end_inset
+
+ line.
+ Indeed, the Jacobian can be written as 
+\begin_inset Formula 
+\[
+J=p_{,\varphi}\varepsilon_{,\dot{\varphi}}-\varepsilon_{,\varphi}p_{,\dot{\varphi}}=\dot{\varphi}\left(p_{,\varphi}\varepsilon_{,X}-\varepsilon_{,\varphi}p_{,X}\right)\,,
+\]
+
+\end_inset
+
+where the right hand side is vanishing on the 
+\begin_inset Formula $\dot{\varphi}=0$
+\end_inset
+
+ line.
+ However, if a limit cycle exists, it has to cross this line.
+ Thus the Jacobian is not sign-definite and it is not clear whether the
+ expression in the brackets of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:derivative_of_pressure"
+
+\end_inset
+
+ is sign-definite.
+ For a shift-symmetric case (with the symmetry 
+\begin_inset Formula $\varphi\rightarrow\varphi+c$
+\end_inset
+
+) the pressure evolves due to the 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:energy_conservation"
+
+\end_inset
+
+.
+ In this case a limit cycle is not possible in an expanding universe, because
+ 
+\begin_inset Formula $\dot{\varphi}p_{,X}\propto a^{-3}$
+\end_inset
+
+ so that 
+\begin_inset Formula $\dot{\varphi}p_{,X}$
+\end_inset
+
+ always decreasing.
+ 
+\end_layout
+
+\begin_layout Standard
+Further it is useful to use the energy conservation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:energy_conservation"
+
+\end_inset
+
+ along with the 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Friedmann_1"
+
+\end_inset
+
+ and the definition of energy density 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Energy_density"
+
+\end_inset
+
+ to obtain 
+\begin_inset Formula 
+\[
+\sqrt{\frac{4}{3}\varepsilon_{f}}-\sqrt{\frac{4}{3}\varepsilon_{i}}=\int_{\varepsilon_{i}}^{\varepsilon_{f}}\frac{d\varepsilon}{\sqrt{3\varepsilon}}=-\int_{t_{i}}^{t_{f}}dt\dot{\varphi}p_{,\dot{\varphi}}=-\int_{\varphi_{i}}^{\varphi_{f}}d\varphi\,p_{,\dot{\varphi}}\,.
+\]
+
+\end_inset
+
+If the motion is periodic we obtain 
+\begin_inset Formula 
+\[
+\oint\,d\varphi\,p_{,\dot{\varphi}}=0\,.
+\]
+
+\end_inset
+
+The later condition we can transform using the Green's formula to and the
+ expression for the energy density 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Energy_density"
+
+\end_inset
+
+ to 
+\begin_inset Formula 
+\begin{equation}
+\oint\,d\varphi\,p_{,\dot{\varphi}}=-\iint d\varphi d\dot{\varphi}\,p_{,\dot{\varphi}\dot{\varphi}}=-\iint d\varphi d\dot{\varphi}\,\varepsilon_{,X}=0\,.\label{eq:Integral_from_energy_cons}
+\end{equation}
+
+\end_inset
+
+Hence 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ has to change the sign and have this opposite sign on some area inside
+ of the limit cycle.
+ We will obtain the same result in a different way later in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:General-phase-space"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Momentum invertibility and strong superluminality 
+\end_layout
+
+\begin_layout Standard
+Further it is illuminating to look at the canonical formulation of the dynamics.
+ It is particularly useful as the authors of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+ are interested in degenerate Hamiltonians which are not smooth functions
+ of canonical momenta.
+ For smooth Lagrangians this happens when the field velocity cannot be uniquely
+ expressed through the canonical momentum.
+ We will proceed using the ADM formalism, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arnowitt:1962hi"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Poisson"
+
+\end_inset
+
+.
+ In a spacetime foliation generated by a time-like congruence with a tangent
+ vector 
+\begin_inset Formula $t^{\mu}$
+\end_inset
+
+ we can represent the metric as 
+\begin_inset Formula 
+\[
+ds^{2}=N^{2}dt^{2}-\ell_{ik}\left(dx^{i}+N^{i}dt\right)\left(dx^{k}+N^{k}dt\right)\,.
+\]
+
+\end_inset
+
+The unit normal to the hypersurface of constant 
+\begin_inset Formula $t$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+U_{\mu}=N\partial_{\mu}t\,.
+\]
+
+\end_inset
+
+The relative three velocity 
+\begin_inset Formula $v$
+\end_inset
+
+ of 
+\begin_inset Formula $U_{\mu}$
+\end_inset
+
+ with respect to the k-essence fluid velocity 
+\begin_inset Formula $u^{\mu}$
+\end_inset
+
+ (given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Velocity"
+
+\end_inset
+
+) can be found from 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\sqrt{1-v^{2}}}=U_{\mu}u^{\mu}=Nu^{t}=\frac{1}{N\sqrt{2X}}\left(\dot{\varphi}-N^{i}\varphi_{,i}\right)\,,\label{eq:relative_velocity}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+so that 
+\begin_inset Formula 
+\[
+v^{2}=1-\frac{2XN^{2}}{\left(\dot{\varphi}-N^{i}\varphi_{,i}\right)^{2}}\,,
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+so that after some algebra 
+\begin_inset Formula 
+\begin{equation}
+v^{2}=\frac{N^{2}\ell^{ik}\varphi_{,i}\varphi_{,k}}{\left(\dot{\varphi}-N^{i}\varphi_{,i}\right)^{2}}\,,\label{eq:relative_v}
+\end{equation}
+
+\end_inset
+
+where we have used the standard ADM results 
+\begin_inset Formula $g^{ik}=-\ell^{ik}+N^{i}N^{k}/N^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g^{ti}=-N^{i}/N^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $g^{tt}=1/N^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\ell^{ik}\ell_{km}=\delta_{m}^{i}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The canonical momentum is defined as 
+\begin_inset Formula 
+\begin{equation}
+P=\frac{\partial}{\partial\dot{\varphi}}\left(\sqrt{-g}p\right)=\sqrt{-g}p_{,X}\frac{1}{N^{2}}\left(\dot{\varphi}-N^{i}\varphi_{,i}\right)\,.\label{eq:momentum}
+\end{equation}
+
+\end_inset
+
+Hence, the canonical momentum is always vanishing at the crossing of the
+ Phantom Divide 
+\begin_inset Formula $p_{,X}=0$
+\end_inset
+
+.
+ The velocity 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ can be found from the canonical momentum provided
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial P}{\partial\dot{\varphi}}\neq0\,.\label{eq:solvability_momentum}
+\end{equation}
+
+\end_inset
+
+In cosmology this momentum is 
+\begin_inset Formula $P=a^{3}\dot{\varphi}p_{,X}$
+\end_inset
+
+ and cannot be 
+\emph on
+locally
+\emph default
+ expressed exclusively through 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ as 
+\begin_inset Formula $a\left(t\right)=\exp\left(\int^{t}dt'\sqrt{\varepsilon\left(\varphi\left(t'\right),\dot{\varphi}\left(t'\right)\right)/3}\right)$
+\end_inset
+
+.
+ Using the definitions of the relative velocity 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:relative_v"
+
+\end_inset
+
+ and the sound speed 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:sound"
+
+\end_inset
+
+ this invertibility condition (for a given scale factor 
+\begin_inset Formula $a$
+\end_inset
+
+, before solving the Hamiltonian constraint - the first Friedmann equation
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Friedmann_1"
+
+\end_inset
+
+) can be written in the form 
+\begin_inset Formula 
+\begin{equation}
+\frac{\partial P}{\partial\dot{\varphi}}=\sqrt{-g}\left(\left(u^{t}\right)^{2}2Xp_{,XX}+p_{,X}g^{tt}\right)=\sqrt{-g}G^{tt}=\frac{\varepsilon_{,X}}{N}\sqrt{\ell}\left(\frac{1-v^{2}c_{\text{S}}^{2}}{1-v^{2}}\right)\,.\label{eq:invertability}
+\end{equation}
+
+\end_inset
+
+In particular, one can chose such a foliation that 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ is constant on the equal-time hypersurface, so that 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+.
+ In this foliation 
+\begin_inset Formula $v=0$
+\end_inset
+
+ and the invertibility of the momentum requires that 
+\begin_inset Formula $\varepsilon_{,X}\neq0$
+\end_inset
+
+.
+ Note that а cusp Hamiltonian and non-invertibility of momentum are among
+ the desirable features of the 
+\begin_inset Quotes eld
+\end_inset
+
+time crystals
+\begin_inset Quotes erd
+\end_inset
+
+ and one of the requirements imposed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+ on a general system with an oscillatory attractor as a ground state.
+ Indeed, the ground state implies a minimum of the Hamiltonian.
+ But if all first derivatives of the Hamiltonian are vanishing, there is
+ no motion and an oscillatory configuration cannot be a ground state.
+ Clearly for systems with cusp Hamiltonians this argument does not work.
+ 
+\end_layout
+
+\begin_layout Standard
+However, the homogeneous and isotropic cosmological dynamics of a k-essence
+ scalar field driving the expansion of the universe cannot be brought to
+ this simple two dimensional canonical form.
+ Below, in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:General-phase-space"
+
+\end_inset
+
+, using standard results from the theory of ODE, we prove that the changing
+ of sign of 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ is a necessary condition for the existence of cosmological limit cycles.
+ Hence one has to require that on some configurations 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+.
+ But, for a generic k-essence Lagrangian, 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ does not imply 
+\begin_inset Formula $p_{,X}=0$
+\end_inset
+
+.
+ Therefore, for 
+\begin_inset Formula $X>0$
+\end_inset
+
+ and a finite and non-vanishing 
+\begin_inset Formula $p_{,X}$
+\end_inset
+
+ the singular surface where 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ corresponds to the divergent speed of sound for the perturbations 
+\begin_inset Formula $c_{\text{S}}^{2}\rightarrow\infty$
+\end_inset
+
+.
+ Moreover, if 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ changes sign (as required for the existence of a limit cycle) it implies
+ that on one side of the singular hypersurface there is a region of extreme
+ superluminality, while the configurations on the other side suffer from
+ infinitely strong gradient instabilities.
+ On these latter configurations 
+\begin_inset Formula $c_{\text{S}}^{2}<0$
+\end_inset
+
+ and the equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:covariant_equation_of_motion"
+
+\end_inset
+
+ becomes an elliptic quasilinear PDE.
+ Thus generically these 
+\begin_inset Quotes eld
+\end_inset
+
+time crystals
+\begin_inset Quotes erd
+\end_inset
+
+ k-essence systems require existence of configurations with an infinitely
+ strong superluminality which are neighboring configurations with infinitely
+ strong gradient instabilities.
+ 
+\end_layout
+
+\begin_layout Standard
+As it follows from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:derivative_of_pressure"
+
+\end_inset
+
+ the pressure has an infinite time derivative at the singularity.
+ Thus the time derivative of the Ricci scalar 
+\begin_inset Formula $R$
+\end_inset
+
+ blows up as well.
+ An effective action in gravity should contain the term 
+\begin_inset Formula $\left(\partial R\right)^{2}$
+\end_inset
+
+ which blows up in this case.
+ This is another way to see that EFT breaks down on the singular curve where
+ 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+As it follows from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:invertability"
+
+\end_inset
+
+, for superluminal speeds of sound the invertibility of the momentum-velocity
+ relation can be also violated on a foliation with the relative velocity
+ 
+\begin_inset Formula $v^{2}=1/c_{\text{S}}^{2}$
+\end_inset
+
+.
+ In this case the hypersurface of constant time coincides with the characteristi
+c surface of the equation of motion.
+ Clearly such a surface cannot be chosen for initial data and the foliation
+ is not suitable for the Cauchy problem.
+ For a detailed discussion see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams:2006sv,Babichev:2007dw"
+
+\end_inset
+
+.
+ Other works discussing the non-uniqueness of the Hamiltonian due to the
+ multivalued relation between momentum and field velocity include 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aharonov:1969vu,Henneaux:1987zz,Rizos:2012qs"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Classical and quantum perturbations
+\end_layout
+
+\begin_layout Standard
+Further the cosmological scalar perturbations are described by the action
+ 
+\begin_inset Formula 
+\begin{equation}
+S=\frac{1}{2}\int d\eta d^{3}x\,Z\left(\left(\mathcal{R}'\right)^{2}-c_{\text{S}}^{2}\left(\partial_{i}\mathcal{R}\right)^{2}\right)\,,\label{eq:action for perturbations}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\eta$
+\end_inset
+
+ is the conformal time and the curvature perturbation 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ is constructed out of the perturbation of the k-essence field 
+\begin_inset Formula $\delta\varphi$
+\end_inset
+
+ and the Newtonian potential 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{R}=\Phi+H\frac{\delta\varphi}{\dot{\varphi}}\,,\label{eq:curvature_perturbation}
+\end{equation}
+
+\end_inset
+
+where both perturbations are written in terms of gauge-invariant variables
+ which correspond to the Newtonian gage.
+ Finally the normalization is 
+\begin_inset Formula 
+\begin{equation}
+Z=a^{2}\left(\frac{\varepsilon+p}{c_{\text{S}}^{2}H^{2}}\right)=\varepsilon_{,X}\left(\frac{\dot{\varphi}a}{H}\right)^{2}\,.\label{eq:Normalization}
+\end{equation}
+
+\end_inset
+
+The action is ghosty provided 
+\begin_inset Formula $Z<0$
+\end_inset
+
+ which is equivalent to 
+\begin_inset Formula $\varepsilon_{,X}<0$
+\end_inset
+
+.
+ If NEC is violated, but there are no gradient instabilities so that the
+ system is hyperbolic and 
+\begin_inset Formula $c_{\text{S}}^{2}>0$
+\end_inset
+
+, then necessarily 
+\begin_inset Formula $\varepsilon_{,X}<0$
+\end_inset
+
+ and the action is ghosty.
+ Ghost instabilities are perturbative, but rely on interactions with other
+ fields.
+ In particular there is always an interaction through gravity.
+ On the contrary the gradient instabilities are linear short scale instabilities.
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ at the Phantom Divide then the background solution has to go through a
+ singularity of the equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:equation_of_motion_cosmology"
+
+\end_inset
+
+.
+ For example it is the case in the example provided in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nojiri:2006ww"
+
+\end_inset
+
+.
+ Even if we assume that 
+\begin_inset Formula $c_{\text{S}}$
+\end_inset
+
+ remains nonzero and does not blow up one would need to guaranty that 
+\begin_inset Formula $\varepsilon_{,\varphi}/\varepsilon_{,X}$
+\end_inset
+
+ does not blow up.
+ However, in that case 
+\begin_inset Formula $\varepsilon_{,\varphi}$
+\end_inset
+
+ should vanish at the same point where 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ is vanishing.
+ This provides two equations in the phase space 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ to satisfy.
+ Therefore this can generically only happen on isolated points of the measure
+ zero corresponding to extrema of the energy density.
+ This degenerate case was in details discussed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vikman:2004dc"
+
+\end_inset
+
+.
+ Another crucial point is that at the Phantom Divide with non-vanishing
+ speed of sound the normalization factor 
+\begin_inset Formula $Z$
+\end_inset
+
+ is vanishing.
+ But 
+\begin_inset Formula $Z=0$
+\end_inset
+
+ corresponds to an infinitely strong coupling on all scales at for the QFT
+ of perturbations.
+ Indeed, the cubic terms in the action for perturbations contain higher
+ order derivatives of the background quantities and are not vanishing at
+ 
+\begin_inset Formula $Z=0$
+\end_inset
+
+.
+ A QFT which only contains third order operators is strongly coupled on
+ all scales.
+ 
+\end_layout
+
+\begin_layout Standard
+Another way to understand the pathology is to introduce the canonical variable
+ (Mukhanov-Sasaki variable) which for for k-essence is 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Garriga:1999vw,Mukhanov:2005sc"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+v=z\mathcal{R}\,,\label{eq:canonical}
+\end{equation}
+
+\end_inset
+
+with 
+\begin_inset Formula 
+\[
+z=\frac{a\dot{\varphi}}{H}\left|\frac{\varepsilon+p}{2Xc_{\text{S}}^{2}}\right|^{1/2}=\frac{a\dot{\varphi}}{H}\,\sqrt{\left|\varepsilon_{,X}\right|}\,.
+\]
+
+\end_inset
+
+The canonical variable can be written as 
+\begin_inset Formula 
+\begin{equation}
+v=a\sqrt{\left|\varepsilon_{,X}\right|}\left(\delta\varphi+\Phi\frac{\dot{\varphi}}{H}\right)\,.\label{eq:canonical_longer}
+\end{equation}
+
+\end_inset
+
+The dynamics of this variable is described by the action 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S=\frac{1}{2}\sigma\int d\eta d^{3}x\left(\left(v'\right)^{2}+c_{\text{S}}^{2}v\Delta v+\frac{z''}{z}v^{2}\right)\,,\label{eq:action_Canonical}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\sigma=\mbox{sign}\left(\varepsilon_{,X}\right)$
+\end_inset
+
+.
+ The corresponding dispersion relation is 
+\begin_inset Formula 
+\[
+\omega_{k}^{2}=c_{\text{S}}^{2}k^{2}-\frac{z''}{z}\,,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $-z''/z$
+\end_inset
+
+ plays the role of the square of effective time-dependent mass.
+ Positive 
+\begin_inset Formula $z''/z$
+\end_inset
+
+ indicates the Jeans instability operating on large scales where one cannot
+ neglect expansion of spacetime.
+ This mass is infinitely growing (in the positive or negative direction)
+ at the Phantom Divide with 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+.
+ Clearly this does not allow to separate scales and treat the perturbations
+ as an EFT.
+ 
+\end_layout
+
+\begin_layout Standard
+Another problem is rooted in the speed of sound.
+ Let's now assume that 
+\begin_inset Formula $\varepsilon_{,X}>0$
+\end_inset
+
+ at the Phantom Divide.
+ Then we have 
+\begin_inset Formula $c_{\text{S}}^{2}\left(t_{pd}\right)=0$
+\end_inset
+
+ and by continuity 
+\begin_inset Formula $c_{\text{S}}^{2}$
+\end_inset
+
+ changes sign at this point.
+ This change of sign of 
+\begin_inset Formula $c_{\text{S}}^{2}$
+\end_inset
+
+ implies the transition of the equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:covariant_equation_of_motion"
+
+\end_inset
+
+ from the hyperbolic to the elliptic type of PDE or vice versa.
+ It is well known that the Cauchy problem is ill-posed for elliptical PDE's.
+ The problem is in the short wavelength instabilities behaving as 
+\begin_inset Formula 
+\begin{equation}
+\delta\varphi_{\mathbf{k}}\sim\exp\left(\left|c_{\text{S}}\mathbf{k}\right|t\right)\,,\label{eq:grrowth}
+\end{equation}
+
+\end_inset
+
+so that the increment of instability in mode 
+\begin_inset Formula $k$
+\end_inset
+
+ is 
+\begin_inset Formula $\left|c_{\text{S}}\mathbf{k}\right|$
+\end_inset
+
+ and grows for large wave numbers without any bound.
+ In reality the bound is provided by a lattice size or by the strong coupling
+ scale.
+ In both these cases the instability has a characteristic scale corresponding
+ to the cut off scale completely destroying the predictability of the theory.
+ If a system enters the elliptic regime on a classical solution which is
+ in the formal region of validity of the EFT, than the system stays there
+ much longer than the inverse frequency cut off scale.
+ In that case all physical modes get a tremendous exponential amplification
+ due to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:grrowth"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+It is worth looking at the quantum fluctuations to understand the problem.
+ If we start from a healthy background 
+\begin_inset Formula $c_{\text{S}}^{2}>0$
+\end_inset
+
+ and 
+\begin_inset Formula $\varepsilon_{,X}>0$
+\end_inset
+
+, then in a Hadamard state (short scales vacuum state) the mode functions
+ 
+\begin_inset Formula $v_{k}$
+\end_inset
+
+ for the canonical variable 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:canonical_longer"
+
+\end_inset
+
+ are normalized inside the horizon (for scales 
+\begin_inset Formula $c_{\text{S}}k\ll\left|z''/z\right|$
+\end_inset
+
+) as 
+\begin_inset Formula 
+\begin{equation}
+\left|v_{k}\right|=\sqrt{\frac{\hbar}{\omega_{k}}}\simeq\sqrt{\frac{\hbar}{c_{\text{S}}k}}\,.\label{eq:mode_func_norm}
+\end{equation}
+
+\end_inset
+
+Where we have explicitly written 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ to stress the quantum origin of this quantity.
+ Then the characteristic quantum fluctuation of the canonical variable on
+ scale 
+\begin_inset Formula $k$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{equation}
+\delta v_{k}\sim\sqrt{\hbar}\left|v_{k}\right|k^{3/2}\sim\sqrt{\frac{\hbar}{c_{\text{S}}}}\,k\,.\label{eq:fluctuations}
+\end{equation}
+
+\end_inset
+
+On these ultrashort physical length scales 
+\begin_inset Formula $\ell=a/k$
+\end_inset
+
+ we can neglect the fluctuations of the Newtonian potential (see below)
+ so that 
+\begin_inset Formula 
+\begin{equation}
+\delta\varphi_{\ell}\sim\sqrt{\frac{\hbar}{\varepsilon_{,X}c_{\text{S}}}}\left(\frac{k}{a}\right)=\left(\frac{\hbar^{2}}{\varepsilon_{,X}p_{,X}}\right)^{1/4}\cdot\frac{1}{\ell}=\left(\frac{2X\hbar^{2}}{\varepsilon_{,X}\left(\varepsilon+p\right)}\right)^{1/4}\cdot\frac{1}{\ell}\,.\label{eq:field_quantum_fluctuation}
+\end{equation}
+
+\end_inset
+
+Here we assumed that 
+\begin_inset Formula $\ell\gg L_{UV}$
+\end_inset
+
+, where the latter is the UV-cutoff length scale which is typically present
+ in such derivatively coupled theories.
+ Thus if either of the quantities 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ or 
+\begin_inset Formula $p_{,X}$
+\end_inset
+
+ is vanishing, the quantum fluctuations 
+\begin_inset Formula $\delta\varphi_{\ell}$
+\end_inset
+
+ blow up on short scales.
+ In particular, for 
+\begin_inset Formula $c_{\text{S}}\rightarrow0$
+\end_inset
+
+ quantum fluctuations at every given scale 
+\begin_inset Formula $\ell$
+\end_inset
+
+ inside the horizon blow up and completely invalidate the applicability
+ of the whole theory of cosmological perturbations.
+ 
+\end_layout
+
+\begin_layout Standard
+On the other hand the fluctuations of the Newtonian potential on short scales
+ are scale-independent 
+\begin_inset Formula 
+\[
+\Phi_{\ell}\sim\sqrt{\hbar}\left(\frac{\varepsilon+p}{c_{\text{S}}}\right)^{1/2}\sim\sqrt{\hbar}\left(X\varepsilon_{,X}\left(\varepsilon+p\right)\right)^{1/4}\,,
+\]
+
+\end_inset
+
+see page 345 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mukhanov:2005sc"
+
+\end_inset
+
+.
+ These fluctuations are always small provided 
+\begin_inset Formula $c_{\text{S}}\gtrsim\varepsilon+p$
+\end_inset
+
+.
+ The latter condition can also be written in standard units as 
+\begin_inset Formula 
+\[
+c_{\text{S}}\gtrsim\left(\frac{\varepsilon}{\varepsilon_{\text{Pl}}}\right)\left(1+w\right)\,,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\varepsilon_{\text{Pl}}$
+\end_inset
+
+ is the Planckian energy density
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Clearly this is is a rather weak lower bound on the sound speed for a dust-like
+ k-essence.
+\end_layout
+
+\end_inset
+
+.
+ It is worthwhile to compare the right hand side of this expression with
+ the Ricci curvature 
+\begin_inset Formula $R=-\varepsilon\left(1-3w\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The magnitude of the quantum fluctuations 
+\begin_inset Formula $\delta\varphi_{\ell}$
+\end_inset
+
+ on a short scale 
+\begin_inset Formula $\ell$
+\end_inset
+
+ can be also obtained from the following uncertainty relation 
+\begin_inset Formula 
+\begin{equation}
+\delta\varphi_{\ell}\cdot\delta P_{\ell}\gtrsim\hbar\,\ell^{-3}\,,\label{eq:uncirtainty}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\delta P_{\ell}$
+\end_inset
+
+ is the fluctuation of the canonical momentum on this scale, for a detailed
+ discussion see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vikman:2012bx"
+
+\end_inset
+
+.
+ Further, the canonical momentum of fluctuations is 
+\begin_inset Formula 
+\[
+\delta P_{\ell}=G^{tt}\delta\dot{\varphi}_{\ell}=\varepsilon_{,X}\delta\dot{\varphi}_{\ell}\,.
+\]
+
+\end_inset
+
+The fluctuation of the field velocity on short-scale 
+\begin_inset Formula $\ell$
+\end_inset
+
+ can be estimated as 
+\begin_inset Formula 
+\[
+\delta\dot{\varphi}_{\ell}\simeq\omega_{\ell}\delta\varphi_{\ell}\simeq\left(c_{\text{S}}/\ell\right)\delta\varphi_{\ell}\,.
+\]
+
+\end_inset
+
+For an oscillator the vacuum saturates the uncertainty relation therefore
+ for a collection of oscillators 
+\begin_inset Formula 
+\[
+\delta\varphi_{\ell}^{2}\simeq\frac{\hbar}{\varepsilon_{,X}c_{\text{S}}}\cdot\frac{1}{\ell^{2}}\,,
+\]
+
+\end_inset
+
+which again gives 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:field_quantum_fluctuation"
+
+\end_inset
+
+.
+ This estimation is not applicable, if the system is strongly coupled for
+ scales 
+\begin_inset Formula $c_{\text{S}}k\lesssim\left|z''/z\right|$
+\end_inset
+
+.
+ However, in that case the predictive power of such theory is rather limited.
+ 
+\end_layout
+
+\begin_layout Standard
+In particular, these results above imply that it is physically impossible
+ to avoid a singularity and to bounce a spatially-flat Friedmann universe
+ just using the k-essence.
+ Though it is not very hard to find a corresponding bouncing cosmological
+ solution in k-essence, e.g see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Abramo:2007mp,DeSantiago:2012nk"
+
+\end_inset
+
+ and for the most recent discussion 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Fertig:2016czu,Romano:2016jlz"
+
+\end_inset
+
+.
+ There are two ways out.
+ Either one should assume that k-essence perturbations can receive large
+ corrections from spatial higher derivatives (HD), thereby curing the situation
+ without spoiling the bouncing background, as was done in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2006xe,Creminelli:2007aq"
+
+\end_inset
+
+.
+ In this case it is not entirely clear whether spatial HD can be dominant
+ in effective field theories just on the perturbative level.
+ For the most recent discussion of an extension of k-essence by HD operators
+ and NEC violation, see 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "deRham:2017aoj"
+
+\end_inset
+
+.
+ Another possibility is to try more general theories with one degree of
+ freedom but with covariant HD in the total action.
+ The latter strategy to arrange a stable bounce free from ghosts and gradient
+ instabilities was followed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Qiu:2011cy,Easson:2011zy"
+
+\end_inset
+
+.
+ Before that a possibility to have a healthy bouncing solution in such theories
+ was very briefly mentioned without any proof or further discussion in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2010ba"
+
+\end_inset
+
+.
+ In particular, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2011zy"
+
+\end_inset
+
+ showed that there is continuum of kinetically braided theories introduced
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deffayet:2010qz"
+
+\end_inset
+
+ (and slightly later in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kobayashi:2010cm"
+
+\end_inset
+
+) which can achieve a healthy bounce without any ghost or gradient instabilities
+, on continuum of solutions with nonvanishing measure and even in the presence
+ of other standard matter species.
+ For the most recent discussion confirming the conclusion of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Qiu:2011cy,Easson:2011zy"
+
+\end_inset
+
+ that one can have one stable bouncing trajectory in such kinetically braided
+ theories, see e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn,Ijjas:2016vtq"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Recently it was showed that one can go beyond the theories with second order
+ equations of motion to degenerate higher derivative theories (DHOST) 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Langlois:2015cwa,Langlois:2015skt"
+
+\end_inset
+
+ and realize even a geodesically complete healthy bounce 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2016zwa,Cai:2017dyi,Kolevatov:2017voe"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+General phase space analysis and the Bendixson–Dulac theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:General-phase-space"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The cosmological equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:equation_of_motion_cosmology"
+
+\end_inset
+
+ can be written in the first order form 
+\begin_inset Formula 
+\begin{align}
+ & \frac{d\dot{\varphi}}{dt}=-3Hc_{\text{S}}^{2}\dot{\varphi}-\frac{\varepsilon_{,\varphi}}{\varepsilon_{,X}}\,,\label{eq:first_order_system_norm}\\
+ & \frac{d\varphi}{dt}=\dot{\varphi}\,.\nonumber 
+\end{align}
+
+\end_inset
+
+The first equation of this system above is singular for configurations with
+ 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+.
+ The integral curves for the vector field 
+\begin_inset Formula $\left(\dot{\varphi},\ddot{\varphi}\right)$
+\end_inset
+
+ of on the phase space 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ are given by 
+\begin_inset Formula 
+\begin{equation}
+\frac{d\dot{\varphi}}{d\varphi}=-3Hc_{\text{S}}^{2}-\frac{\varepsilon_{,\varphi}}{\varepsilon_{,\dot{\varphi}}}\,.\label{eq:integral_curves}
+\end{equation}
+
+\end_inset
+
+For every k-essence with the Lagrangian 
+\begin_inset Formula $p\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ it is convenient to introduce an auxiliary system of ODE 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vikman:2004dc"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align}
+ & \frac{du}{dt}=\alpha\left(u,v\right)=-p_{,u}\sqrt{3\varepsilon}-\varepsilon_{,v}\,,\label{eq:auxiliarly_system}\\
+ & \frac{dv}{dt}=\beta\left(u,v\right)=\varepsilon_{,u}\,,\nonumber 
+\end{align}
+
+\end_inset
+
+ with 
+\begin_inset Formula $\varepsilon=up_{,u}-p$
+\end_inset
+
+.
+ Without the friction term 
+\begin_inset Formula $p_{,u}\sqrt{3\varepsilon}$
+\end_inset
+
+ these ODEs are the Hamilton equations of motion with canonical momentum
+ 
+\begin_inset Formula $u$
+\end_inset
+
+, coordinate 
+\begin_inset Formula $v$
+\end_inset
+
+ and Hamiltonian 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ Without this friction term the motion happens on the curves of constant
+ 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+.
+ As 
+\begin_inset Formula $p_{,u}=up_{,X}$
+\end_inset
+
+, the effective friction coefficient is 
+\begin_inset Formula $p_{,X}\sqrt{3\varepsilon}$
+\end_inset
+
+.
+ If the sign of the friction coefficient is always positive the dissipative
+ motion cannot be periodic.
+ Hence 
+\begin_inset Formula $p_{,X}$
+\end_inset
+
+ has to change the sign for the existence of a limit cycle.
+ This is a reformulation of the same statement presented in at the beginning
+ of the paper.
+ This system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+ is different from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:equation_of_motion_cosmology"
+
+\end_inset
+
+, but it is constructed out of the same function 
+\begin_inset Formula $p\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ where instead of 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ one plugs in 
+\begin_inset Formula $v$
+\end_inset
+
+ and instead of 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ one plugs in 
+\begin_inset Formula $u$
+\end_inset
+
+.
+ The solutions 
+\begin_inset Formula $u\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ are different from 
+\begin_inset Formula $\varphi\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\varphi}\left(t\right)$
+\end_inset
+
+.
+ In particular, 
+\begin_inset Formula $\dot{v}\neq u$
+\end_inset
+
+.
+ The main point is that this system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+ has the same integral curves on 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+ as the equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:equation_of_motion_cosmology"
+
+\end_inset
+
+ on 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+, but it is clearly less singular.
+ These integral curves are locally given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:integral_curves"
+
+\end_inset
+
+.
+ In particular a limit cycle corresponds to a closed integral curve on 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ plane and on 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+ plane.
+ Тhe time flow in 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+ goes in the opposite direction to the time flow in 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ for the regions with 
+\begin_inset Formula $\varepsilon_{,X}<0$
+\end_inset
+
+ as both first order equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+ for 
+\begin_inset Formula $v$
+\end_inset
+
+ and 
+\begin_inset Formula $u$
+\end_inset
+
+ have an opposite sign to the corresponding equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:first_order_system_norm"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Nontrivial fixed points
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Nontrivial-fixed-points"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Because of the friction, one can expect, that the (non-degenerate) fixed
+ points of the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+ should always be saddles, nodes and foci.
+ However, nontrivial fixed points with 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ can only be either saddles or centers.
+ Let us prove this statement.
+ Note that these fixed points of the auxiliary system are located on the
+ singular curve of the original system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:first_order_system_norm"
+
+\end_inset
+
+.
+ Around a generic fixed point
+\begin_inset Formula 
+\[
+\frac{d}{dt}\delta v=\varepsilon_{,uu}\delta u+\varepsilon_{,uv}\delta v\,,
+\]
+
+\end_inset
+
+and for a nontrivial fixed point at which 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\[
+\frac{d}{dt}\delta u=-\left[p_{,uv}\sqrt{3G_{\text{N}}\varepsilon}+\frac{3G_{\text{N}}}{2}p_{,u}\frac{\varepsilon_{,v}}{\sqrt{3G_{\text{N}}\varepsilon}}+\varepsilon_{,vv}\right]\delta v-\varepsilon_{,vu}\delta u\,,
+\]
+
+\end_inset
+
+where we have used 
+\begin_inset Formula $\varepsilon_{,u}=\varepsilon_{,X}u=0$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{,uu}=\left(up_{,X}\right)_{,u}=p_{,X}+2Xp_{,XX}=\varepsilon_{,X}=0$
+\end_inset
+
+.
+ If we further use 
+\begin_inset Formula $\alpha\left(u,v\right)=-p_{,u}\sqrt{3G_{\text{N}}\varepsilon}-\varepsilon_{,v}=0$
+\end_inset
+
+, the last equation takes the form 
+\begin_inset Formula 
+\[
+\frac{d}{dt}\delta u=p_{,u}\left[\frac{3}{2}G_{\text{N}}p_{,u}-\left(\frac{\varepsilon_{,v}}{p_{,u}}\right)_{,v}\right]\delta v-\varepsilon_{,vu}\delta u\,.
+\]
+
+\end_inset
+
+Hence for the eigenvalues of the linearized system we obtain 
+\begin_inset Formula 
+\begin{equation}
+\lambda^{2}=\varepsilon_{,uv}^{2}+\varepsilon_{,uu}p_{,u}\left[\frac{3}{2}G_{\text{N}}p_{,u}-\left(\frac{\varepsilon_{,v}}{p_{,u}}\right)_{,v}\right]\,.\label{eq:Nontrivial_Eigenvalue}
+\end{equation}
+
+\end_inset
+
+These eigenvalues are either both real and of opposite sign, so that the
+ fixed point is a saddle, or both eigenvalues are purely imaginary so that
+ the fixed point is a center in the linear approximation.
+ Thus a fixed point on the curve 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ cannot be a node.
+ By virtue of the Lyapunov theorem, for a fixed point to be an exact center,
+ a nonlinear system has to posses an analytic non-trivial integral of motion
+ around this fixed point.
+ The latter requirement is rather strong and can only be realized in special
+ cases.
+ Hence one can expect that the center in linear approximation should become
+ a non-linear focus.
+ 
+\end_layout
+
+\begin_layout Subsection
+The Bendixson–Dulac theorem
+\end_layout
+
+\begin_layout Standard
+This theorem states that, if there exist a 
+\begin_inset Formula $C^{1}$
+\end_inset
+
+ function 
+\begin_inset Formula $f\left(u,v\right)$
+\end_inset
+
+ (called the Dulac function) such that 
+\begin_inset Formula 
+\[
+\frac{\partial\left(f\alpha\right)}{\partial u}+\frac{\partial\left(f\beta\right)}{\partial v}>0\,,
+\]
+
+\end_inset
+
+almost everywhere in a simply connected region of the plane, then there
+ are no periodic solutions lying entirely within the region.
+ 
+\end_layout
+
+\begin_layout Standard
+Further we will assume that in the region where of phase space where the
+ limit cycle is located the energy density is strictly positive, 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+.
+ This is needed for the differentiability of the right hand side of the
+ system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+.
+ Moreover, this excludes a possibility of a bounce happening in this region
+ of phase space.
+ 
+\end_layout
+
+\begin_layout Standard
+In that case one can chose the Dulac function 
+\begin_inset Formula $f\left(\varepsilon\right)=1/\sqrt{3\varepsilon}$
+\end_inset
+
+ for which we have
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+It is important to stress the power of the Dulac generalization of the original
+ Bendixson theorem which only allowed for 
+\begin_inset Formula $f=1$
+\end_inset
+
+.
+ In that case one would obtain that 
+\begin_inset Formula $\varepsilon_{,X}\left(3\varepsilon+p\right)$
+\end_inset
+
+ should change the sign for the existence of the limit cycle.
+ This is clearly a weaker requirement.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\frac{\partial\left(f\alpha\right)}{\partial u}+\frac{\partial\left(f\beta\right)}{\partial v}=\left(-f\left(\varepsilon\right)p_{,u}\sqrt{3\varepsilon}\right)_{,u}=-\varepsilon_{,X}\,,
+\]
+
+\end_inset
+
+where we have used that 
+\begin_inset Formula $p_{,uu}=\left(up_{,X}\right)_{,u}=p_{,X}+2Xp_{,XX}=\varepsilon_{,X}$
+\end_inset
+
+.
+ Hence the system should necessary possess a singularity where 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ changes sign or at least vanishing.
+ Otherwise the limit cycle cannot exist.
+ This goes beyond the statement that the limit cycle should have a fixed
+ point of the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+ inside.
+ Indeed, for a fixed point 
+\begin_inset Formula $\varepsilon_{,u}=\varepsilon_{,X}u$
+\end_inset
+
+ should vanish.
+ The latter is always realized at the origin where 
+\begin_inset Formula $u=0$
+\end_inset
+
+.
+ Note that the change of sign of 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ is a strong requirement for the existence of a limit cycle.
+ It is not clear whether this condition can be obtained just form the requiremen
+t that the sign of the time-derivative of the pressure 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:derivative_of_pressure"
+
+\end_inset
+
+ should change.
+ 
+\end_layout
+
+\begin_layout Subsection
+Cosmocanonical equations 
+\end_layout
+
+\begin_layout Standard
+It is important to note that 
+\begin_inset Formula $u$
+\end_inset
+
+ does not correspond to a naive 
+\emph on
+flat space
+\emph default
+ canonical momentum 
+\begin_inset Formula $\pi=\partial\mathscr{L}/\partial\dot{\varphi}=p_{,\dot{\varphi}}=P/a^{3}$
+\end_inset
+
+ for the field 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Indeed, for this momentum 
+\begin_inset Formula $\pi$
+\end_inset
+
+ we obtain using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:equation_of_motion_cosmology"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\dot{\pi}=-3H\pi+\left(\frac{\partial p}{\partial\varphi}\right)_{\dot{\varphi}}\,,\label{eq:fake_canonical}
+\end{equation}
+
+\end_inset
+
+ instead of the first equation of the auxiliary system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+.
+ From this equation above it follows that on the limit cycle the 
+\begin_inset Formula $p_{,\varphi}$
+\end_inset
+
+ (taken by constant 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+) should change the sign.
+ Thus a limit cycle crosses the curve on phase space 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $p_{,\varphi}=0$
+\end_inset
+
+.
+ Indeed, otherwise it is impossible to overcome the Hubble friction and
+ the
+\emph on
+ flat space
+\emph default
+ canonical momentum 
+\begin_inset Formula $\pi$
+\end_inset
+
+ would always decrease in an expanding universe.
+ Note that the transition to 
+\begin_inset Formula $\pi$
+\end_inset
+
+ is not that useful in the region with a singularity 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+, as there the relation between momentum and field velocity becomes not
+ invertible, see 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:invertability"
+
+\end_inset
+
+.
+ Thus this description would not be useful to prove the statement that this
+ singularity is required for a limit cycle.
+ Now we can look at the 
+\emph on
+flat space
+\emph default
+ Hamiltonian 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{H}=\dot{\varphi}\pi-p\,.\label{eq:another_Hamiltonian}
+\end{equation}
+
+\end_inset
+
+Clearly this Hamiltonian 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:another_Hamiltonian"
+
+\end_inset
+
+ is equal to 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ by value, but 
+\begin_inset Formula $\varepsilon\left(u,v\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{H}\left(\varphi,\pi\right)$
+\end_inset
+
+ are two different functions.
+ Further using 
+\begin_inset Formula 
+\[
+\left(\frac{\partial p}{\partial\varphi}\right)_{\pi}=\left(\frac{\partial p}{\partial\varphi}\right)_{\dot{\varphi}}+\left(\frac{\partial p}{\partial\dot{\varphi}}\right)_{\varphi}\left(\frac{\partial\dot{\varphi}}{\partial\varphi}\right)_{\pi}\,,
+\]
+
+\end_inset
+
+we get that 
+\begin_inset Formula 
+\[
+\left(\frac{\partial p}{\partial\varphi}\right)_{\dot{\varphi}}=-\left(\frac{\partial\mathcal{H}}{\partial\varphi}\right)_{\pi}\,,
+\]
+
+\end_inset
+
+so that 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fake_canonical"
+
+\end_inset
+
+ differs from the canonical equation by a friction term with
+\emph on
+ 
+\emph default
+
+\begin_inset Formula $3H=\sqrt{3\mathcal{H}}$
+\end_inset
+
+ friction coefficient.
+ The first order equation for 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ does not have the friction term and remains canonical 
+\begin_inset Formula 
+\[
+\dot{\varphi}=\left(\frac{\partial\mathcal{H}}{\partial\pi}\right)_{\varphi}\,.
+\]
+
+\end_inset
+
+Contrary to the auxiliary system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+ the trajectories in 
+\begin_inset Formula $\left(\varphi,\pi\right)$
+\end_inset
+
+ are not identical to the integral curves of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:equation_of_motion_cosmology"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We can start from the system 
+\begin_inset Formula 
+\begin{align}
+ & \dot{\pi}=-\sqrt{3\mathcal{H}}\,\pi-\mathcal{H}_{,\varphi}\,,\label{eq:almoust_Hamilton_equations}\\
+ & \dot{\varphi}=\mathcal{H}_{,\pi}\,,\nonumber 
+\end{align}
+
+\end_inset
+
+and use the Bendixson–Dulac theorem with the Dulac function 
+\begin_inset Formula $f=1/\sqrt{3\mathcal{H}}$
+\end_inset
+
+ to obtain that 
+\begin_inset Formula $\partial_{\pi}\left(f\alpha\right)+\partial_{\varphi}\left(f\beta\right)=-1$
+\end_inset
+
+.
+ Which implies that the limit cycle is not possible, provided the conditions
+ of the Bendixson–Dulac theorem are satisfied.
+ In particular, the relevant assumption there was that 
+\begin_inset Formula $\alpha\left(\varphi,\pi\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta\left(\varphi,\pi\right)$
+\end_inset
+
+ are smooth - i.e.
+ that the flat space Hamiltonian 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+ is smooth.
+ Hence a limit cycle is not possible for k-essence with a smooth Hamiltonian.
+ Moreover, one can expect that the 
+\emph on
+cosmocanonical
+\emph default
+ system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:almoust_Hamilton_equations"
+
+\end_inset
+
+ is universal – holds for 
+\emph on
+any generic
+\emph default
+ cosmological scalar field 
+\emph on
+beyond
+\emph default
+ k-essence i.e.
+ Galileons, Horndeski theories etc 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+We assume here that the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:almoust_Hamilton_equations"
+
+\end_inset
+
+ is valid for a cosmological scalar field with a second order covariant
+ equation of motion.
+ A detailed discussion will be provided somewhere else.
+ 
+\end_layout
+
+\end_inset
+
+.
+ Therefore we expect that the limit cycle in an expanding universe is only
+ possible for systems with a not smooth flat space Hamiltonian.
+ 
+\end_layout
+
+\begin_layout Section
+Phase space analysis of the particular model
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Particular_Model"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this section we provide a detailed phase space analysis of the class
+ of k-essence systems discussed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+.
+ This analysis will mostly serve for the illustrative purposes of our generic
+ results obtained above.
+ It is also interesting in view of the results from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cai:2017dyi"
+
+\end_inset
+
+, where it was claimed that one can model a geodesically complete healthy
+ bounce with a background solution given entirely by a k-essence model,
+ whereas the perturbations can be made healthy because of the additional
+ beyond-Horndeski terms from DHOST 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Langlois:2015cwa,Langlois:2015skt"
+
+\end_inset
+
+ present in the action.
+ Similar constructions of the healthy bounce in DHOST were presented in
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2016zwa"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kolevatov:2017voe"
+
+\end_inset
+
+, though there the background evolution is not driven purely by a k-essence.
+ The limit cycle is a geodesically complete solution with, or as we studied
+ here, without bounces of the scale factor.
+ Hence one can hope that similar beyond-Horndeski terms may stabilize the
+ limit cycle without substantial changes in the background dynamics considered
+ here.
+ 
+\end_layout
+
+\begin_layout Standard
+The expansion of the universe will be assumed to be driven by the scalar
+ field itself through the first Friedmann equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Friedmann_1"
+
+\end_inset
+
+.
+ The Lagrangian studied in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+ is 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+p(\varphi,X)=\left(3b\,\varphi^{2}-1\right)X+X^{2}-V\left(\varphi\right)\,,\label{eq:kosc}
+\end{equation}
+
+\end_inset
+
+where the double-well potential is given by 
+\begin_inset Formula 
+\begin{equation}
+V\left(\varphi\right)=\Lambda+\frac{1}{12a}-\frac{1}{2}\varphi^{2}+\frac{3a}{4}\varphi^{4}\,.\label{eq:potential}
+\end{equation}
+
+\end_inset
+
+To make all quantities dimensionless we use units of some mass scale 
+\begin_inset Formula $m$
+\end_inset
+
+, whose square otherwise would appear in front of the 
+\begin_inset Formula $\varphi^{2}$
+\end_inset
+
+ operator in the potential above.
+ It is reasonable to assume that 
+\begin_inset Formula 
+\[
+m\ll M_{\text{Pl}}\,.
+\]
+
+\end_inset
+
+As we will show later it is a correct assumption, see Eq.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Physical_Energy_Density_Last"
+
+\end_inset
+
+.
+ Otherwise we will assume that all parameters of the Lagrangian, 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $b$
+\end_inset
+
+, 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ are typically 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+.
+ Without potential and with 
+\begin_inset Formula $b=0$
+\end_inset
+
+ this system corresponds to simple k-inflation 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ArmendarizPicon:1999rj"
+
+\end_inset
+
+ and ghost condensate 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ArkaniHamed:2003uy"
+
+\end_inset
+
+.
+ The authors only considered 
+\begin_inset Formula $a>0$
+\end_inset
+
+ and 
+\begin_inset Formula $b>0$
+\end_inset
+
+, which we will assume in this paper as well along with the 
+\begin_inset Formula $\Lambda\geq0$
+\end_inset
+
+.
+ The extrema of the potential are given by 
+\begin_inset Formula 
+\begin{align}
+\varphi_{0}=0\,, & \:\varphi_{\pm}=\pm\frac{1}{\sqrt{3a}}\,.\label{eq:Fixed_Points}
+\end{align}
+
+\end_inset
+
+Thus in the phase space of the homogeneous solutions 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)$
+\end_inset
+
+ there are always three equilibrium points - fixed points 
+\begin_inset Formula $\left(0,0\right)\,,\left(\pm1/\sqrt{3a},0\right)$
+\end_inset
+
+.
+ Clearly the first trivial point 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ corresponds to a false vacuum which is unstable.
+ There 
+\begin_inset Formula $V\left(\varphi_{0}\right)=\Lambda+1/\left(12a\right)$
+\end_inset
+
+.
+ While the fixed points with symmetry breaking, the true vacua, correspond
+ to de Sitter solutions with 
+\begin_inset Formula 
+\[
+V\left(\varphi_{\pm}\right)=\Lambda\,.
+\]
+
+\end_inset
+
+The NEC is violated when 
+\begin_inset Formula $p_{,X}<0$
+\end_inset
+
+, i.e.
+ inside of the Phantom Divide (PD) which is given by the ellipse 
+\begin_inset Formula 
+\begin{equation}
+\dot{\varphi}^{2}+3b\,\varphi^{2}=1\,.\label{eq:NEC_ellipse}
+\end{equation}
+
+\end_inset
+
+For values of 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ outside of the ellipse the system does not violate the NEC.
+ On the ellipse the equation of state 
+\begin_inset Formula $w=-1$
+\end_inset
+
+.
+ From 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:field_quantum_fluctuation"
+
+\end_inset
+
+ it follows that by approaching the PD ellipse from outside the quantum
+ perturbations on short scales diverge.
+ 
+\end_layout
+
+\begin_layout Standard
+The corresponding energy density is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Energy_density"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon=\left(3b\,\varphi^{2}-1\right)X+3X^{2}+V\left(\varphi\right)\,.\label{eq:particular_energy_density}
+\end{equation}
+
+\end_inset
+
+The singularity in the equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:equation_of_motion_cosmology"
+
+\end_inset
+
+ occurs when 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ or on the ellipse 
+\begin_inset Formula 
+\begin{equation}
+3\dot{\varphi}^{2}+3b\,\varphi^{2}=1\,.\label{eq:Singularity_ellipse}
+\end{equation}
+
+\end_inset
+
+From 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:field_quantum_fluctuation"
+
+\end_inset
+
+ it follows that by approaching this singularity ellipse with 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+ from inside the quantum perturbations on short scales diverge.
+ Note that both ellipses 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+ share the same 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ axis, but the axis in 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ for the PD is in 
+\begin_inset Formula $\sqrt{3}$
+\end_inset
+
+ times larger then the axis of teh singularity ellipse.
+ Hence the singularity 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+ is located inside of the PD 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+ for arbitrary positive 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+For the sound speed 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:sound"
+
+\end_inset
+
+ as a function on phase space we have 
+\begin_inset Formula 
+\[
+c_{\text{S}}^{2}\left(\varphi,\dot{\varphi}\right)=\frac{\dot{\varphi}^{2}+3b\,\varphi^{2}-1}{3\dot{\varphi}^{2}+3b\,\varphi^{2}-1}=1-\frac{2\dot{\varphi}^{2}}{3\dot{\varphi}^{2}+3b\,\varphi^{2}-1}\,.
+\]
+
+\end_inset
+
+Thus for all 
+\begin_inset Formula $\varepsilon_{,X}=3\dot{\varphi}^{2}+3b\,\varphi^{2}-1<0$
+\end_inset
+
+ i.e.
+ inside of the singularity ellipse 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+ the sound speed is always superluminal except of points 
+\begin_inset Formula $\dot{\varphi}=0$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $\varepsilon_{,X}>0$
+\end_inset
+
+ the speed of sound is never superluminal.
+ By approaching this singular ellipse 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+ from inside the sound speed grows without any limit.
+ It is important that configurations with superluminality are separated
+ from a possible limit cycle by the singularity ellipse 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+.
+ Indeed, no physically relevant trajectory can cross this border 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vikman:2004dc"
+
+\end_inset
+
+, while we know that the limit cycle (if exists) has to cross the Phantom
+ Divide 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+ which is located outside of the singularity ellipse.
+ In the region of the phase space between the PD 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+ and the singularity ellipse 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+ the sound speed is imaginary and the equation of motion (including perturbation
+s) is an elliptic PDE.
+ The increment of this linear instability grows for each mode without any
+ bound by approaching the singularity ellipse 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+.
+ The linear instability for high 
+\begin_inset Formula $k$
+\end_inset
+
+ modes was mentioned in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+, albeit the authors used a different formula for the sound speed.
+ Namely it was assumed that one can treat the system as a perfect fluid
+ so that the sound speed can be inferred from 
+\begin_inset Formula $c_{s}^{2}=\partial\left\langle p\right\rangle /\partial\left\langle \varepsilon\right\rangle $
+\end_inset
+
+ where the averaging is done over many oscillations.
+ Clearly this formula is different from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:sound"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+On the other hand for the derivative of the energy density we have 
+\begin_inset Formula 
+\[
+\varepsilon_{,\varphi}=\varphi\left(3b\dot{\varphi}^{2}+3a\varphi^{2}-1\right)\,.
+\]
+
+\end_inset
+
+Thus there is also an ellipse of the vanishing 
+\begin_inset Formula $\varepsilon_{,\varphi}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+3b\dot{\varphi}^{2}+3a\varphi^{2}=1\,.\label{eq:zero_force_ellipse}
+\end{equation}
+
+\end_inset
+
+As we have showed in section 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "sec:General-phase-space"
+
+\end_inset
+
+ a limit cycle has to pass through configurations where 
+\begin_inset Formula $p_{,\varphi}=0$
+\end_inset
+
+.
+ This is not a strong requirement as 
+\begin_inset Formula 
+\[
+p_{,\varphi}=\varphi\left(3b\dot{\varphi}^{2}+1-3a\varphi^{2}\right)\,,
+\]
+
+\end_inset
+
+and the limit cycle can just evolve through 
+\begin_inset Formula $\varphi=0$
+\end_inset
+
+ which is anyway required by the symmetry of the system.
+ 
+\end_layout
+
+\begin_layout Standard
+For our further analysis of the phase curves it is convenient to use the
+ auxiliary system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system"
+
+\end_inset
+
+ in phase space 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+.
+ For the system under consideration 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kosc"
+
+\end_inset
+
+ auxiliary system is
+\begin_inset Formula 
+\begin{align}
+ & \frac{du}{dt}=-p_{,u}\sqrt{3G_{\text{N}}\varepsilon}-\varepsilon_{,v}=-u\left(3bv^{2}+u^{2}-1\right)\sqrt{3G_{\text{N}}\varepsilon}-v\left(3av^{2}+3bu^{2}-1\right)\,,\label{eq:auxiliarly_system_concrete_example}\\
+ & \frac{dv}{dt}=\varepsilon_{,u}=u\left(3bv^{2}+3u^{2}-1\right)\,,\nonumber 
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where the energy density is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:particular_energy_density"
+
+\end_inset
+
+ with the substitution 
+\begin_inset Formula $\varphi\rightarrow v$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{\varphi}\rightarrow u$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon\left(v,u\right)=\frac{1}{2}\left(3b\,v^{2}-1\right)u^{2}+\frac{3}{4}u^{4}+\Lambda+\frac{1}{12a}-\frac{1}{2}v^{2}+\frac{3a}{4}v^{4}\,,\label{eq:energy_density_uv}
+\end{equation}
+
+\end_inset
+
+and the dimensionless Newtons constant is 
+\begin_inset Formula 
+\[
+G_{\text{N}}=\frac{m^{2}}{M_{\text{Pl}}^{2}}\,.
+\]
+
+\end_inset
+
+Under the natural assumptions 
+\begin_inset Formula 
+\[
+G_{\text{N}}\ll1\,.
+\]
+
+\end_inset
+
+The advantage of this auxiliary system is that the singular ellipse 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+ with 
+\begin_inset Formula $\varepsilon_{,u}=0$
+\end_inset
+
+, does not correspond to a singularity anymore.
+ In generic case when 
+\begin_inset Formula $a\neq b\neq1$
+\end_inset
+
+ the dynamical flow 
+\begin_inset Formula $\mathbf{F}=\left(\dot{v},\dot{u}\right)$
+\end_inset
+
+ across the singular ellipse is parallel to 
+\begin_inset Formula $u$
+\end_inset
+
+-axis, see the right plot on Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:Limit_2"
+
+\end_inset
+
+ for a degenerate case.
+ 
+\end_layout
+
+\begin_layout Standard
+For small 
+\begin_inset Formula $v$
+\end_inset
+
+ or close to the 
+\begin_inset Formula $u$
+\end_inset
+
+-axis the flow 
+\begin_inset Formula $\mathbf{F}$
+\end_inset
+
+ is always pointing outside of the singular ellipse, as the positive cosmologica
+l friction term 
+\begin_inset Formula $-p_{,X}u\sqrt{3G_{\text{N}}\varepsilon}$
+\end_inset
+
+ dominates.
+ However, by approaching the 
+\begin_inset Formula $v$
+\end_inset
+
+-axis along the singular ellipse the second term in the equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system_concrete_example"
+
+\end_inset
+
+ starts to dominate, as 
+\begin_inset Formula $u$
+\end_inset
+
+ is vanishing.
+ And the direction of flow changes inwards.
+ On the singular ellipse, the points of equilibrium between these two forces
+ on the right hand side of the first equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system_concrete_example"
+
+\end_inset
+
+ are nontrivial fixed points of the auxiliary system.
+ As we discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Nontrivial-fixed-points"
+
+\end_inset
+
+ such fixed points can be either a saddle or a center (at the linear approximati
+on).
+ Due to the symmetry 
+\begin_inset Formula $\left(v,u\right)\rightarrow\left(-v,-u\right)$
+\end_inset
+
+ of the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system_concrete_example"
+
+\end_inset
+
+ there are always at least two such nontrivial fixed points.
+ Thus the system has at least five fixed points in total, on top of those
+ located at infinity.
+ We will study this issue later in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Fixed-points"
+
+\end_inset
+
+ in more details.
+ 
+\end_layout
+
+\begin_layout Subsection
+Energy Density 
+\end_layout
+
+\begin_layout Standard
+It is convenient to express the energy density in terms of 
+\begin_inset Formula 
+\[
+X=\frac{1}{2}u^{2}\:\:\text{and}\:\:Y=\frac{1}{2}v^{2}\,,
+\]
+
+\end_inset
+
+so that 
+\begin_inset Formula 
+\[
+\varepsilon\left(X,Y\right)=3X^{2}+3aY^{2}+6bXY-X-Y+\Lambda+\frac{1}{12a}\,.
+\]
+
+\end_inset
+
+This quadratic form has an extremum at 
+\begin_inset Formula 
+\begin{equation}
+X_{m}=\frac{1}{6}\left(\frac{a-b}{a-b^{2}}\right)\:\:\text{and}\:\:Y_{m}=\frac{1}{6}\left(\frac{1-b}{a-b^{2}}\right)\,.\label{eq:extremum_XY}
+\end{equation}
+
+\end_inset
+
+This extremum exists in real 
+\begin_inset Formula $v$
+\end_inset
+
+and 
+\begin_inset Formula $u$
+\end_inset
+
+either if 
+\begin_inset Formula 
+\[
+b<1\:\:\text{and}\:\:a\geq b\,,
+\]
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\[
+b>1\:\:\text{and}\:\:a\leq b\,,
+\]
+
+\end_inset
+
+or for the special case when 
+\begin_inset Formula $b=1$
+\end_inset
+
+ and 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ In this extremum 
+\begin_inset Formula 
+\[
+\varepsilon_{m}=\varepsilon\left(X_{m},Y_{m}\right)=\Lambda-\frac{\left(a-b\right)^{2}}{12a\left(a-b^{2}\right)}\,.
+\]
+
+\end_inset
+
+The matrix of second derivatives has the form 
+\begin_inset Formula 
+\[
+\varepsilon''=\left(\begin{array}{cc}
+\varepsilon_{,XX} & \varepsilon_{,XY}\\
+\varepsilon_{,XY} & \varepsilon_{,YY}
+\end{array}\right)=6\left(\begin{array}{cc}
+1 & b\\
+b & a
+\end{array}\right)\,.
+\]
+
+\end_inset
+
+This matrix 
+\begin_inset Formula $\varepsilon''$
+\end_inset
+
+ is positive-definite, provided 
+\begin_inset Formula $a>b^{2}$
+\end_inset
+
+.
+ In that case extremum 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:extremum_XY"
+
+\end_inset
+
+ is a minimum which for real 
+\begin_inset Formula $v$
+\end_inset
+
+and 
+\begin_inset Formula $u$
+\end_inset
+
+ can only exist for 
+\begin_inset Formula $b\leq1$
+\end_inset
+
+.
+ In this case requiring that 
+\begin_inset Formula 
+\[
+\varepsilon_{m}=\Lambda-\frac{\left(a-b\right)^{2}}{12a\left(a-b^{2}\right)}>0\,,
+\]
+
+\end_inset
+
+ is sufficient to guaranty that the the equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system_concrete_example"
+
+\end_inset
+
+ has analytic right hand side, so that our analysis accomplished in the
+ previous sections can be applicable in the whole phase space 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Fixed Points
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Fixed-points"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Let us now study the fixed points in more details.
+ 
+\end_layout
+
+\begin_layout Paragraph
+False Vacuum: 
+\end_layout
+
+\begin_layout Standard
+We start from the trivial fixed point, the false vacuum where 
+\begin_inset Formula $\left(u,v\right)=0$
+\end_inset
+
+.
+ In that case 
+\begin_inset Formula 
+\[
+\varepsilon\left(v,u\right)=\Lambda+\frac{1}{12a}+\mathcal{O}\left(u^{2},v^{2}\right)\equiv\frac{V_{0}}{G_{\text{N}}}+\mathcal{O}\left(u^{2},v^{2}\right)\,,
+\]
+
+\end_inset
+
+so that the linearized system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system_concrete_example"
+
+\end_inset
+
+ takes the form 
+\begin_inset Formula 
+\begin{align}
+ & \frac{du}{dt}=u\sqrt{3V_{0}}+v\,,\label{eq:Origin_Fixed}\\
+ & \frac{dv}{dt}=-u\,,\nonumber 
+\end{align}
+
+\end_inset
+
+with the corresponding eigenvalues 
+\begin_inset Formula 
+\[
+\lambda_{\pm}^{f}=\sqrt{\frac{3V_{0}}{4}}\pm\sqrt{\frac{3V_{0}}{4}-1}\,.
+\]
+
+\end_inset
+
+For 
+\begin_inset Formula $V_{0}\geq4/3$
+\end_inset
+
+ both eigenvalues are real and positive so that the fixed point is an unstable
+ node.
+ While for 
+\begin_inset Formula $V_{0}<4/3$
+\end_inset
+
+ both roots are complex with a positive real part so that the fixed point
+ is an unstable focus.
+ In both cases continuum of trajectories originate from the trivial fixed
+ point.
+ The Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index of this false vacuum is 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+For 
+\begin_inset Formula $G_{\text{N}}=0$
+\end_inset
+
+ this point is a center.
+ 
+\end_layout
+
+\begin_layout Paragraph
+True Vacua: 
+\end_layout
+
+\begin_layout Standard
+Now let us consider other fixed points 
+\begin_inset Formula $\left(\pm\left(3a\right)^{-1/2},0\right)$
+\end_inset
+
+ which are the true vacua of the potential.
+ For 
+\begin_inset Formula $a<b$
+\end_inset
+
+ these fixed points are located outside of the PD and of the Singularity.
+ In this case the Lagrangian starts around them from the usual kinetic term
+ and these points are indeed stable true vacua.
+ Whereas for 
+\begin_inset Formula $b<a$
+\end_inset
+
+ these fixed points are inside of these ellipses, the Lagrangian starts
+ with the wrong-sing kinetic term, and the system behaves as a ghost condensate
+ with potential.
+ In this case these points should be unstable.
+ 
+\end_layout
+
+\begin_layout Standard
+For the energy we have 
+\begin_inset Formula 
+\[
+\varepsilon=\Lambda+\mathcal{O}\left(\delta u^{2},\delta v^{2}\right)\,,
+\]
+
+\end_inset
+
+so that the linearized system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system_concrete_example"
+
+\end_inset
+
+ takes the form 
+\begin_inset Formula 
+\begin{align}
+ & \frac{du}{dt}=-u\left(\frac{b}{a}-1\right)\sqrt{3G_{\text{N}}\Lambda}-2\delta v\,,\label{eq:nontrivial_fixed_point}\\
+ & \frac{d\delta v}{dt}=u\left(\frac{b}{a}-1\right)\,.\nonumber 
+\end{align}
+
+\end_inset
+
+The corresponding eigenvalues are 
+\begin_inset Formula 
+\begin{equation}
+\lambda_{\pm}^{t}=\frac{\sqrt{3G_{\text{N}}\Lambda}}{2}\left[\left(1-\frac{b}{a}\right)\pm\sqrt{\left(1-\frac{b}{a}\right)^{2}+\frac{8}{3G_{\text{N}}\Lambda}\left(1-\frac{b}{a}\right)}\right]\,.\label{eq:eigenvalues_true_vacuum}
+\end{equation}
+
+\end_inset
+
+Further we will neglect the fine-tuned and degenerate case when 
+\begin_inset Formula $a=b$
+\end_inset
+
+ so that the true vacua are located on the Singularity.
+ We only consider simple fixed points where the linear analysis is applicable,
+ for this degenerate case see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:Limit_2"
+
+\end_inset
+
+.
+ Both eigenvalues are real provided either 
+\begin_inset Formula 
+\begin{equation}
+a>b\,,\label{eq:true_vac_saddle}
+\end{equation}
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\begin{equation}
+b>a\left(1+\frac{8}{3\Lambda G_{\text{N}}}\right)\,.\label{eq:true_vac_node}
+\end{equation}
+
+\end_inset
+
+ In the first case 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:true_vac_saddle"
+
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{+}^{t}>0$
+\end_inset
+
+ while 
+\begin_inset Formula $\lambda_{-}^{t}<0$
+\end_inset
+
+.
+ Hence both these fixed points are saddle points in this case.
+ Thus in this case the true vacua are inside of the PD and the Singularity
+ and they are always unstable saddle points with the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index -1.
+ In the second case the true vacua are outside the PD and the Singularity
+ and separated from them at least by the distance 
+\begin_inset Formula $\left(3a\right)^{-1/2}\left(1-\left(1+8/\left(3\Lambda G_{\text{N}}\right)\right)^{-1/2}\right)$
+\end_inset
+
+.
+ In this case both roots 
+\begin_inset Formula $\lambda_{\pm}^{t}$
+\end_inset
+
+ are negative, so that and the true vacua are stable nodes with the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index +1.
+ 
+\end_layout
+
+\begin_layout Standard
+In-between these two ranges of parameters namely when 
+\begin_inset Formula 
+\begin{equation}
+1<\frac{b}{a}<1+\frac{8}{3\Lambda G_{\text{N}}}\,,\label{eq:true_vac_focus}
+\end{equation}
+
+\end_inset
+
+so that the true vacua are relatively not far outside of the the PD and
+ the Singularity, and these fixed points are stable foci with the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index +1.
+ 
+\end_layout
+
+\begin_layout Standard
+In the limit 
+\begin_inset Formula $G_{\text{N}}=0$
+\end_inset
+
+ the eigenvalues are 
+\begin_inset Formula 
+\[
+\lambda_{\pm}^{t}=\pm\sqrt{2\left(1-\frac{b}{a}\right)}\,.
+\]
+
+\end_inset
+
+Hence, for vanishing Newton constant and 
+\begin_inset Formula $a<b$
+\end_inset
+
+ both true vacua are centers, whereas for 
+\begin_inset Formula $b<a$
+\end_inset
+
+ these points are inside of the Singularity and they are saddles and therefore
+ unstable.
+ For this reason one cannot consider them as a really true vacua in this
+ case.
+ 
+\end_layout
+
+\begin_layout Paragraph
+Nontrivial Fixed Points 
+\end_layout
+
+\begin_layout Standard
+We should study the equation 
+\begin_inset Formula 
+\[
+-u\left(3bv^{2}+u^{2}-1\right)\sqrt{3G_{\text{N}}\varepsilon}=v\left(3av^{2}+3bu^{2}-1\right)=\varepsilon_{,v}\,,
+\]
+
+\end_inset
+
+on the singularity 
+\begin_inset Formula 
+\begin{equation}
+u^{2}=\frac{1}{3}-bv^{2}\,,\label{eq:u_on_singularity}
+\end{equation}
+
+\end_inset
+
+with 
+\begin_inset Formula $v^{2}<\left(3b\right)^{-1}$
+\end_inset
+
+.
+ For small 
+\begin_inset Formula $G_{\text{N}}$
+\end_inset
+
+ the only way to compensate the small friction term is to have comparably
+ small force 
+\begin_inset Formula $\varepsilon_{,v}$
+\end_inset
+
+.
+ Thus we have to look for such solutions of this equation that the force
+ is vanishing as 
+\begin_inset Formula $G_{\text{N}}^{1/2}$
+\end_inset
+
+.
+ For the normal 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+ parameters 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ there can be two neighborhoods when this can happen: either around 
+\begin_inset Formula $v=0$
+\end_inset
+
+ or around a possible root of 
+\begin_inset Formula $3av^{2}+3bu^{2}-1$
+\end_inset
+
+, provided the later is located at the interval of interest.
+ 
+\end_layout
+
+\begin_layout Standard
+Hence on the singularity the zero-force ellipse in the auxiliary system
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:auxiliarly_system_concrete_example"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\varepsilon_{,v}=v\left(3av^{2}+3bu^{2}-1\right)=v\left(3v^{2}\left(a-b^{2}\right)+b-1\right)\,.
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula 
+\[
+3v^{2}\left(a-b^{2}\right)+b-1>0\,,
+\]
+
+\end_inset
+
+around the fixed point, then in the nontrivial fixed points 
+\begin_inset Formula $\left(v_{*},u_{*}\right)$
+\end_inset
+
+ the first component 
+\begin_inset Formula $v_{*}$
+\end_inset
+
+ has the same sign as the sign of 
+\begin_inset Formula $u_{*}$
+\end_inset
+
+.
+ On the other hand, if 
+\begin_inset Formula 
+\[
+3v^{2}\left(a-b^{2}\right)+b-1<0\,,
+\]
+
+\end_inset
+
+around the fixed point, then in the nontrivial fixed points 
+\begin_inset Formula $\left(v_{*},u_{*}\right)$
+\end_inset
+
+ the first component 
+\begin_inset Formula $v_{*}$
+\end_inset
+
+ has the sign opposite to sign of 
+\begin_inset Formula $u_{*}$
+\end_inset
+
+.
+ The force vanishes at 
+\begin_inset Formula 
+\[
+v_{zf}^{2}=\frac{b-1}{3\left(b^{2}-a\right)}\,.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula 
+\[
+v_{zf}^{2}=\frac{b-1}{3\left(b^{2}-a\right)}<\frac{1}{3b}\,,
+\]
+
+\end_inset
+
+then the force changes sign on the projection of the singularity on to 
+\begin_inset Formula $v-$
+\end_inset
+
+axes.
+ The last inequality corresponds to 
+\begin_inset Formula 
+\begin{eqnarray*}
+b<1 & \text{and} & a>b\,,
+\end{eqnarray*}
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\begin{eqnarray*}
+b>1 & \text{and} & a<b\,.
+\end{eqnarray*}
+
+\end_inset
+
+For the maximal 
+\begin_inset Formula $v=\left(3b\right)^{-1/2}$
+\end_inset
+
+ the force term 
+\begin_inset Formula $\varepsilon_{,v}$
+\end_inset
+
+ has the sign of 
+\begin_inset Formula $a-b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The nontrivial fixed points are roots of the following polynomial equation
+ 
+\begin_inset Formula $\mathscr{P}\left(v_{*}^{2}\right)=0$
+\end_inset
+
+ where 
+\begin_inset Formula 
+\begin{align*}
+ & \mathscr{P}\left(v_{*}^{2}\right)=-\frac{\left(a-b\right)^{2}}{3b^{3}}+\left(2+\frac{1-2a}{b}-\frac{4a}{b^{2}}+\frac{3a^{2}}{b^{3}}\right)v_{*}^{2}-3\left(b+2-\frac{4a}{b}-\frac{2a}{b^{2}}+\frac{3a^{2}}{b^{3}}\right)v_{*}^{4}+\\
+ & +\left[\frac{9a^{2}}{b^{3}}-\frac{18a}{b}+9b+G_{\text{N}}\left(\frac{1}{a}+\frac{a}{b^{2}}-\frac{2}{b}+12\Lambda\right)\right]v_{*}^{6}+\frac{6}{b}G_{\text{N}}\left[1-\frac{a}{b}\right]v_{*}^{8}+9G_{\text{N}}\left[\frac{a}{b^{2}}-1\right]v_{*}^{10}\,.
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Small roots vanishing in decoupling.
+ 
+\end_layout
+
+\begin_layout Standard
+First we can search for the root close to 
+\begin_inset Formula $v=0$
+\end_inset
+
+.
+ The polynomial equation above has the following approximate root 
+\begin_inset Formula 
+\begin{align}
+ & v_{s}^{2}=G_{\text{N}}\,\frac{1}{27}\left[\frac{12\Lambda+\left(a^{-1}-1\right)}{\left(b-1\right)^{2}}\right]\times\label{eq:Nontrivial_root}\\
+ & \times\left[1-G_{\text{N}}\,\frac{b(b-3)+2a^{2}\left(12\Lambda-1\right)+ab\left(7-3b+12\left(b-3\right)\Lambda\right)}{9a\left(b-1\right)^{3}}+\mathcal{O}\left(G_{N}^{2}\right)\right]\,,\nonumber 
+\end{align}
+
+\end_inset
+
+which satisfies this equation up to 
+\begin_inset Formula $\mathcal{O}\left(G_{N}^{2}\right)$
+\end_inset
+
+ inclusively and vanishes in the limit 
+\begin_inset Formula $G_{\text{N}}\rightarrow0$
+\end_inset
+
+.
+ For the existence of this root one has to require only the positivity of
+ the energy density on the Singularity close to the 
+\begin_inset Formula $v=0$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\varepsilon\left(0,\frac{1}{\sqrt{3}}\right)=\Lambda+\frac{1}{12a}-\frac{1}{12}\geq0\,.
+\]
+
+\end_inset
+
+Clearly the asymptotic expansion breaks down when 
+\begin_inset Formula $b\rightarrow1$
+\end_inset
+
+.
+ The existence of this root is entirely do to gravity.
+ Thus in the leading order in 
+\begin_inset Formula $G_{\text{N}}$
+\end_inset
+
+ the corresponding fixed points are either 
+\begin_inset Formula 
+\[
+\left(v_{s},u_{s}\right)\:\:\text{and}\:\:\left(-v_{s},-u_{s}\right)\:\:\text{for}\:\:b>1\,,
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+\left(v_{s},-u_{s}\right)\:\:\text{and}\:\:\left(-v_{s},u_{s}\right)\:\:\text{for}\:\:b<1\,,
+\]
+
+\end_inset
+
+where we define 
+\emph on
+positive
+\emph default
+ 
+\begin_inset Formula 
+\begin{align}
+ & v_{s}=\sqrt{G_{\text{N}}}\,\left(\frac{12\Lambda+\left(a^{-1}-1\right)}{27\left(b-1\right)^{2}}\right)^{1/2}\times\label{eq:small_nontrivial_root_positive}\\
+ & \times\left[1-G_{\text{N}}\,\frac{b(b-3)+2a^{2}\left(12\Lambda-1\right)+ab\left(7-3b+12\left(b-3\right)\Lambda\right)}{18a\left(b-1\right)^{3}}+\mathcal{O}\left(G_{N}^{2}\right)\right]\,,\nonumber 
+\end{align}
+
+\end_inset
+
+and through relation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:u_on_singularity"
+
+\end_inset
+
+ the corresponding 
+\emph on
+positive
+\emph default
+ 
+\begin_inset Formula 
+\begin{align}
+ & u_{s}=\frac{1}{\sqrt{3}}\left(1-G_{\text{N}}\frac{b}{18}\left[\frac{12\Lambda+\left(a^{-1}-1\right)}{\left(b-1\right)^{2}}\right]\right.\times\label{eq:small_nontrivial_root_u}\\
+ & \left.\times\left[1-G_{\text{N}}\,\frac{b(b-3)+2a^{2}\left(12\Lambda-1\right)+ab\left(7-3b+12\left(b-3\right)\Lambda\right)}{9a\left(b-1\right)^{3}}+\mathcal{O}\left(G_{N}^{2}\right)\right]\right)\,.\nonumber 
+\end{align}
+
+\end_inset
+
+Using the formula 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Nontrivial_Eigenvalue"
+
+\end_inset
+
+ we obtain for the corresponding eigenvalues 
+\begin_inset Formula 
+\[
+\lambda^{2}=-2\left(b-1\right)+\mathcal{O}\left(G_{\text{N}}\right)<0\:\:\text{for}\:\:b>1\,,
+\]
+
+\end_inset
+
+so that the fixed points 
+\begin_inset Formula $\left(v_{s},u_{s}\right)\:\:\text{and}\:\:\left(-v_{s},-u_{s}\right)$
+\end_inset
+
+ are linear centers (nonlinear foci), with the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index +1.
+ While in the opposite case 
+\begin_inset Formula 
+\[
+\lambda^{2}=2\left(1-b\right)+\mathcal{O}\left(G_{\text{N}}\right)>0\:\:\text{for}\:\:b<1\,,
+\]
+
+\end_inset
+
+so that consequently the points 
+\begin_inset Formula $\left(v_{s},-u_{s}\right)\:\:\text{and}\:\:\left(-v_{s},u_{s}\right)$
+\end_inset
+
+ are saddle points with the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index -1.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+Large Roots at Extremum 
+\end_layout
+
+\begin_layout Standard
+On the other hand, if 
+\begin_inset Formula $v_{zf}^{2}<\left(3b\right)^{-1}$
+\end_inset
+
+ then one can look for a root close to 
+\begin_inset Formula $v_{zf}^{2}$
+\end_inset
+
+.
+ This root has the asymptotic 
+\begin_inset Formula 
+\[
+v_{l\pm}^{2}=\frac{b-1}{3\left(b^{2}-a\right)}\left[1\pm\frac{1}{3}\sqrt{G_{\text{N}}}\,\,\sqrt{\frac{(a-b)^{3}\left[(a-b)^{2}-12a\left(a-b^{2}\right)\Lambda\right]}{a\left(a-b^{2}\right)^{3}(b-1)^{3}}}+\mathcal{O}\left(G_{N}^{3/2}\right)\right]\,.
+\]
+
+\end_inset
+
+These larger than 
+\begin_inset Formula $v_{s}$
+\end_inset
+
+ roots exist if either 
+\begin_inset Formula 
+\begin{equation}
+b<1\:\:\text{and}\:\:a>b\:\text{and}\:\:\Lambda>\frac{\left(a-b\right)^{2}}{12a\left(a-b^{2}\right)}\,,\label{eq:Case_1_Large_Roots}
+\end{equation}
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\begin{equation}
+b>1\:\:\text{and}\:\:a<b\:\:\text{and}\:\:\Lambda>0\,.\label{eq:Case_2_Large_Roots}
+\end{equation}
+
+\end_inset
+
+Now we define 
+\emph on
+positive
+\emph default
+ 
+\emph on
+
+\begin_inset Formula 
+\[
+v_{l\pm}=\sqrt{\frac{b-1}{3\left(b^{2}-a\right)}}\left(1\pm\frac{1}{6}\sqrt{G_{\text{N}}}\,\,\sqrt{\frac{(a-b)^{3}\left[(a-b)^{2}-12a\left(a-b^{2}\right)\Lambda\right]}{a\left(a-b^{2}\right)^{3}(b-1)^{3}}}+\mathcal{O}\left(G_{N}^{3/2}\right)\right)\,,
+\]
+
+\end_inset
+
+
+\emph default
+and through 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:u_on_singularity"
+
+\end_inset
+
+ corresponding 
+\emph on
+positive
+\emph default
+ 
+\begin_inset Formula 
+\[
+u_{l\pm}=\sqrt{\frac{a-b}{3\left(a-b^{2}\right)}}\left(1\pm\frac{1}{6}\sqrt{G_{\text{N}}}\,\,b\sqrt{\frac{(a-b)\left[(a-b)^{2}-12a\left(a-b^{2}\right)\Lambda\right]}{a\left(a-b^{2}\right)^{3}(b-1)}}+\mathcal{O}\left(G_{N}^{3/2}\right)\right)\,.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the first case 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Case_1_Large_Roots"
+
+\end_inset
+
+ 
+\begin_inset Formula $v_{l+}$
+\end_inset
+
+ corresponds to positive 
+\begin_inset Formula $\varepsilon_{,v}$
+\end_inset
+
+ and consequently to 
+\begin_inset Formula $\left(+u_{l+}\right)$
+\end_inset
+
+, while 
+\begin_inset Formula $v_{l-}$
+\end_inset
+
+ to negative 
+\begin_inset Formula $\varepsilon_{,v}$
+\end_inset
+
+ and consequently to 
+\begin_inset Formula $\left(-u_{l-}\right)$
+\end_inset
+
+.
+ Hence we have the following pairs of fixed points 
+\begin_inset Formula 
+\[
+\left(v_{l+},u_{l+}\right)\:,\:\left(-v_{l+},-u_{l+}\right)\:\:\text{and}\:\:\left(v_{l-},-u_{l-}\right)\:,\:\left(-v_{l-},u_{l-}\right)\:\:\text{for}\:\:b<1\:\:\text{and}\:\:a>b\,.
+\]
+
+\end_inset
+
+While in the second case 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Case_2_Large_Roots"
+
+\end_inset
+
+ 
+\begin_inset Formula $v_{l+}$
+\end_inset
+
+ corresponds to negative 
+\begin_inset Formula $\varepsilon_{,v}$
+\end_inset
+
+ and consequently to 
+\begin_inset Formula $\left(-u_{l+}\right)$
+\end_inset
+
+, while 
+\begin_inset Formula $v_{l-}$
+\end_inset
+
+ to positive 
+\begin_inset Formula $\varepsilon_{,v}$
+\end_inset
+
+ and consequently to 
+\begin_inset Formula $\left(+u_{l-}\right)$
+\end_inset
+
+.
+ Hence we have the following pairs of fixed points 
+\begin_inset Formula 
+\[
+\left(v_{l+},-u_{l+}\right)\:,\:\left(-v_{l+},u_{l+}\right)\:\:\text{and}\:\:\left(v_{l-},u_{l-}\right)\:,\:\left(-v_{l-},-u_{l-}\right)\:\:\text{for}\:\:b>1\:\:\text{and}\:\:a<b\,.
+\]
+
+\end_inset
+
+Using the formula 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Nontrivial_Eigenvalue"
+
+\end_inset
+
+ we obtain for the corresponding eigenvalues for first case 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Case_1_Large_Roots"
+
+\end_inset
+
+ 
+\begin_inset Formula $b<1$
+\end_inset
+
+ and 
+\begin_inset Formula $a>b$
+\end_inset
+
+ all eigenvalues are equal and
+\begin_inset Formula 
+\[
+\lambda^{2}=\frac{4\left(a-b\right)\left(b-1\right)}{a-b^{2}}+\mathcal{O}\left(G_{N}^{1/2}\right)<0\,.
+\]
+
+\end_inset
+
+So that these large fixed points are four linear centers on the singularity.
+ And in total we have on the singularity two saddle points and four linear
+ centers.
+ The total Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index from the Singularity 
+\begin_inset Formula $+2$
+\end_inset
+
+.
+ The false vacuum has another 
+\begin_inset Formula $+1$
+\end_inset
+
+ for the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index.
+ Hence the total index Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index of these five fixed points is 
+\begin_inset Formula $+3$
+\end_inset
+
+.
+ Both true vacua are saddles and are also located inside the singularity.
+ Hence the total index of a curve surrounding the Singularity is 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ Hence a limiting cycle is possible around a Singularity.
+ 
+\end_layout
+
+\begin_layout Standard
+While in the second case 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Case_2_Large_Roots"
+
+\end_inset
+
+ 
+\begin_inset Formula $b>1$
+\end_inset
+
+ and 
+\begin_inset Formula $a<b$
+\end_inset
+
+ again all eigenvalues are equal 
+\begin_inset Formula 
+\[
+\lambda^{2}=\frac{4\left(a-b\right)\left(b-1\right)}{a-b^{2}}+\mathcal{O}\left(G_{N}^{1/2}\right)>0\,,
+\]
+
+\end_inset
+
+so that there four saddle points on the singularity.
+ The total Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index from the Singularity 
+\begin_inset Formula $-2$
+\end_inset
+
+ in this case.
+ The false vacuum has another 
+\begin_inset Formula $+1$
+\end_inset
+
+ for the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'
+\end_layout
+
+\end_inset
+
+e index.
+ Both true vacua are outside of the Singularity and have index 
+\begin_inset Formula $+1$
+\end_inset
+
+.
+ Hence there cannot be a limit cycle just around the Singularity and not
+ containing the true vacua in this case.
+ 
+\end_layout
+
+\begin_layout Subsection
+Energy Levels and Contour of No Return 
+\end_layout
+
+\begin_layout Standard
+Without the friction term the motion occurs in 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+ along the contours of the constant energy density given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:energy_density_uv"
+
+\end_inset
+
+.
+ For each value energy density these contours are plane algebraic curves
+ - quartics.
+ If we find an energy level completely enclosing the PD from the outside
+ where 
+\begin_inset Formula $p_{,X}>0$
+\end_inset
+
+ (so that in this model 
+\begin_inset Formula $\varepsilon_{,X}>0$
+\end_inset
+
+ too) the dynamical flow in an expanding universe will be directed to the
+ interior phase space of this level of the energy density.
+ Indeed, the normal to the 
+\begin_inset Formula $\varepsilon\left(v,u\right)=\varepsilon_{0}$
+\end_inset
+
+ contour is 
+\begin_inset Formula $\overrightarrow{N}=\left(\varepsilon_{,v},\varepsilon_{,u}\right)$
+\end_inset
+
+, it points out outside of the closed contour, while the scalar product
+ of a 
+\begin_inset Formula $\overrightarrow{N}$
+\end_inset
+
+ with flow 
+\begin_inset Formula $\overrightarrow{F}=\left(\dot{v},\dot{u}\right)$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\overrightarrow{F}\cdot\overrightarrow{N}=-\varepsilon_{,u}p_{,u}\sqrt{3G_{\text{N}}\varepsilon}=-2X\varepsilon_{,X}p_{,X}\sqrt{3G_{\text{N}}\varepsilon}\,.
+\]
+
+\end_inset
+
+Any possible limit cycle will be located inside of the minimal energy density
+ level 
+\begin_inset Formula $\varepsilon_{H}$
+\end_inset
+
+ enclosing the PD.
+ 
+\end_layout
+
+\begin_layout Paragraph
+The energy level 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ touching the PD at the 
+\begin_inset Formula $u-$
+\end_inset
+
+axes 
+\end_layout
+
+\begin_layout Standard
+The curve of constant energy density 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon\left(v,u\right)=\varepsilon_{U}=\varepsilon\left(0,1\right)=\Lambda+\frac{1}{12a}+\frac{1}{4}\,,\label{eq:E_U}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\varepsilon\left(v,u\right)$
+\end_inset
+
+ is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:energy_density_uv"
+
+\end_inset
+
+ touches the PD at 
+\begin_inset Formula $\left(0,\pm1\right)$
+\end_inset
+
+.
+ In the physical units, this energy density is given by 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon'_{U}=\Lambda'+\frac{1}{12a'}+\frac{1}{4}m^{4}=m^{4}\left(\Lambda+\frac{1}{12a}+\frac{1}{4}\right)\,.\label{eq:Physical_Energy_Density_Last}
+\end{equation}
+
+\end_inset
+
+To avoid strong quantum gravity effects one has to require 
+\begin_inset Formula $\varepsilon'_{U}\ll M_{\text{Pl}}^{4}$
+\end_inset
+
+.
+ For positive parameters this implies that 
+\begin_inset Formula $m\ll M_{\text{Pl}}$
+\end_inset
+
+, and consequently the smallness of the dimensionless Newtons constant 
+\begin_inset Formula 
+\[
+G_{N}=\frac{m^{2}}{M_{\text{Pl}}^{2}}\ll1\,.
+\]
+
+\end_inset
+
+Moreover, for the dimensionless parameter 
+\begin_inset Formula $a$
+\end_inset
+
+ we have the condition 
+\begin_inset Formula 
+\[
+a\gg\frac{m^{4}}{M_{\text{Pl}}^{4}}=G_{N}^{2}\,.
+\]
+
+\end_inset
+
+For the pressure we have 
+\begin_inset Formula 
+\[
+p=2Xp_{,X}-\varepsilon_{U}\,.
+\]
+
+\end_inset
+
+Now let us check when the energy level 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+, given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:E_U"
+
+\end_inset
+
+, can cross the PD somewhere else at a point 
+\begin_inset Formula $v_{*}$
+\end_inset
+
+.
+ We have 
+\begin_inset Formula 
+\[
+\varepsilon\left(v_{*},\sqrt{1-3bv_{*}^{2}}\right)=\varepsilon_{U}\,,
+\]
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\[
+\frac{1}{4}\left(1-3bv_{*}^{2}\right)^{2}-\frac{1}{2}v_{*}^{2}+\frac{3a}{4}v_{*}^{4}=\frac{1}{4}\,,
+\]
+
+\end_inset
+
+so that generically there is another root given by 
+\begin_inset Formula 
+\[
+v_{*}^{2}=\frac{2}{3}\left(\frac{1+3b}{a+3b^{2}}\right)\,.
+\]
+
+\end_inset
+
+However, the projection of the PD 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+ on 
+\begin_inset Formula $v-$
+\end_inset
+
+axes only occupies 
+\begin_inset Formula $v^{2}\leq1/3b$
+\end_inset
+
+ so that for 
+\begin_inset Formula 
+\[
+v_{*}^{2}>\frac{1}{3b}\,,
+\]
+
+\end_inset
+
+the energy level 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ does not cross the PD.
+ Hence the condition for no crossing of the PD is 
+\begin_inset Formula 
+\[
+\frac{2}{3}\left(\frac{1+3b}{a+3b^{2}}\right)>\frac{1}{3b}\,,
+\]
+
+\end_inset
+
+or in other terms
+\begin_inset Formula 
+\begin{equation}
+3b^{2}-6b+a-2<0\,.\label{eq:no_second_touch}
+\end{equation}
+
+\end_inset
+
+The roots of the left hand side of the last inequality are
+\begin_inset Formula 
+\[
+b_{0\pm}=1\pm\sqrt{1+\frac{2-a}{3}}\,,
+\]
+
+\end_inset
+
+so that there is no more crossings provided 
+\begin_inset Formula 
+\begin{equation}
+1-\sqrt{\frac{5-a}{3}}<b<1+\sqrt{\frac{5-a}{3}}\,.\label{eq:condition_on_b_no_crossing}
+\end{equation}
+
+\end_inset
+
+In particular, for 
+\begin_inset Formula $a>5$
+\end_inset
+
+ there are no real roots 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ of the left hand side of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:no_second_touch"
+
+\end_inset
+
+ and the energy density level 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ crosses the PD at four points 
+\begin_inset Formula $\left(\pm v_{*},\pm\sqrt{1-3bv_{*}^{2}}\right)$
+\end_inset
+
+ after touching it at 
+\begin_inset Formula $\left(0,\pm1\right)$
+\end_inset
+
+.
+ Clearly, in that case, energy density level 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ does not confine the PD.
+ 
+\end_layout
+
+\begin_layout Standard
+Further, the energy level 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ crosses the 
+\begin_inset Formula $v-$
+\end_inset
+
+axes at 
+\begin_inset Formula $v_{V}$
+\end_inset
+
+ given by 
+\begin_inset Formula 
+\begin{equation}
+v_{V}^{2}=\frac{1}{-1+\sqrt{1+3a}}\,.\label{eq:Ev_crossing_phi}
+\end{equation}
+
+\end_inset
+
+This is outside of the projection of the PD if 
+\begin_inset Formula 
+\[
+v_{V}^{2}>\frac{1}{3b}\,,
+\]
+
+\end_inset
+
+which translates into inequality 
+\begin_inset Formula 
+\begin{equation}
+b>\frac{1}{3}\left(-1+\sqrt{1+3a}\right)=b_{out}\,.\label{eq:condition_on_b_outside}
+\end{equation}
+
+\end_inset
+
+These conditions 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:condition_on_b_no_crossing"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:condition_on_b_outside"
+
+\end_inset
+
+ are compatible only if 
+\begin_inset Formula 
+\[
+\frac{1}{3}\left(-1+\sqrt{1+3a}\right)<1+\sqrt{1+\frac{2-a}{3}}\,,
+\]
+
+\end_inset
+
+which, for positive 
+\begin_inset Formula $a$
+\end_inset
+
+, is equivalent to 
+\begin_inset Formula $a<5$
+\end_inset
+
+.
+ Further one can check that 
+\begin_inset Formula $b_{out}>b_{0-}$
+\end_inset
+
+.
+ Therefore we arrive to the condition that 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ contains the PD provided
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{3}\left(-1+\sqrt{1+3a}\right)<b<1+\sqrt{\frac{5-a}{3}}\,.\label{eq:Ev_Encloses_PD}
+\end{equation}
+
+\end_inset
+
+It is convenient to reformulate these conditions in terms of 
+\begin_inset Formula $a$
+\end_inset
+
+as 
+\begin_inset Formula 
+\begin{eqnarray*}
+b<1 & \text{and } & a<2b+3b^{2}\,,
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+1\leq b<\frac{3+\sqrt{15}}{3} & \text{and } & a<2+6b+3b^{2}\,.
+\end{eqnarray*}
+
+\end_inset
+
+In particular, we obtain that for 
+\begin_inset Formula $b>1+\sqrt{5/3}$
+\end_inset
+
+ the energy level 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ cannot confine the PD.
+ 
+\end_layout
+
+\begin_layout Paragraph
+The energy level 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ touching the PD and the Singularity at the 
+\begin_inset Formula $v-$
+\end_inset
+
+axes
+\end_layout
+
+\begin_layout Standard
+On the other hand the curve of constant energy density 
+\begin_inset Formula 
+\begin{equation}
+\varepsilon\left(v,u\right)=\varepsilon_{S}=\varepsilon\left(\left(3b\right)^{-1/2},0\right)=\Lambda+\frac{1}{12a}+\frac{1}{6b}\left(\frac{a}{2b}-1\right)\,,\label{eq:E_S}
+\end{equation}
+
+\end_inset
+
+touches the Phantom Divide and the Singularity at 
+\begin_inset Formula $\left(\pm\left(3b\right)^{-1/2},0\right)$
+\end_inset
+
+.
+ For 
+\begin_inset Formula $b\geq\frac{1}{3}\left(-1+\sqrt{1+3a}\right)$
+\end_inset
+
+ one obtains 
+\begin_inset Formula $\varepsilon_{U}\geq\varepsilon_{S}$
+\end_inset
+
+.
+ This energy level, 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+, crosses the 
+\begin_inset Formula $u-$
+\end_inset
+
+axes at 
+\begin_inset Formula 
+\[
+u_{S\pm}^{2}=\frac{b\pm\sqrt{b^{2}-2b+a}}{3b}\,,
+\]
+
+\end_inset
+
+which is real provided 
+\begin_inset Formula 
+\begin{equation}
+a\geq2b-b^{2}\,.\label{eq:Real_u_s_in_a}
+\end{equation}
+
+\end_inset
+
+This can be translated into inequality in terms of 
+\begin_inset Formula $b$
+\end_inset
+
+ as 
+\begin_inset Formula $b^{2}-2b+a=\left(b-1\right)^{2}+a-1\geq0$
+\end_inset
+
+ so that the condition holds for 
+\begin_inset Formula $a\geq1$
+\end_inset
+
+ and arbitrary 
+\begin_inset Formula $b$
+\end_inset
+
+ or for 
+\begin_inset Formula $a<1$
+\end_inset
+
+ and either 
+\begin_inset Formula 
+\begin{equation}
+b<1-\sqrt{1-a}\,,\label{eq:real_root_u_h_less}
+\end{equation}
+
+\end_inset
+
+or 
+\begin_inset Formula 
+\begin{equation}
+b>1+\sqrt{1-a}\,.\label{eq:eq:real_root_u_h_more}
+\end{equation}
+
+\end_inset
+
+The smaller root 
+\begin_inset Formula $u_{S-}$
+\end_inset
+
+ is real provided 
+\begin_inset Formula $b^{2}-2b+a\leq b^{2}\,,$
+\end_inset
+
+ or for 
+\begin_inset Formula 
+\begin{equation}
+a\leq2b.\label{eq:Real_Smaller_Root}
+\end{equation}
+
+\end_inset
+
+ In that case 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ level crosses the 
+\begin_inset Formula $u-$
+\end_inset
+
+axes 4 times.
+ 
+\end_layout
+
+\begin_layout Standard
+Now let us check whether 
+\begin_inset Formula $u_{S+}$
+\end_inset
+
+ can be larger or equal to unity.
+ This happens when 
+\begin_inset Formula $3b^{2}+2b-a\leq0$
+\end_inset
+
+ which transforms into 
+\begin_inset Formula 
+\begin{equation}
+b\leq\frac{-1+\sqrt{1+3a}}{3}\,,\label{eq:uHhigher_thanDivide}
+\end{equation}
+
+\end_inset
+
+or exactly when 
+\begin_inset Formula $\varepsilon_{S}\geq\varepsilon_{U}$
+\end_inset
+
+.
+ Importantly, 
+\begin_inset Formula $\left(-1+\sqrt{1+3a}\right)/3<a/2$
+\end_inset
+
+ for all 
+\begin_inset Formula $a$
+\end_inset
+
+, hence in that case 
+\begin_inset Formula $b<a/2$
+\end_inset
+
+, the root 
+\begin_inset Formula $u_{S-}$
+\end_inset
+
+ is imaginary and consequently 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ crosses the 
+\begin_inset Formula $u-$
+\end_inset
+
+axes only twice.
+ 
+\end_layout
+
+\begin_layout Standard
+Further for 
+\begin_inset Formula $a<1$
+\end_inset
+
+ the inequality 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:uHhigher_thanDivide"
+
+\end_inset
+
+ implies that 
+\begin_inset Formula $b<1/3$
+\end_inset
+
+, and is stronger than 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:real_root_u_h_less"
+
+\end_inset
+
+, and excludes the case 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:eq:real_root_u_h_more"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now let us check when 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ crosses the Phantom Divide somewhere else except of 
+\begin_inset Formula $\left(\pm\left(3b\right)^{-1/2},0\right)$
+\end_inset
+
+.
+ The condition for crossing is 
+\begin_inset Formula 
+\[
+\varepsilon\left(v_{pd},\sqrt{1-3bv_{pd}^{2}}\right)=\varepsilon_{s}\,,
+\]
+
+\end_inset
+
+so that the additional crossing happens at 
+\begin_inset Formula 
+\[
+v_{pd}^{2}=\frac{3b^{2}+2b-a}{3b\left(a+3b^{2}\right)}\,.
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $u_{S+}^{2}>1$
+\end_inset
+
+ which corresponds to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:uHhigher_thanDivide"
+
+\end_inset
+
+, 
+\begin_inset Formula $v_{pd}^{2}<0$
+\end_inset
+
+ and there is no additional crossing of the PD.
+ Thus, for parameters satisfying 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:uHhigher_thanDivide"
+
+\end_inset
+
+ the energy level 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ encloses the PD.
+ 
+\end_layout
+
+\begin_layout Standard
+Depending on the parameters either 
+\begin_inset Formula $\varepsilon_{U}$
+\end_inset
+
+ or 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ has the smallest energy density among the levels encircling the PD ellipse
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+, see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "fig:Limit_1"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now let us find for which rages of parameters the energy density level 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ encloses the Singularity 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+.
+ Let us first find whether 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ can cross the Singularity.
+ We have 
+\begin_inset Formula 
+\[
+\varepsilon\left(v_{sin},\sqrt{\frac{1}{3}-bv_{sin}^{2}}\right)=\varepsilon_{s}\,,
+\]
+
+\end_inset
+
+which yields 
+\begin_inset Formula 
+\[
+v_{sin}^{2}=\frac{2b-b^{2}-a}{3b\left(a-b^{2}\right)}\,.
+\]
+
+\end_inset
+
+This crossing of the Singularity does not happen provided either when 
+\begin_inset Formula $v_{sin}^{2}<0$
+\end_inset
+
+ i.e when 
+\begin_inset Formula 
+\begin{eqnarray}
+b\leq1 & \text{and} & a<b^{2}\,,\label{eq:v_sing_imaginary_1}\\
+b\leq1 & \text{and} & a>2b-b^{2}\,,\label{eq:v_sing_imaginary_2}\\
+b>1 & \text{and} & a>b^{2}\,,\label{eq:v_sing_imaginary_3}\\
+b>1 & \text{and} & a<2b-b^{2}\,,\label{eq:v_sing_imaginary_4}
+\end{eqnarray}
+
+\end_inset
+
+or when 
+\begin_inset Formula $v_{sin}^{2}>\left(3b\right)^{-1}$
+\end_inset
+
+ i.e.
+ 
+\begin_inset Formula 
+\begin{eqnarray*}
+b<1 & \text{and} & b^{2}<a<b\,,\\
+b>1 & \text{and} & b<a<b^{2}\,.
+\end{eqnarray*}
+
+\end_inset
+
+On the other hand, as we discussed before, if we require a double crossing
+ of the 
+\begin_inset Formula $u-$
+\end_inset
+
+axes (so that 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ consists of one piece) we have to demand that 
+\begin_inset Formula 
+\[
+a>2b\,.
+\]
+
+\end_inset
+
+We should also require that 
+\begin_inset Formula $\varepsilon_{S}$
+\end_inset
+
+ crosses the 
+\begin_inset Formula $u-$
+\end_inset
+
+axes at 
+\begin_inset Formula 
+\[
+u_{S+}^{2}=\frac{b+\sqrt{b^{2}-2b+a}}{3b}>\frac{1}{3}\,,
+\]
+
+\end_inset
+
+which gives 
+\begin_inset Formula 
+\begin{eqnarray*}
+b\leq2 & \text{and} & a>2b-b^{2}\,,\\
+b>2 & \text{and} & a>0\,.
+\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Thus any infinitesimally small change of the contour 
+\begin_inset Formula $\varepsilon\left(v,u\right)=\varepsilon_{pd}\left(1+\epsilon\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\epsilon\ll1$
+\end_inset
+
+ encloses the Phantom Divide and has the flow of trajectories pointing inside.
+ No trajectory can escape this contour 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:E_U"
+
+\end_inset
+
+.
+ As a limit cycle has to cross the Phantom Divide, there cannot be limit
+ cycles outside of the contour of no return.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement tb
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang british
+\begin_inset Graphics
+	filename Final Plots/a1b0.5l1.pdf
+	lyxscale 25
+	width 16cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Limit_1"
+
+\end_inset
+
+
+\lang american
+ Phase plot with a limit cycle for the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kosc"
+
+\end_inset
+
+ with the parameters 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=1/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda=1$
+\end_inset
+
+.
+ The values of parameters are chosen for illustrative purposes only.
+ The limit cycle is the yellow less-symmetric curve.
+ The red ellipse is the Singularity where 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+, which is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+.
+ Inside of this singular curve the perturbations are ghosts.
+ On the singular curve the perturbations are infinitely strongly coupled.
+ The green ellipse is the Phantom Divide on which 
+\begin_inset Formula $p_{,X}=0$
+\end_inset
+
+, i.e.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+, and 
+\begin_inset Formula $w=-1$
+\end_inset
+
+.
+ Inside this green ellipse the NEC is violated.
+ Between these two ellipses the sound speed is imaginary and the system
+ is linearly unstable.
+ By approaching the Singularity from outside this linear instability becomes
+ infinitely strong for any given mode 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ The blue contour is the lowest level, 
+\begin_inset Formula $\varepsilon\left(\varphi,\dot{\varphi}\right)=\varepsilon_{U}$
+\end_inset
+
+ from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:E_U"
+
+\end_inset
+
+, of energy density enclosing the Phantom Divide.
+ One can clearly see five fixed points: two centers on the singular ellipse,
+ one node in the origin and two saddles on the 
+\begin_inset Formula $\varphi$
+\end_inset
+
+-axis located inside of the Phantom Divide and the Singularity.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement tb
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang british
+\begin_inset Graphics
+	filename Final Plots/a1b1l1.pdf
+	lyxscale 25
+	width 7.5cm
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Final Plots/a1b1l0zoom.pdf
+	width 7.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Limit_2"
+
+\end_inset
+
+
+\lang american
+ Phase plot with a limit cycle for the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kosc"
+
+\end_inset
+
+ with the degenerate values of the parameters: 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda=0$
+\end_inset
+
+ on the right and 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda=1$
+\end_inset
+
+ on the left.
+ The values of parameters are chosen for illustrative purposes only.
+ The limit cycle is the yellow less-symmetric curve.
+ The red ellipse is the Singularity where 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+, which is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+.
+ Inside of this singular curve the perturbations are ghosts.
+ On the singular curve the perturbations are infinitely strongly coupled.
+ The green ellipse is the curve on which 
+\begin_inset Formula $p_{,X}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $w=-1$
+\end_inset
+
+.
+ This green ellipse is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+.
+ Inside this green ellipse the NEC is violated.
+ Between these two ellipses the sound speed in imaginary and the system
+ is linearly unstable.
+ By approaching the red ellipse from outside this linear instability becomes
+ infinitely strong for any given mode 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Clearly both systems possess a single simple equilibrium / fix point at
+ the origin 
+\begin_inset Formula $\left(\varphi,\dot{\varphi}\right)=\left(0,0\right)$
+\end_inset
+
+ where the system is linearly stable but is ghosty and suffers therefore
+ from the ghosts instabilities due to interactions (e.g.
+ unavoidable interactions through gravity).
+ This trivial vacuum is isolated by the red ellipse of the infinitely strong
+ coupling from the oscillatory attractor which can be considered as a nontrivial
+ ground state.
+ However, this is nontrivial ground state is plagued by linear instabilities.
+ Indeed, the yellow cyclic trajectory clearly crosses the green ellipse
+ four times - enters twice the region where the sound speed is imaginary.
+ Moreover, the classical evolution breaks down by approaching the green
+ ellipse as the quantum perturbations on short scales grow without any bound,
+ see 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:field_quantum_fluctuation"
+
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\lang british
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement tb
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang british
+\begin_inset Graphics
+	filename Final Plots/a1b2l1.pdf
+	lyxscale 25
+	width 14.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:No_Limit_3"
+
+\end_inset
+
+
+\lang american
+ Phase plot without the limit cycle for the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kosc"
+
+\end_inset
+
+ with the values of the parameters 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=2$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda=1$
+\end_inset
+
+.
+ The values of parameters are chosen for illustrative purposes only.
+ The red ellipse is the singularity where 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+, which is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+.
+ Inside of this singular curve the perturbations are ghosts.
+ On the singular curve the perturbations are infinitely strongly coupled.
+ The green ellipse is the curve on which 
+\begin_inset Formula $p_{,X}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $w=-1$
+\end_inset
+
+.
+ This green ellipse is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+.
+ Inside this green ellipse the NEC is violated.
+ Between these two ellipses the sound speed in imaginary and the system
+ is linearly unstable.
+ By approaching the red ellipse from outside this linear instability becomes
+ infinitely strong for any given mode 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ The blue contour is the lowest level of constant energy density enclosing
+ the Phantom Divide, 
+\begin_inset Formula $\varepsilon\left(\varphi,\dot{\varphi}\right)=\varepsilon_{U}$
+\end_inset
+
+ which is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:E_U"
+
+\end_inset
+
+.
+ One can clearly see five fixed points: two saddles on the singular red
+ ellipse, one node in the origin and two stable foci on the 
+\begin_inset Formula $\varphi$
+\end_inset
+
+-axis.
+ These stable foci attract trajectories crossing the blue contour of no
+ return.
+ Outside of the blue contour there cannot be limit cycles as the latter
+ has to cross through the green ellipse - the Phantom Divide.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang british
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Float figure
+placement tb
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang british
+\begin_inset Graphics
+	filename Final Plots/a1b025l1.pdf
+	lyxscale 25
+	width 14.5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Singular_Limit"
+
+\end_inset
+
+
+\lang american
+ Phase plot without the limit cycle for the system 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:kosc"
+
+\end_inset
+
+ with the values of the parameters 
+\begin_inset Formula $a=1$
+\end_inset
+
+, 
+\begin_inset Formula $b=1/4$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda=1$
+\end_inset
+
+.
+ The values of parameters are chosen for illustrative purposes only.
+ The red ellipse is the Singularity where 
+\begin_inset Formula $\varepsilon_{,X}=0$
+\end_inset
+
+, which is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Singularity_ellipse"
+
+\end_inset
+
+.
+ Inside of this singular curve the perturbations are ghosts.
+ On the singular curve the perturbations are infinitely strongly coupled.
+ The green ellipse is the curve on which 
+\begin_inset Formula $p_{,X}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $w=-1$
+\end_inset
+
+.
+ This green ellipse is given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:NEC_ellipse"
+
+\end_inset
+
+.
+ Inside this green ellipse the NEC is violated.
+ Between these two ellipses the sound speed in imaginary and the system
+ is linearly unstable.
+ By approaching the red ellipse from outside this linear instability becomes
+ infinitely strong for any given mode 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ The blue contour is the lowest level of constant energy density enclosing
+ the Phantom Divide, 
+\begin_inset Formula $\varepsilon\left(\varphi,\dot{\varphi}\right)=\varepsilon_{S}$
+\end_inset
+
+ given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:E_S"
+
+\end_inset
+
+.
+ One can clearly see five fixed points: two centers on the Singularity,
+ one node in the origin and two saddles on the 
+\begin_inset Formula $\varphi$
+\end_inset
+
+-axis.
+ Outside of the blue contour there cannot be limit cycles as the latter
+ has to cross through the green ellipse - the Phantom Divide.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\lang british
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions and Discussion 
+\end_layout
+
+\begin_layout Standard
+The new oscillatory state of cosmological matter corresponds to a limit
+ cycle of the classical equations of motion.
+ This state can also be considered as a cosmological realization of a time-cryst
+al.
+ This regime can be of interest to cosmology, because on average the universe
+ undergoes the de Sitter expansion with 
+\begin_inset Formula $\left\langle w\right\rangle =-1$
+\end_inset
+
+.
+ Hence, a time-crystal can be used to model early stages of Inflation or
+ late stages of Dark Energy.
+ We have shown that any realization of the new oscillatory state of cosmological
+ matter requires not only a violation of the NEC but also a crossing of
+ the Phantom Divide.
+ The systems studied in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+ are known to be incapable to achieve this crossing 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Vikman:2004dc"
+
+\end_inset
+
+, see also 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hu:2004kh,Caldwell:2005ai,Xia:2007km"
+
+\end_inset
+
+ and for a review 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cai:2009zp,Nesseris:2006er"
+
+\end_inset
+
+.
+ In particular, the crossing generically implies gradient instabilities
+ where the sound speed is imaginary, 
+\begin_inset Formula $c_{s}^{2}<0$
+\end_inset
+
+.
+ We have showed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Refreshing-k-essence-and"
+
+\end_inset
+
+ that the quantum perturbations of k-essence on short scales grow without
+ any bound in an attempt to evolve across 
+\begin_inset Formula $w=-1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Further in section 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "sec:General-phase-space"
+
+\end_inset
+
+ we used the Bendixson–Dulac theorem to prove that for k-essence i) to realize
+ a cosmological limit cycle classically the system has to have a flat-space
+ Hamiltonian with cusps and that ii) the existence of a limit cycle implies
+ that the system has a singularity where 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ changes sign and where the canonical momentum does not define the velocity
+ uniquely.
+ The appearance of this singularity implies the presence of configurations
+ with strong superluminal propagation of the small perturbations and existence
+ of other configurations with strong gradient instability.
+ On this singularity the small quantum perturbations are infinitely strongly
+ coupled.
+ The Bendixson–Dulac theorem dictates that the singularity curve on which
+ 
+\begin_inset Formula $\varepsilon_{,X}$
+\end_inset
+
+ is vanishing, should be located inside of the limit cycle, as the latter
+ cannot cross the singularity.
+ For some systems, including the one studied in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+, the configurations with superluminality are separated from the limit cycle
+ by the singularity curve with infinitely strongly coupled perturbations.
+ Thus one can consider that the oscillatory solution and the superluminal
+ configurations are described by two separate EFT's.
+ There are arguments 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Adams:2006sv"
+
+\end_inset
+
+ that the presence of superluminality implies that the system cannot be
+ UV-completed in the usual local and Lorentz-invariant way.
+ If the superluminal configurations should be described by a disconnected
+ EFT different from the one which describes the limit cycle and neighboring
+ configurations these arguments would not apply.
+ 
+\end_layout
+
+\begin_layout Standard
+Then in section 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "sec:Particular_Model"
+
+\end_inset
+
+ we analyzed in details the dynamics of the particular class of k-essence
+ models from 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bains:2015gpv"
+
+\end_inset
+
+.
+ These theories have three free parameters.
+ Following the spirit of the Poincare-Bendixson theorem we analyzed for
+ which values of the parameters the limit cycle is possible.
+ This section serves for the illustrative purposes of our analytical results
+ from the previous sections.
+ We provide numerically obtained phase plots for a better visualization.
+ In this particular class of theories the configurations with the superluminalit
+y are always screened by the singularity from the time-crystal or limit
+ cycle.
+ However, the latter is also disconnected from the trivial Lorentz-invariant
+ vacuum.
+ Hence the EFT describing the time-crystal does not have any Lorentz-invariant
+ solutions.
+ It is interesting to understand under which conditions this feature allows
+ for the theory to have a Lorentz-invariant and local UV-completion.
+ 
+\end_layout
+
+\begin_layout Standard
+The models which can violate NEC and can cross the Phantom Divide without
+ immediate pathologies are Generalized Galileons / Horndeski theories 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Horndeski,Deffayet:2011gz,Kobayashi:2011nu"
+
+\end_inset
+
+.
+ Recently it has been argued 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Libanov:2016kfc"
+
+\end_inset
+
+ that for the subclass of these theories introduced in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deffayet:2010qz"
+
+\end_inset
+
+ it is still rather hard to have a singularity free cosmological evolution
+ without any pathology and with an NEC-violating phase.
+ Further these results were generalized to whole class of Horndeski theories
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kobayashi:2016xpl"
+
+\end_inset
+
+.
+ Both these works only consider external matter which does not have any
+ direct coupling to the considered Galileon scalar field.
+ May be a presence of an additional degree of freedom particularly coupled
+ to the Galileon can ameliorate the problem.
+ 
+\end_layout
+
+\begin_layout Standard
+To conclude, we find the idea of cosmological time-crystals rather interesting,
+ but it seems to be very hard to realize this idea in a physically plausible
+ way.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acknowledgments
+\end_layout
+
+\end_inset
+
+ The work of A.V.
+ was supported by the J.
+ E.
+ Purkyně Fellowship of the Czech Academy of Sciences, by the Grant Agency
+ of the Czech Republic under the grant P201/12/G028 and by the International
+ Research Unit of Advanced Future Studies, Kyoto University Research Coordinatio
+n Alliance.
+ Many of the results of the paper were obtained during the visit of A.V.
+ to the Yukawa Institute for Theoretical Physics, Kyoto University.
+ A.V.
+ would like to express gratitude to the members and staff of YITP for the
+ warm hospitality.
+ A.V.
+ is also thankful to the Galileo Galilei Institute for Theoretical Physics
+ for the kind hospitality and the INFN for partial support during the intermedia
+te stages of writing this paper.
+ A major part of the paper was finished at the Cargèse Summer Institute:
+ Quantum Gravity, Cosmology and Particle Physics.
+ A.V.
+ is thankful to the organizers and staff for the kind hospitality and partial
+ financial support.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "Osc"
+options "bibtotoc,utphys"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

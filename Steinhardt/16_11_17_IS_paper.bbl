@@ -1,0 +1,10 @@
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{Ijjas:2016tpn}
+A.~Ijjas and P.~J. Steinhardt, ``{Classically stable nonsingular cosmological
+  bounces},'' \href{http://dx.doi.org/10.1103/PhysRevLett.117.121304}{{\em
+  Phys. Rev. Lett.} {\bfseries 117} no.~12, (2016) 121304},
+\href{http://arxiv.org/abs/1606.08880}{{\ttfamily arXiv:1606.08880 [gr-qc]}}.
+%%CITATION = ARXIV:1606.08880;%%.
+
+\end{thebibliography}\endgroup
