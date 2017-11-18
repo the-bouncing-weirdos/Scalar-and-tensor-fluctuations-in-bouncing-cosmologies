@@ -71,31 +71,10 @@
 \begin_body
 
 \begin_layout Standard
+It seems to be natural to introduce the field redefinition 
 \begin_inset Formula 
 \[
-k(\Phi)=-\frac{3\sqrt[3]{2}\left(H_{0}W\left(\theta\log(\Phi)\left(\gamma_{0}\Phi^{3}+2FT_{*}\right)-2F\log^{2}(\Phi)+\theta^{2}\right)+\gamma_{0}\theta^{3}\Phi^{3}W^{2}+2H_{0}^{2}\log^{2}(\Phi)\right)}{W^{2}\theta^{2}\left(\gamma_{0}\left(-\Phi^{3}\right)\right){}^{2/3}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-k(\Phi)=-6\frac{W^{2}\left(\Phi\right)\Phi^{3}\gamma_{0}\theta^{3}+W\left(\Phi\right)H_{0}\left[\theta\log\Phi\left(\gamma_{0}\Phi^{3}+2F\,t_{*}\right)-2F\log^{2}\Phi+\theta^{2}\right]+2H_{0}^{2}\log^{2}\Phi}{\Phi^{2}W^{2}\left(\Phi\right)\theta^{4}\phi_{0}^{2}}\,,
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-W\left(\Phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\Phi-\theta t_{*}\right){}^{2}\right]
+\log\left(\frac{\phi}{\phi_{\star}}\right)=\chi
 \]
 
 \end_inset
@@ -103,7 +82,7 @@ W\left(\Phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\Phi-\theta t_{*}\rig
 
 \begin_inset Formula 
 \[
-\Phi=\frac{\phi}{\phi_{0}}\,,
+W\left(\phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\left(\frac{\phi}{\phi_{\star}}\right)-\theta t_{*}\right){}^{2}\right]=\exp\left[\frac{F}{\theta^{2}}\left(\chi-\theta t_{*}\right){}^{2}\right]\,,
 \]
 
 \end_inset
@@ -111,7 +90,7 @@ W\left(\Phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\Phi-\theta t_{*}\rig
 
 \begin_inset Formula 
 \[
-\phi_{0}=\left(\frac{-2\gamma_{0}}{\theta^{3}}\right)^{1/3}\,.
+\Omega\left(\chi\right)=W\left(\chi\right)\theta^{3}\left(\theta\phi_{\star}\exp\chi\right)^{3}+H_{0}\left[\chi\left(4F\left[\chi-\theta t_{*}\right]+2\theta\left(\theta\phi_{\star}\exp\chi\right)^{3}\right)-2\theta^{2}\right]\,,
 \]
 
 \end_inset
@@ -119,7 +98,7 @@ W\left(\Phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\Phi-\theta t_{*}\rig
 
 \begin_inset Formula 
 \[
-\phi\left(t\right)=\phi_{0}\exp\left(\theta t\right)
+k(\chi)=-\frac{12H_{0}^{2}\chi^{2}-3W\left(\chi\right)\left(\Omega\left(\chi\right)-H_{0}\theta\left(\theta\phi_{\star}\exp\chi\right)^{3}\chi\right)}{W^{2}\left(\chi\right)\theta^{2}\left(\theta\phi_{\star}\exp\chi\right)^{2}}\,,
 \]
 
 \end_inset
@@ -127,7 +106,7 @@ W\left(\Phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\Phi-\theta t_{*}\rig
 
 \begin_inset Formula 
 \[
-\dot{\phi}_{0}=\theta\phi_{0}
+q\left(\chi\right)=\frac{12H_{0}^{2}\chi^{2}-2W\left(\chi\right)\left(\Omega\left(\chi\right)+H_{0}\theta\left(\theta\phi_{\star}\exp\chi\right)^{3}\chi\right)}{W^{2}\left(\chi\right)\theta^{2}\left(\theta\phi_{\star}\exp\chi\right)^{4}}\,.
 \]
 
 \end_inset
@@ -135,7 +114,7 @@ W\left(\Phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\Phi-\theta t_{*}\rig
 
 \begin_inset Formula 
 \[
-q\left(\Phi\right)=4\frac{W^{2}\left(\Phi\right)\Phi^{3}\gamma_{0}\theta^{3}+W\left(\Phi\right)H_{0}\left[\theta\log\Phi\left(3\gamma_{0}\Phi^{3}+2Ft_{*}\right)-2F\log^{2}\Phi+\theta^{2}\right]+3H_{0}^{2}\log^{2}\Phi}{\Phi^{4}W^{2}\left(\Phi\right)\theta^{6}\phi_{0}^{4}}\,,
+\partial\phi=\phi_{\star}\partial\chi\exp\chi
 \]
 
 \end_inset
@@ -143,44 +122,21 @@ q\left(\Phi\right)=4\frac{W^{2}\left(\Phi\right)\Phi^{3}\gamma_{0}\theta^{3}+W\l
 
 \begin_inset Formula 
 \[
-\Omega\left(\Phi\right)=W^{2}\left(\Phi\right)\Phi^{3}\gamma_{0}\theta^{3}+W\left(\Phi\right)H_{0}\left[\theta\log\Phi\left(2\gamma_{0}\Phi^{3}+2Ft_{*}\right)-2F\log^{2}\Phi+\theta^{2}\right]\,,
+\Box\phi=\phi_{\star}\Box\chi\exp\chi+\phi_{\star}\left(\partial\chi\right)^{2}\exp\chi=\phi_{\star}\exp\chi\left(\Box\chi+\left(\partial\chi\right)^{2}\right)
 \]
 
 \end_inset
 
-
+so that 
 \begin_inset Formula 
 \[
-\Omega\left(\Phi\right)=-\frac{1}{2}W^{2}\left(\Phi\right)\left(\theta\phi_{0}\Phi\right)^{3}\theta^{3}+W\left(\Phi\right)H_{0}\left[\theta^{2}+\theta\left[2Ft_{*}-\left(\theta\phi_{0}\Phi\right)^{3}\right]\log\Phi-2F\log^{2}\Phi\right]\,,
+\left(\partial\phi\right)^{2}\Box\phi=\phi_{\star}^{2}\left(\partial\chi\right)^{2}\left(\exp3\chi\right)\left(\Box\chi+\left(\partial\chi\right)^{2}\right)
 \]
 
 \end_inset
 
-
-\begin_inset Formula 
-\[
-k(\Phi)=-\frac{12H_{0}^{2}\log^{2}\Phi+6\left[\Omega\left(\Phi\right)+W\left(\Phi\right)\left(\theta\phi_{0}\Phi\right)^{3}H_{0}\theta\log\sqrt{\Phi}\right]}{\left(\theta\phi_{0}\Phi\right)^{2}\left(W\left(\Phi\right)\theta\right)^{2}}\,,
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-q\left(\Phi\right)=\frac{12H_{0}^{2}\log^{2}\Phi+4\left[\Omega\left(\Phi\right)-W\left(\Phi\right)\left(\theta\phi_{0}\Phi\right)^{3}H_{0}\theta\log\sqrt{\Phi}\right]}{\left(\theta\phi_{0}\Phi\right)^{4}\left(W\left(\Phi\right)\theta\right)^{2}}\,,
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\mathscr{L}=\frac{1}{2}k(\Phi)\left(\partial\Phi\right)^{2}+\frac{1}{4}q\left(\Phi\right)\left(\partial\Phi\right)^{4}+\frac{1}{2}\left(\partial\Phi\right)^{2}\Box\Phi\,.
-\]
-
-\end_inset
-
-
+does not look much simpler...
+ 
 \end_layout
 
 \end_body

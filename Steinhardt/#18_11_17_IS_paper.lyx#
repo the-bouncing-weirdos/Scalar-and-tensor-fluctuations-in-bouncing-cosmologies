@@ -933,6 +933,35 @@ Other Solutions, Phase Space
 Superluminality
 \end_layout
 
+\begin_layout Standard
+It is known that generic theories with derivative interactions can have
+ such configurations that small perturbations propagate faster than light.
+ In k-essence one can formulate inequalities which can guarantee the absence
+ of such superluminality.
+ However, this seems to be impossible to achieve in general theories with
+ Kinetic Gravity Braiding.
+ There are examples 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2012my,Easson:2013bda"
+
+\end_inset
+
+of such theories where there is no superluminality for 
+\emph on
+all
+\emph default
+ cosmological configurations.
+ However, this only happens in an idealized universe without any external
+ matter.
+ An unusual property of the theories with Kinetic Gravity Braiding is that
+ the sound speed does depend not only on configuration 
+\begin_inset Formula $\left(\phi,\dot{\phi}\right)$
+\end_inset
+
+ but 
+\end_layout
+
 \begin_layout Section
 Perturbations
 \end_layout
