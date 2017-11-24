@@ -235,8 +235,6 @@ c
 
 \end_inset
 
-
-\lang english
 CEICO-Central European Institute for Cosmology and Fundamental Physics,
  
 \end_layout
@@ -297,7 +295,7 @@ key "Ijjas:2016tpn"
  the consequences of this feature for a possible UV-completion.
  Further, following the originally constructed background history, we evaluated
  the tensor and scalar spectra during the bouncing phase characterized by
- the violation of null (and strong) energy condition.
+ the violation of the null energy condition.
  We found that the change of the speed of sound is the cause of the dominance
  of the tensor power spectrum over the scalar part through most of the bounce.
  Moreover, we observe that none of the spectra evaluated across the bouncing
@@ -751,7 +749,7 @@ reference "eq:IS_Lagrangian"
  one obtains 
 \begin_inset Formula 
 \begin{equation}
-\gamma\left(t\right)=H\left(\text{t}\right)-\frac{1}{2}\dot{\phi}^{3}\,.\label{eq:Gamma_IS_Lagrangian}
+\gamma\left(t\right)=H\left(t\right)-\frac{1}{2}\dot{\phi}^{3}\,.\label{eq:Gamma_IS_Lagrangian}
 \end{equation}
 
 \end_inset
@@ -962,12 +960,12 @@ key "Easson:2013bda"
  However, this only happens in an idealized universe without any external
  matter.
  An unusual property of the theories with Kinetic Gravity Braiding is that
- locally the sound speed does depend not only on the local state of the
- field 
+ the value of the sound speed does depend not only on the local state of
+ the field 
 \begin_inset Formula $\left(\phi,\dot{\phi}\right)$
 \end_inset
 
-, but also on the external matter.
+, but also on the external matter energy-momentum tensor.
  Even in the case of of the subluminal cosmological states 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -976,7 +974,14 @@ key "Creminelli:2012my"
 \end_inset
 
  the external matter introduces the superluminality at least for some regions
- of phase space.
+ of phase space 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2013bda"
+
+\end_inset
+
+.
  
 \end_layout
 
