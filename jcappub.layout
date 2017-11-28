@@ -1,0 +1,165 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[article,jcappub.sty]{article (JCAP)}
+
+########################################################################
+# 
+# JCAP journal style
+# ------------------
+# 
+# Last Modified: June 2012
+# 
+# Authors:
+# - Nicolas Tessore <tessore@thphys.uni-heidelberg.de>
+# 
+########################################################################
+
+
+Format 35
+Input stdclass.inc
+
+Preamble
+	\usepackage{jcappub}
+EndPreamble
+
+SecNumDepth             3
+TocDepth                3
+
+NoStyle Chapter
+NoCounter chapter
+NoStyle Chapter*
+
+Style Title
+	Align			Left
+	Font
+		Family		Sans
+		Series		Bold
+		Size		Giant
+	EndFont
+	TopSep			3
+	BottomSep		3
+End
+
+Style Author
+	InTitle			1
+	Align			Left
+	OptionalArgs		3
+	Font
+		Family		Sans
+		Series		Bold
+		Size		Larger
+	EndFont
+	TopSep			0
+	BottomSep		1
+End
+
+Style Affiliation
+	Category		FrontMatter
+	LatexName		affiliation
+	LatexType		Command
+	InTitle			1
+	OptionalArgs		1
+	LeftMargin		M
+	ItemSep			0.5
+	BottomSep		1
+End
+
+Style Email
+	Category		FrontMatter
+	LatexName		emailAdd
+	LatexType		Command
+	LeftMargin		M
+	InTitle			1
+	LabelType		Top_Environment
+	LabelString		"E-mail:"
+	BottomSep		1
+End
+
+Style Abstract
+	Category		FrontMatter
+	LatexName		abstract
+	LatexType		Command
+	InTitle			1
+	Align			Left
+	Margin			First_Dynamic
+	LabelType		Static
+	LabelString		"Abstract."
+	LabelSep		" "
+	LabelFont
+		Family		Sans
+		Series		Bold
+		Size		Large
+	EndFont
+	TopSep			0
+	BottomSep		1.5
+End
+
+Style Keywords
+	Category		FrontMatter
+	LatexName		keywords
+	LatexType		Command
+	InTitle			1
+	Align			Left
+	Margin			First_Dynamic
+	LabelType		Static
+	LabelString		"Keywords:"
+	LabelSep		" "
+	LabelFont
+		Family		Sans
+		Series		Bold
+		Size		Large
+	EndFont
+	BottomSep		1
+End
+
+Style arXivNumber
+	Category		FrontMatter
+	LatexName		arxivnumber
+	LatexType		Command
+	InTitle			1
+	Align			Left
+	Margin			First_Dynamic
+	LabelType		Static
+	LabelString		"ArXiv ePrint:"
+	LabelSep		" "
+	LabelFont
+		Family		Sans
+		Series		Bold
+		Size		Large
+	EndFont
+	BottomSep		1
+End
+
+Style SubHeader
+	Category		FrontMatter
+	LatexName		subheader
+	LatexType		Command
+	InTitle			1
+	Align			Left
+	ParIndent		""
+	Font
+		Family		Sans
+		Series		Bold
+		Shape		SmallCaps
+		Size		Normal
+	EndFont
+End
+
+Style Collaboration
+	CopyStyle		Author
+	Category		FrontMatter
+	LatexName		collaboration
+	LatexType		Command
+	InTitle			1
+End
+
+Style Dedicated
+	Category		FrontMatter
+	LatexName		dedicated
+	LatexType		Command
+	InTitle			1
+	Align			Right
+	Font
+		Shape		Italic
+		Size		Small
+	EndFont
+End
