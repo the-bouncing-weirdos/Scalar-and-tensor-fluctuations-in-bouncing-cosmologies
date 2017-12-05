@@ -1,7 +1,7 @@
 program evol; implicit none;
 logical break
 real y(2)
-real, parameter :: dt = 1.d-2
+real, parameter :: dt = 1.d1
 integer  j, i
 
 
@@ -34,8 +34,8 @@ do i = 1,10
 write (*,*) ''; write (*,*) ''
 end do
 
-do i = 1,5
-    y(1) = 32.0 + 1.0*i
+do i = 1,10
+    y(1) = 32.0 + 0.5*i
     y(2) = 0.125
     break= .true.
     do while (break)
@@ -48,14 +48,29 @@ do i = 1,5
 write (*,*) ''; write (*,*) ''
 end do
 
-do i = 1,5
-    y(1) = 52.5 + 0.5*i
-    y(2) = 0.125
+do i = 1,12
+y(1) = 66.0 - 0.5*i
+y(2) = 0.1467
+break= .true.
+do while (break)
+call gl8_background(y,dt)
+write (*,*) y(1), y(2)
+if (y(2)< 0.12 .or. isNaN(y(1)) .or. y(2)>0.3) then
+break = .false.
+end if
+end do
+write (*,*) ''; write (*,*) ''
+end do
+
+
+do i = 1,20
+    y(1) = 63.3102
+    y(2) = 0.18 + 0.005*i
     break= .true.
     do while (break)
         call gl8_background(y,dt)
         write (*,*) y(1), y(2)
-        if (y(2)< 0.12 .or. isNaN(y(1)) .or. y(1)>63.0 .or. y(2)>0.3) then
+        if (y(2)< 0.12 .or. isNaN(y(1)) .or. y(1)>63.32 .or. y(2)>0.3) then
             break = .false.
         end if
     end do
@@ -74,11 +89,11 @@ subroutine evalf(y, dydx)
 real y(2), dydx(2)
 
 ! time
-dydx(1) = y(2)
+dydx(1) = y(2)*den(y)
 
 ! scale factor
 dydx(2) = (-kprime(y)*y(2)**2/2.d0-75.d-2*qprime(y)*y(2)**4-75.d-2*q(y)*y(2)**6-3.d0*(k(y)+q(y)*y(2)**2+&
-15.d-1*y(2)**4)*hubble(y)*y(2))/den(y)
+15.d-1*y(2)**4)*hubble(y)*y(2))
 
 end subroutine evalf
 
