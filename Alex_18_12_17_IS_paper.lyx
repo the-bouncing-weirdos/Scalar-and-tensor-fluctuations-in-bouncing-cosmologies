@@ -1,0 +1,2245 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass jcappub
+\begin_preamble
+\pdfoutput=1
+\renewcommand\[{\begin{equation}}
+\renewcommand\]{\end{equation}} 
+\renewcommand*\arraystretch{1.5}
+\end_preamble
+\use_default_options true
+\begin_modules
+eqs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language american
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "lmss" "default"
+\font_typewriter "lmtt" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format pdf2
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement th
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks true
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Unbraiding the Bounce 
+\end_layout
+
+\begin_layout SubHeader
+preprint number 
+\end_layout
+
+\begin_layout Author
+David A.
+ Dobre
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+Andrei V.
+ Frolov,
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a,b
+\end_layout
+
+\end_inset
+
+Jos
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e} T.
+ G
+\backslash
+'{a}
+\end_layout
+
+\end_inset
+
+lvez Ghersi,
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+Sabir Ramazanov,
+\end_layout
+
+\begin_layout Author
+and 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+Alexander Vikman
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+a
+\end_layout
+
+\end_inset
+
+Department of Physics, Simon Fraser University, 
+\end_layout
+
+\begin_layout Affiliation
+8888 University Drive, Burnaby, British Columbia V5A 1S6, Canada
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+
+Perimeter Institute for Theoretical Physics,
+\end_layout
+
+\begin_layout Affiliation
+31 Caroline Street North, Waterloo, Ontario, N2L 2Y5, Canada
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Affiliation
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+c
+\end_layout
+
+\end_inset
+
+CEICO-Central European Institute for Cosmology and Fundamental Physics,
+ 
+\end_layout
+
+\begin_layout Affiliation
+Institute of Physics, the Academy of Sciences of the Czech Republic, 
+\begin_inset Newline newline
+\end_inset
+
+Na Slovance 2, 182 21 Prague 8, Czech Republic
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Email
+ddobre@sfu.ca
+\end_layout
+
+\begin_layout Email
+frolov@sfu.ca
+\end_layout
+
+\begin_layout Email
+joseg@sfu.ca
+\end_layout
+
+\begin_layout Email
+ramazanov@fzu.cz
+\end_layout
+
+\begin_layout Email
+vikman@fzu.cz
+\end_layout
+
+\begin_layout Abstract
+We study a recently proposed by Ijjas and Steinhardt particular realization
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ of the cosmological bounce scenario.
+ First, we reveal the exact construction of the Lagrangian used in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+.
+ This explicit construction allowed us to study other cosmological solutions
+ in this theory.
+ In particular we found solutions with superluminal speed of sound and discuss
+ the consequences of this feature for a possible UV-completion.
+ Further, following the originally constructed background history, we evaluated
+ the tensor and scalar spectra during the bouncing phase characterized by
+ the violation of the null energy condition.
+ We found that the change of the speed of sound is the cause of the dominance
+ of the tensor power spectrum over the scalar part through most of the bounce.
+ Moreover, we observe that none of the spectra evaluated across the bouncing
+ phase is scale invariant.
+ In addition to this, we present our results for particle production by
+ showing the evolution of the occupation number of scalar fluctuations through
+ the bounce.
+ 
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+Since 2011 it is well known that scalar-tensor theories with Kinetic Gravity
+ Braiding (which are also called first two terms of Horndeski or simple
+ generalized Galileons) allow for 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Qiu:2011cy,Easson:2011zy"
+
+\end_inset
+
+ a classical bouncing evolution manifestly free from ghost and gradient
+ instabilities around the bounce.
+ The possibility of the bounce in such systems was briefly mentioned in
+ Moreover, in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2011zy"
+
+\end_inset
+
+ it was demonstrated that one can easily construct spatially flat bouncing
+ universes, without ghosts and gradient instabilities and with bouncing
+ solutions of a non-vanishing measure.
+ Moreover, in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2011zy"
+
+\end_inset
+
+ it was demonstrated that there is a continuum of such minimally coupled
+ theories of the type of Kinetic Gravity Braiding.
+ This Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2011zy"
+
+\end_inset
+
+ provided inequalities on two free functions of kinetic term present in
+ Lagrangian of the theory, which are sufficient to guaranty a healthy bounce.
+ It was also showed that this setup also works in a presence (in fact unavoidabl
+e) of the normal matter - like radiation etc.
+ In one of examples ("Hot G-Bounce") it was even showed that such a bouncing
+ universes can smoothly transit to the radiation dominated stage.
+ In this work it was also discussed that there is always a singularity (either
+ in the gravitational or acoustic metric).
+ 
+\end_layout
+
+\begin_layout Section
+Model and main equations 
+\end_layout
+
+\begin_layout Standard
+In 2016, Ijjas and Steinhardt proposed a particular realization 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ of the cosmological bounce scenario in a particular subclass of these theories.
+ For convenience we denote this realization as 
+\emph on
+IS-bounce
+\emph default
+.
+ The IS-bounce was claimed to be free from ghost and gradient instabilities
+ and free from superluminal propagation of perturbations.
+ The explicit case of the IS-bounce uses a class of Kinetic Gravity Braiding
+ theories with explicitly strongly 
+\emph on
+broken
+\emph default
+ shift-symmetry 
+\begin_inset Formula $\phi\rightarrow\phi+c$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+S=\frac{1}{2}\int d^{4}x\,\sqrt{-g}\left(k\left(\phi\right)\left(\partial\phi\right)^{2}+\frac{1}{2}q\left(\phi\right)\left(\partial\phi\right)^{4}+\left(\partial\phi\right)^{2}\Box\phi\right)\,,\label{eq:IS_Lagrangian}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+\left(\partial\phi\right)^{2}\equiv g^{\mu\nu}\partial_{\mu}\phi\partial_{\nu}\phi\equiv2X\,,\qquad\Box\phi\equiv g^{\mu\nu}\nabla_{\mu}\nabla_{\nu}\phi\,,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\nabla_{\mu}$
+\end_inset
+
+ is the usual Levi-Civita connection 
+\lang english
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Further we use: the standard notation 
+\begin_inset Formula $\sqrt{-g}\equiv\sqrt{-\text{det}g_{\mu\nu}}$
+\end_inset
+
+ where 
+\begin_inset Formula $g_{\mu\nu}$
+\end_inset
+
+ is the metric, the signature convention 
+\begin_inset Formula $\left(+,-,-,-\right)$
+\end_inset
+
+ (contrary to 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+), and the units 
+\begin_inset Formula $c=\hbar=1$
+\end_inset
+
+, 
+\begin_inset Formula $M_{\text{Pl}}=\left(8\pi G_{\text{N}}\right)^{-1/2}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\lang american
+.
+ The scalar field is supposed to be minimally coupled to gravity.
+ Hence the theory is defined by two free functions 
+\begin_inset Formula $k\left(\phi\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q\left(\phi\right)$
+\end_inset
+
+.
+ In notation of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deffayet:2010qz"
+
+\end_inset
+
+ we have
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+At the beginning the authors of 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ also used 
+\begin_inset Formula $G\left(X,\phi\right)=b\left(\phi\right)X$
+\end_inset
+
+, however this additional free function 
+\begin_inset Formula $b\left(\phi\right)$
+\end_inset
+
+ can be eliminated by a simple field-redefinition.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+K\left(X,\phi\right)=k\left(\phi\right)X+q\left(\phi\right)X^{2}\,,\qquad G\left(X,\phi\right)=X\,.\label{eq:KGB_identifiaction}
+\end{equation}
+
+\end_inset
+
+This identification allows us to directly use all necessary formulas derived
+ in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deffayet:2010qz"
+
+\end_inset
+
+ for arbitrary 
+\begin_inset Formula $K\left(X,\phi\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $G\left(X,\phi\right)$
+\end_inset
+
+, see also 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kobayashi:2010cm"
+
+\end_inset
+
+.
+ In particular the pressure is 
+\begin_inset Formula 
+\[
+P=kX+qX^{2}-2X\ddot{\phi}\text{ ,}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+J=\dot{\phi}\left(k+2qX+3\dot{\phi}H\right)\text{ ,}
+\]
+
+\end_inset
+
+the energy density 
+\begin_inset Formula 
+\[
+\varepsilon=\dot{\phi}J-kX-qX^{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\dot{H}=X\ddot{\phi}-\frac{1}{2}\dot{\phi}J\text{ ,}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The quadratic action for curvature perturbations 
+\begin_inset Formula $\mathcal{R}$
+\end_inset
+
+ reads
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ does not use the canonical normalization with 
+\begin_inset Formula $1/2$
+\end_inset
+
+ in front of the action.
+ Hence our coefficients 
+\begin_inset Formula $A\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $B\left(t\right)$
+\end_inset
+
+ are twice larger then those in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+S_{2}=\frac{1}{2}\int dt\,d^{3}x\,a^{3}\left(A\left(t\right)\dot{\mathcal{R}}^{2}-\frac{B\left(t\right)}{a^{2}}\left(\partial_{i}\mathcal{R}\right)^{2}\right)\,.\label{eq:quadratic_action_scalars}
+\end{equation}
+
+\end_inset
+
+The formula for the normalization of the kinetic term is given by (A.9) page
+ 36, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deffayet:2010qz"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+A=\frac{2XD}{\left(H-\dot{\phi}XG_{,X}\right)^{2}}\,,\label{eq:Our_Normalization}
+\end{equation}
+
+\end_inset
+
+where the quantity 
+\begin_inset Formula 
+\begin{equation}
+D=K_{,X}+2XK_{,XX}-2G_{,\phi}-2XG_{,X\phi}+6\dot{\phi}H\left(G_{,X}+XG_{,XX}\right)+6X^{2}G_{,X}^{2}\,,\label{eq:D_for_ghosts}
+\end{equation}
+
+\end_inset
+
+determines (
+\begin_inset Formula $D>0$
+\end_inset
+
+) whether the perturbations are free of ghosts.
+ The sound speed is given by the formula (A.11) page 36, 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Deffayet:2010qz"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+c_{s}^{2}=\frac{B\left(t\right)}{A\left(t\right)}=\frac{\dot{\phi}XG_{,X}\left(H-\dot{\phi}XG_{,X}\right)-\partial_{t}\left(H-\dot{\phi}XG_{,X}\right)}{XD}\,,\label{eq:speed_of_sound}
+\end{equation}
+
+\end_inset
+
+where we assumed that the field 
+\begin_inset Formula $\phi$
+\end_inset
+
+ is the only source of energy-momentum.
+ From this expression we can write 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{2}B\left(t\right)=\frac{\dot{\phi}XG_{,X}\left(H-\dot{\phi}XG_{,X}\right)-\partial_{t}\left(H-\dot{\phi}XG_{,X}\right)}{\left(H-\dot{\phi}XG_{,X}\right)^{2}}\text{ .}\label{eq:B_kgb}
+\end{equation}
+
+\end_inset
+
+Hence it is natural to introduce a convenient variable
+\begin_inset Formula 
+\begin{equation}
+\gamma=H-\dot{\phi}XG_{,X}\text{ ,}\label{eq:gamma}
+\end{equation}
+
+\end_inset
+
+in terms of which 
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{2}B\left(t\right)=\frac{d}{dt}\gamma^{-1}+H\gamma^{-1}-1\text{ .}\label{eq:B_general}
+\end{equation}
+
+\end_inset
+
+The expression for 
+\begin_inset Formula $B\left(t\right)$
+\end_inset
+
+ was written in this elegant form in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ for a particular choice 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KGB_identifiaction"
+
+\end_inset
+
+ of functions 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ However, before that this variable 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:gamma"
+
+\end_inset
+
+ was used in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Libanov:2016kfc"
+
+\end_inset
+
+, see equation (2.6) page 4.
+ 
+\end_layout
+
+\begin_layout Standard
+For the Lagrangian given by 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:KGB_identifiaction"
+
+\end_inset
+
+ one obtains 
+\begin_inset Formula 
+\begin{equation}
+\gamma\left(t\right)=H-\dot{\phi}X\,,\label{eq:Gamma_IS_Lagrangian}
+\end{equation}
+
+\end_inset
+
+so that 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:B_kgb"
+
+\end_inset
+
+ (or 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:B_general"
+
+\end_inset
+
+) yields
+\begin_inset Formula 
+\begin{equation}
+B=\frac{2X\left(k+2qX+4H\dot{\phi}+2\ddot{\phi}-2X^{2}\right)}{\left(H-\dot{\phi}X\right)^{2}}\,.\label{eq:B_IS}
+\end{equation}
+
+\end_inset
+
+While the general expression 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:D_for_ghosts"
+
+\end_inset
+
+ gives 
+\begin_inset Formula 
+\begin{equation}
+D=k+6Xq+6\dot{\phi}H+6X^{2}\,,\label{eq:D_IS}
+\end{equation}
+
+\end_inset
+
+ and consequently 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Our_Normalization"
+
+\end_inset
+
+ reads 
+\begin_inset Formula 
+\begin{equation}
+A=\frac{2X\left(k+6qX+6\dot{\phi}H+6X^{2}\right)}{\left(H-\dot{\phi}X\right)^{2}}\,.\label{eq:Normalization}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inverse method, finding the theory 
+\end_layout
+
+\begin_layout Standard
+The authors of IS-bounce pustulated a particular fairly simple time-dependence
+ of the Hubble parameter 
+\begin_inset Formula 
+\begin{equation}
+H\left(t\right)=H_{0}\,t\,\exp\left(-F\left(t-t_{*}\right)^{2}\right)\,,\label{eq:Hubble_IS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $F$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{*}$
+\end_inset
+
+ are constants, and proposed an 
+\begin_inset Quotes eld
+\end_inset
+
+inverse method
+\begin_inset Quotes erd
+\end_inset
+
+ to find free functions 
+\begin_inset Formula $k\left(\phi\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q\left(\phi\right)$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_Lagrangian"
+
+\end_inset
+
+ which can realize this cosmological evolution.
+  
+\end_layout
+
+\begin_layout Standard
+The key observation of the 
+\begin_inset Quotes eld
+\end_inset
+
+inverse method
+\begin_inset Quotes erd
+\end_inset
+
+ proposed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+ is that one can can also independently postulate 
+\begin_inset Formula $\gamma\left(t\right)$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:B_general"
+
+\end_inset
+
+.
+ The IS-bounce postulates 
+\begin_inset Formula 
+\begin{equation}
+\gamma=\gamma_{0}\exp\left(3\theta t\right)+H\left(t\right)\,,\label{eq:Gamma _IS}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\gamma_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta$
+\end_inset
+
+ are additional constants with respect to already introduced 
+\begin_inset Formula $H_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $F$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{*}$
+\end_inset
+
+.
+ From 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Gamma_IS_Lagrangian"
+
+\end_inset
+
+ one can obtain 
+\begin_inset Formula 
+\[
+\phi\left(t\right)=\phi_{0}+\int_{t_{0}}^{t}dt'\left(2\left(H-\gamma\right)\right)^{1/3}\,,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\phi\left(t_{0}\right)=\phi_{0}$
+\end_inset
+
+.
+ It is convenient to chose this initial value as 
+\begin_inset Formula $\phi_{0}=\left(-2\gamma_{0}/\theta\right)^{1/3}\exp\left(3t_{0}\right),$
+\end_inset
+
+ so that the particular solution postulated in IS-bounce is 
+\begin_inset Formula 
+\begin{equation}
+\phi\left(t\right)=\left(\frac{-2\gamma_{0}}{\theta^{3}}\right)^{1/3}\exp\left(\theta t\right)\,.\label{eq:phi_solution}
+\end{equation}
+
+\end_inset
+
+For the later it is suitable to denote 
+\begin_inset Formula 
+\[
+\phi_{\star}=\left(\frac{-2\gamma_{0}}{\theta^{3}}\right)^{1/3}\,,
+\]
+
+\end_inset
+
+as a characteristic field range, so that 
+\begin_inset Formula 
+\begin{equation}
+t=\frac{1}{\theta}\text{log}\left(\phi/\phi_{\star}\right)\,.\label{eq:time_IS_solution}
+\end{equation}
+
+\end_inset
+
+Using the substitutions 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hubble_IS"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Gamma _IS"
+
+\end_inset
+
+ one obtains the functions 
+\begin_inset Formula $k\left(\phi\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $q\left(\phi\right)$
+\end_inset
+
+ as functions of time on the particular solution 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:phi_solution"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+k\left(t\right)=-\frac{2\left(2\dot{H}+3H^{2}+\dot{\gamma}+3H\gamma\right)}{\left(2\left(H-\gamma\right)\right)^{2/3}}\,,\label{eq:k(t)}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+q\left(t\right)=\frac{4\left(2\dot{H}+\dot{\gamma}+9H\gamma\right)}{3\left(2\left(H-\gamma\right)\right)^{4/3}}\,.\label{eq:q(t)}
+\end{equation}
+
+\end_inset
+
+For the later it is convenient to introduce functions 
+\begin_inset Formula 
+\begin{equation}
+W\left(\phi\right)=\exp\left[\frac{F}{\theta^{2}}\left(\log\left(\frac{\phi}{\phi_{\star}}\right)-\theta t_{*}\right){}^{2}\right]\,,\label{eq:W_IS}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+\Omega\left(\phi\right)=W\left(\phi\right)\theta^{3}\left(\theta\phi\right)^{3}+H_{0}\left[\log\left(\frac{\phi}{\phi_{\star}}\right)\left(4F\left[\log\left(\frac{\phi}{\phi_{\star}}\right)-\theta t_{*}\right]+2\theta\left(\theta\phi\right)^{3}\right)-2\theta^{2}\right]\,,\label{eq:Omega_IS}
+\end{equation}
+
+\end_inset
+
+in terms of which the defining functions are 
+\begin_inset Formula 
+\begin{equation}
+k(\phi)=-\frac{12H_{0}^{2}\log^{2}\left(\phi/\phi_{\star}\right)-3W\left(\phi\right)\left[\Omega\left(\phi\right)-H_{0}\theta\left(\theta\phi\right)^{3}\log\left(\phi/\phi_{\star}\right)\right]}{W^{2}\left(\phi\right)\theta^{2}\left(\theta\phi\right){}^{2}}\,,\label{eq:k(phi)}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\begin{equation}
+q\left(\phi\right)=\frac{12H_{0}^{2}\log^{2}\left(\phi/\phi_{\star}\right)-2W\left(\phi\right)\left[\Omega\left(\phi\right)+H_{0}\theta\left(\theta\phi\right)^{3}\log\left(\phi/\phi_{\star}\right)\right]}{W^{2}\left(\phi\right)\theta^{2}\left(\theta\phi\right){}^{4}}\,.\label{eq:q(phi)}
+\end{equation}
+
+\end_inset
+
+These expressions defining the theory which should be related to the origins
+ of the universe neither look well-motivated nor natural from any point
+ of view.
+ This is the prize for the chosen simple exact solution 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hubble_IS"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:phi_solution"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Other Solutions, Phase Space 
+\end_layout
+
+\begin_layout Section
+Superluminality
+\end_layout
+
+\begin_layout Standard
+It is known that generic theories with derivative interactions can have
+ such configurations that small perturbations propagate faster than light.
+ In k-essence one can formulate inequalities which can guarantee the absence
+ of such superluminality.
+ However, this seems to be impossible to achieve in general theories with
+ Kinetic Gravity Braiding.
+ There are examples 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2012my,Easson:2013bda"
+
+\end_inset
+
+of such theories where there is no superluminality for 
+\emph on
+all
+\emph default
+ cosmological configurations, for the proof see
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2013bda"
+
+\end_inset
+
+.
+ However, this only happens in an idealized universe without any external
+ matter.
+ An unusual property of the theories with Kinetic Gravity Braiding is that
+ the value of the sound speed does depend not only on the local state of
+ the field 
+\begin_inset Formula $\left(\phi,\dot{\phi}\right)$
+\end_inset
+
+, but also on the external matter energy-momentum tensor.
+ Even in the case of of the subluminal cosmological states 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2012my"
+
+\end_inset
+
+ the external matter introduces the superluminality at least for some regions
+ of phase space 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Easson:2013bda"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Perturbations
+\end_layout
+
+\begin_layout Standard
+In this section, we describe the dynamics of the scalar and tensor fluctuations
+ by considering the IS-bouncing trajectory proposed in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+, which was described in the previous sections.
+ All the information needed from this trajectory is contained in the choice
+ of 
+\begin_inset Formula $H(t)$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hubble_IS"
+
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma(t)$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Gamma _IS"
+
+\end_inset
+
+.
+ For instance, we will first describe the set of equations of motion and
+ initial conditions required for numerical evaluation.
+ 
+\end_layout
+
+\begin_layout Subsection
+Setting up the equations of motion and initial conditions
+\end_layout
+
+\begin_layout Standard
+The field dynamics of these fluctuations is described by the Lagrangian
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_Lagrangian"
+
+\end_inset
+
+ expanded in second order of perturbations written in Fourier space, 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}_{\mathbf{k}}^{(2)}=\frac{a^{3}A(t)}{2}\left(\left|\dot{\mathcal{R}_{\mathbf{k}}}\right|^{2}-\frac{k^{2}c_{s}^{2}}{a^{2}}\left|\mathcal{R}_{\mathbf{k}}\right|^{2}\right)+\frac{a^{3}}{4}\sum_{p=+,\times}\left[\left|\dot{h}_{\mathbf{k}}^{p}\right|^{2}-\frac{k^{2}}{a^{2}}\left|h_{\mathbf{k}}^{p}\right|^{2}\right].\label{eq:IS_second_order}
+\end{equation}
+
+\end_inset
+
+Where tensor modes are also included apart from the scalar curvature shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Scalar_curv"
+
+\end_inset
+
+ and the index 
+\begin_inset Formula $p$
+\end_inset
+
+ is a placeholder for any of the polarization modes, conventionally denoted
+ by 
+\begin_inset Formula $(+)$
+\end_inset
+
+ and 
+\begin_inset Formula $(\times)$
+\end_inset
+
+.
+ In this case, the speed of sound follows from its previous definitions
+ and 
+\begin_inset Formula $A(t)$
+\end_inset
+
+ is the same as in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Normalization"
+
+\end_inset
+
+.
+ We derive the equations of motion after varying the action built from the
+ previous expression with respect to 
+\begin_inset Formula $\mathcal{R}_{\mathbf{k}}$
+\end_inset
+
+ and 
+\begin_inset Formula $h_{\mathbf{k}}^{p}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{eqnarray*}
+ & {\displaystyle {\ddot{\mathcal{R}}_{\mathbf{k}}+\frac{d\ln(a^{3}A(t))}{dt}\dot{\mathcal{R}}_{\mathbf{k}}+\frac{k^{2}c_{s}^{2}}{a^{2}}\mathcal{R}_{\mathbf{k}}=0,}}\\
+ & {\displaystyle {\ddot{h}_{\mathbf{k}}^{p}+3H\dot{h}_{\mathbf{k}}^{p}+\frac{k^{2}}{a^{2}}h_{\mathbf{k}}^{p}=0.}}
+\end{eqnarray*}
+
+\end_inset
+
+With the help of the auxiliary variables 
+\begin_inset Formula $\mathcal{R}_{\mathbf{k}}\equiv a^{-3/2}A(t)^{-1/2}\mathcal{S}_{\mathbf{k}}$
+\end_inset
+
+ and 
+\begin_inset Formula $h_{\mathbf{k}}^{p}\equiv\sqrt{{2}}a^{-3/2}\mathcal{T}_{\mathbf{k}}^{p}$
+\end_inset
+
+ it is possible to write these equations in the form of two decoupled simple
+ harmonic oscillators, 
+\begin_inset Formula 
+\begin{eqnarray}
+ & {\displaystyle {\ddot{\mathcal{S}}_{\mathbf{k}}+\omega_{\mathcal{S}}^{2}\mathcal{S}_{\mathbf{k}}=0,}\label{eq:IS_{e}qmov_{s}calar}}\\
+ & {\displaystyle {\ddot{\mathcal{T}}_{\mathbf{k}}^{p}+\omega_{\mathcal{T}}^{2}\mathcal{T}_{\mathbf{k}}^{p}=0,}\label{eq:IS_{e}qmov_{t}ensor}}
+\end{eqnarray}
+
+\end_inset
+
+where the functions 
+\begin_inset Formula $z\equiv a^{3/2}A^{1/2}$
+\end_inset
+
+ and 
+\begin_inset Formula $y\equiv a^{3/2}$
+\end_inset
+
+ are useful in order to define the natural frequencies for both oscillators
+ 
+\begin_inset Formula $\omega_{\mathcal{S}}^{2}\equiv k^{2}c_{s}^{2}/a^{2}-\ddot{z}/z$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{\mathcal{T}}^{2}\equiv k^{2}/a^{2}-\ddot{y}/y$
+\end_inset
+
+.
+ For simplicity, we will evolve these auxiliary variables instead of the
+ original scalar and tensor modes; however it is not a problem to determine
+ the dynamics of 
+\begin_inset Formula $\mathcal{R}_{\mathbf{k}}$
+\end_inset
+
+ and 
+\begin_inset Formula $h_{\mathbf{k}}^{p}$
+\end_inset
+
+ after inverting the definitions of 
+\begin_inset Formula $\mathcal{S}_{\mathbf{k}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{\mathbf{k}}^{p}$
+\end_inset
+
+.
+ Initial conditions can be determined by instantaneous energy minimization
+ after diagonalizing the Hamiltonian of an harmonic oscillator with a time-depen
+dent frequency in a fixed instant of time, even when it is well-known that
+ this selection criteria is not unique.
+ The promotion of these solutions to field operators is given by, 
+\begin_inset Formula 
+\[
+\hat{\mathcal{S}}_{\mathbf{k}}=\mathcal{S}_{\mathbf{k}}\hat{a}_{\mathbf{k}}+\mathcal{S}_{\mathbf{k}}^{*}\hat{a}_{\mathbf{-k}}^{\dagger}~;~\hat{\mathcal{T}}_{\mathbf{k}}^{p}=\mathcal{T}_{\mathbf{k}}^{p}\hat{b}_{\mathbf{k}}+(\mathcal{T}_{\mathbf{k}}^{p})^{*}\hat{b}_{\mathbf{-k}}^{\dagger},
+\]
+
+\end_inset
+
+and is consistent with the reality condition for all the fluctuation modes.
+ 
+\begin_inset Formula $(\hat{a}_{\mathbf{k}},\hat{a}_{\mathbf{k}}^{\dagger})$
+\end_inset
+
+ and 
+\begin_inset Formula $(\hat{b}_{\mathbf{k}},\hat{b}_{\mathbf{k}}^{\dagger})$
+\end_inset
+
+ are the creation and annihilation operators for scalar and tensor perturbations.
+ Any generic solution to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_eqmov_scalar"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_eqmov_tensor"
+
+\end_inset
+
+ can be written as a function of two real modes 
+\begin_inset Formula $\mathcal{S}_{\mathbf{k}}=\mathcal{S}_{\mathbf{k}}^{(1)}+i\mathcal{S}_{\mathbf{k}}^{(2)}$
+\end_inset
+
+.
+ From the standard commutation relations for the ladder operators 
+\begin_inset Formula $[\hat{a}_{\mathbf{k}},\hat{a}_{\mathbf{k}}^{\dagger}]=1$
+\end_inset
+
+ and the equal-time commutator 
+\begin_inset Formula $[\hat{\mathcal{S}}_{\mathbf{k}},\dot{\hat{\mathcal{S}}}_{\mathbf{k}}]=i$
+\end_inset
+
+, we can show that the Wronskian of these real modes satisfies, 
+\begin_inset Formula 
+\[
+\mathcal{S}_{\mathbf{k}}^{(1)}\dot{\mathcal{S}}_{\mathbf{k}}^{(2)}-\mathcal{S}_{\mathbf{k}}^{(2)}\dot{\mathcal{S}}_{\mathbf{k}}^{(1)}=\frac{1}{2},
+\]
+
+\end_inset
+
+at every instant of time, in agreement with the canonical commutations relations.
+ The same procedure follows to write conservation of the Wronskian for the
+ tensor modes.
+ Hence, it is possible to write the canonically normalized initial conditions
+ for all the modes involved, 
+\begin_inset Formula 
+\begin{eqnarray}
+ & {\displaystyle {\dot{\mathcal{S}}^{(1)}(t_{0})=0~;~\mathcal{S}^{(1)}(t_{0})=\frac{1}{\sqrt{2\omega_{\mathcal{S}}(t_{0})}}},\nonumber}\\
+ & {\displaystyle {\dot{\mathcal{S}}^{(2)}(t_{0})=\sqrt{\frac{\omega_{\mathcal{S}}(t_{0})}{2}}~;~\mathcal{S}^{(2)}(t_{0})=0},\label{eq:IS_{i}nit_{S}}}\\
+ & {\displaystyle {(\dot{\mathcal{T}}^{p})^{(1)}(t_{0})=0~;~(\mathcal{T}^{p})^{(1)}(t_{0})=\frac{1}{\sqrt{2\omega_{\mathcal{T}}(t_{0})}}},\nonumber}\\
+ & {\displaystyle {(\dot{\mathcal{T}}^{p})^{(2)}(t_{0})=\sqrt{\frac{\omega_{\mathcal{T}}(t_{0})}{2}}}~;~(\mathcal{T}^{p})^{(2)}(t_{0})=0,\label{eq:IS_{i}nit_{T}}}
+\end{eqnarray}
+
+\end_inset
+
+in an analogous way than the standard prescription for the Bunch-Davies
+ vacuum.
+ Notice that even in the limit of high 
+\begin_inset Formula $k$
+\end_inset
+
+, it is possible to observe that 
+\begin_inset Formula $c_{s}^{2}(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $a(t)$
+\end_inset
+
+ make the scalar initial conditions not invariant under time translations.
+ Our objective with this choice of initial conditions is the instantaneous
+ minimization of the energy per 
+\begin_inset Formula $k$
+\end_inset
+
+-mode for 
+\emph on
+only
+\emph default
+ positive values of 
+\begin_inset Formula $\omega_{\mathcal{T}}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{\mathcal{S}}^{2}$
+\end_inset
+
+ before the bounce.
+ In this way, we will compare the state of the system at any posterior instant
+ of time with the zero-point energy state at 
+\begin_inset Formula $t=t_{0}$
+\end_inset
+
+ of a time-dependent harmonic oscillator.
+ This would be a suitable (but not unique) way to define equations of motion
+ while setting initial conditions that minimize the energy of the system
+ before the bounce.
+ Notice that the evaluation of the expressions in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_init_S"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_init_T"
+
+\end_inset
+
+ at all the posterior instants of time should never be treated as solutions
+ to the equations of motion.
+ Nevertheless, there is another way to rephrase the system that increases
+ the performance of a numerical computation.
+ For instance, let us rewrite the eikonal separation 
+\begin_inset Formula $\mathcal{S}_{\mathbf{k}}=L_{\mathcal{S}}\exp(i\Theta_{\mathcal{S}})$
+\end_inset
+
+, where 
+\begin_inset Formula $L_{\mathcal{S}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Theta_{\mathcal{S}}$
+\end_inset
+
+ are real.
+ Then we replace this expression in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_eqmov_scalar"
+
+\end_inset
+
+ obtaining two equations after separating the real and imaginary parts,
+ 
+\begin_inset Formula 
+\begin{eqnarray}
+ & \ddot{L}_{\mathcal{S}}+(\omega_{\mathcal{S}}^{2}-\dot{\Theta}_{\mathcal{S}}^{2})L_{\mathcal{S}}=0~~\mathrm{(Real\:part)},\nonumber \\
+ & \ddot{\Theta}_{\mathcal{S}}+2\frac{\dot{L}_{\mathcal{S}}}{L_{\mathcal{S}}}\dot{\Theta}_{\mathcal{S}}=0~~\mathrm{(Imaginary\:part)},\label{eq:IS_phase_S}
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_phase_S"
+
+\end_inset
+
+ has a simple analytic solution given by 
+\begin_inset Formula $\dot{\Theta}_{\mathcal{S}}(t)=L_{\mathcal{S}}^{2}(t_{0})\dot{\Theta}_{\mathcal{S}}(t_{0})/L_{\mathcal{S}}^{2}$
+\end_inset
+
+.
+ Hence, the only equation to solve for the scalar modes is, 
+\begin_inset Formula 
+\begin{equation}
+\ddot{L}_{\mathcal{S}}+\left[\omega_{\mathcal{S}}^{2}-L_{\mathcal{S}}^{4}(t_{0})\frac{\dot{\Theta}_{\mathcal{S}}^{2}(t_{0})}{L_{\mathcal{S}}^{4}}\right]L_{\mathcal{S}}=0.\label{eq:IS_amp_S}
+\end{equation}
+
+\end_inset
+
+The same idea can be straightforwardly applied for the tensor modes after
+ replacing all the tensor components of 
+\begin_inset Formula $\mathcal{T}_{\mathbf{k}}^{p}$
+\end_inset
+
+ by 
+\begin_inset Formula $L_{\mathcal{T}}^{p}\exp(i\Theta_{\mathcal{T}})$
+\end_inset
+
+.
+ Assuming the same contribution from all polarizations, this will lead us
+ to an analogous result for the phase velocity 
+\begin_inset Formula $\dot{\Theta}_{\mathcal{T}}(t)$
+\end_inset
+
+ and the equation of motion for the amplitudes differ from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amp_S"
+
+\end_inset
+
+ only by considering 
+\begin_inset Formula $\omega_{\mathcal{T}}^{2}$
+\end_inset
+
+ instead of 
+\begin_inset Formula $\omega_{\mathcal{S}}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+\ddot{L}_{\mathcal{T}}^{p}+\left[\omega_{\mathcal{T}}^{2}-(L_{\mathcal{T}}^{p})^{4}(t_{0})\frac{\dot{\Theta}_{\mathcal{T}}^{2}(t_{0})}{(L_{\mathcal{T}}^{p})^{4}}\right]L_{\mathcal{T}}^{p}=0.\label{eq:IS_amp_T}
+\end{equation}
+
+\end_inset
+
+It is important to remember that the power spectrum only depends on the
+ amplitudes of the original modes, which can found at all times by, 
+\begin_inset Formula 
+\begin{equation}
+|\mathcal{R}_{\mathbf{k}}|=\frac{|\mathcal{S}_{\mathbf{k}}|}{a^{3/2}A^{1/2}}=\frac{L_{\mathcal{S}}}{a^{3/2}A^{1/2}}\:,\:|h_{\mathbf{k}}^{p}|=\frac{\sqrt{{2}}|\mathcal{T}_{\mathbf{k}}^{p}|}{a^{3/2}}=\frac{\sqrt{{2}}L_{\mathcal{T}}^{p}}{a^{3/2}}.\label{eq:IS_amplitudes}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Initial conditions in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_init_S"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_init_T"
+
+\end_inset
+
+ are reproduced after evaluating 
+\begin_inset Formula $\Theta_{\mathcal{T}}(t_{0})=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\Theta_{\mathcal{S}}(t_{0})=0$
+\end_inset
+
+, similarily 
+\begin_inset Formula $\dot{L}_{\mathcal{T}}^{p}(t_{0})=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\dot{L}_{\mathcal{S}}(t_{0})=0$
+\end_inset
+
+.
+ The amplitudes of the modes and the phase derivatives are the only initial
+ conditions with non-trivial values, 
+\begin_inset Formula 
+\begin{eqnarray}
+ & {L}_{\mathcal{S}}(t_{0})=\frac{1}{\sqrt{2\omega_{\mathcal{S}}(t_{0})}}~~;~~\dot{\Theta}_{\mathcal{S}}(t_{0})=\omega_{\mathcal{S}}(t_{0}),\label{eq:IS_real_ICs_scalar}\\
+ & {L}_{\mathcal{T}}^{p}(t_{0})=\frac{1}{\sqrt{2\omega_{\mathcal{T}}(t_{0})}}~~;~~\dot{\Theta}_{\mathcal{T}}(t_{0})=\omega_{\mathcal{T}}(t_{0}),\label{eq:IS_real_ICs_tensor}
+\end{eqnarray}
+
+\end_inset
+
+where the effective frequency of the harmonic oscillators in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amp_S"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amp_T"
+
+\end_inset
+
+ at 
+\begin_inset Formula $t=t_{0}$
+\end_inset
+
+ is exactly zero for the scalar and tensor modes regardless of the values
+ of 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ This procedure describes the single field realization of the separation
+ technique of fast and slow components shown in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ghersi:2016gee"
+
+\end_inset
+
+.
+ Our construction relies heavily in the positivity of 
+\begin_inset Formula $\omega_{\mathcal{T}}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{\mathcal{S}}^{2}$
+\end_inset
+
+ at 
+\begin_inset Formula $t=t_{0}$
+\end_inset
+
+, for that reason the initial instant of time where the mode evolution starts
+ needs to be chosen properly in order to avoid diverging initial conditions.
+ Both functions are positive in the range of very high values of 
+\begin_inset Formula $k$
+\end_inset
+
+, therefore we evaluated both effective frequencies in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:w_eff_ST"
+
+\end_inset
+
+ in the low 
+\begin_inset Formula $k$
+\end_inset
+
+ limit.
+ Henceforth, we choose 
+\begin_inset Formula $t_{0}=-90\:t_{\mathrm{Pl}}$
+\end_inset
+
+ to be the initial instant of time where the evolution of perturbations
+ begin.
+ Moreover, it is also (approximately) the first moment where both 
+\begin_inset Formula $A(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{s}^{2}$
+\end_inset
+
+ are finite and positive, thus the system of scalar and tensor fluctuations
+ evolves in a time domain where it is free from ghost and gradient instabilities.
+ 
+\end_layout
+
+\begin_layout Subsection
+Evolution of the mode amplitudes and length scales
+\end_layout
+
+\begin_layout Standard
+The definitions of the effective oscillation frequencies for the scalar
+ curvature 
+\begin_inset Formula $(\omega_{\mathcal{S}}^{2})$
+\end_inset
+
+ and primordial tensor 
+\begin_inset Formula $(\omega_{\mathcal{T}}^{2})$
+\end_inset
+
+ modes shows that only the scalar fluctuations propagate with sound speed
+ 
+\begin_inset Formula $c_{s}$
+\end_inset
+
+.
+ It is relevant, therefore, to compare the evolution of different physical
+ length scales as these propagate from sub-horizon scales.
+ Let us define the two physical scales with respect to a given comoving
+ wavelength 
+\begin_inset Formula $\lambda_{\mathrm{com}}$
+\end_inset
+
+ by 
+\begin_inset Formula 
+\begin{eqnarray}
+ & {\displaystyle {\lambda_{\mathrm{phys}}^{\mathcal{S}}=\frac{a\lambda_{\mathrm{com}}}{c_{s}},}\label{lambda_{S}}}\\
+ & {\displaystyle {\lambda_{\mathrm{phys}}^{\mathcal{T}}=a\lambda_{\mathrm{com}},}\label{lambda_{T}}}
+\end{eqnarray}
+
+\end_inset
+
+which can be identified as the corresponding wavelength part from the definition
+s of 
+\begin_inset Formula $\omega_{\mathcal{S}}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{\mathcal{T}}^{2}$
+\end_inset
+
+.
+ We now evaluate the time derivative of the logarithmic versions of these
+ two quantities, obtaining 
+\begin_inset Formula 
+\begin{eqnarray}
+ & {\displaystyle {\frac{d\ln\lambda_{\mathrm{phys}}^{\mathcal{S}}}{dt}=H-\frac{1}{2}\left(\frac{\dot{B}}{B}-\frac{\dot{A}}{A}\right),}\label{lambda_{d}ot_{S}}}\\
+ & {\displaystyle {\frac{d\ln\lambda_{\mathrm{phys}}^{\mathcal{T}}}{dt}=H.}\label{lambda_{d}ot_{S}}}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+From these expressions, we notice that none of these derivatives depends
+ on the specific values of the evolving scalar or tensor wavelengths.
+ From the form of 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ and 
+\begin_inset Formula $H$
+\end_inset
+
+ suggested for the IS-bounce in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Hubble_IS"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Gamma _IS"
+
+\end_inset
+
+ along with the construction of 
+\begin_inset Formula $A(t)$
+\end_inset
+
+ and 
+\begin_inset Formula $B(t)$
+\end_inset
+
+ described in equations (14) and (17) in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Ijjas:2016tpn"
+
+\end_inset
+
+, it is possible to compare the evolution of all the physical length scales
+ 
+\begin_inset Formula $(\ell_{\mathrm{phys}})$
+\end_inset
+
+ including the sound and particle horizon: 
+\begin_inset Formula 
+\[
+{\displaystyle {s_{\mathrm{H}}=\int\frac{c_{s}(t)dt}{a(t)}~;~p_{\mathrm{H}}=\int\frac{dt}{a(t)},}}
+\]
+
+\end_inset
+
+through the bouncing phase.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scalar_lengths"
+
+\end_inset
+
+, as an example, we observe the evolution of the sound horizon and three
+ sub-horizon physical wavelengths (
+\begin_inset Formula $\lambda_{\mathrm{phys}}^{\mathcal{S}}$
+\end_inset
+
+) corresponding to different comoving modes that propagate through the so-called
+ acoustic geometry.
+ Such scalar wavelengths never reach the sound horizon.
+ In the same way, the evolution of the particle horizon and the corresponding
+ tensor wavelengths (
+\begin_inset Formula $\lambda_{\mathrm{phys}}^{\mathcal{T}}$
+\end_inset
+
+) are depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tensor_lengths"
+
+\end_inset
+
+, where each of these was built from the same comoving modes as in the previous
+ case.
+ In both scenarios, this indicates that we should not expect any transitions
+ – such as the characteristic 
+\begin_inset Quotes eld
+\end_inset
+
+freezing
+\begin_inset Quotes erd
+\end_inset
+
+ occuring when a mode crosses the horizon during inflation – in the solutions
+ of the scalar and modes since none of the sub-horizon modes cross to super-hori
+zon scales.
+ Throughout this paper, we write the physical wavenumbers in units of the
+ Ricci curvature 
+\begin_inset Formula $|R|^{1/2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+After considering these results, we evolve the mode amplitudes for scalar
+ and tensor fluctuations using the equations of motion in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amp_S"
+
+\end_inset
+
+ and its tensor counterpart in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amp_T"
+
+\end_inset
+
+ considering the initial conditions in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_real_ICs_scalar"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_real_ICs_tensor"
+
+\end_inset
+
+.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:amplitudes"
+
+\end_inset
+
+, we represent the dynamics of the amplitudes of some of the original scalar
+ (in Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scalar_amps"
+
+\end_inset
+
+) and tensor modes (in Fig.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tensor_amps"
+
+\end_inset
+
+) after using the inversion relationships in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amplitudes"
+
+\end_inset
+
+.
+ This confirms our previous statement about the lack of a 
+\begin_inset Quotes eld
+\end_inset
+
+mode freezing
+\begin_inset Quotes erd
+\end_inset
+
+ phase in all the sub-horizon modes.
+ It is possible to observe oscillations of the modes for the sub-horizon
+ modes with the smallest values of 
+\begin_inset Formula $k_{\mathrm{phys}}$
+\end_inset
+
+.
+ In the next subsection of this manuscript, it will be possible to identify
+ these oscillations in the scalar and tensor power spectrum and in the occupatio
+n numbers at given frequencies.
+ In the limit where 
+\begin_inset Formula $k$
+\end_inset
+
+ goes to zero, the dominant scales are the negative values of 
+\begin_inset Formula $\ddot{z}/z$
+\end_inset
+
+ and 
+\begin_inset Formula $\ddot{y}/y$
+\end_inset
+
+ which behave as time-dependent effective masses.
+\end_layout
+
+\begin_layout Subsection
+Evolution of the scalar and tensor power spectrum and particle production
+\end_layout
+
+\begin_layout Standard
+In this subsection, we evaluate the scale dependence and other specific
+ features of the power spectrum of scalar and tensor perturbations through
+ the IS bouncing trajectory from the choice of instantaneous minimal energy
+ initial conditions set in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_real_ICs_scalar"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_real_ICs_tensor"
+
+\end_inset
+
+ right before the bounce.
+ In addition to this, we also calculate the evolution of the occupation
+ number of scalar and tensor fluctuations, observing that some of the features
+ of the spectra are due to particle production.
+ The power spectra of primordial scalar and tensor fluctuations follow from
+ the typical definition given by, 
+\begin_inset Formula 
+\begin{equation}
+P_{\mathcal{R}}(k)=\frac{k^{3}}{2\pi^{2}}|\mathcal{R}_{\mathbf{k}}(t)|^{2}~~,~~P_{h}(k)=\frac{k^{3}}{2\pi^{2}}\sum_{p=+,\times}|h_{\mathbf{k}}^{p}(t)|^{2},\label{eq:IS_spectrum}
+\end{equation}
+
+\end_inset
+
+where the time evolution of the amplitudes 
+\begin_inset Formula $|\mathcal{R}_{\mathbf{k}}(t)|^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $|h_{\mathbf{k}}^{p}(t)|^{2}$
+\end_inset
+
+ follows from the numerical solutions for 
+\begin_inset Formula $L_{\mathcal{S}}$
+\end_inset
+
+ and 
+\begin_inset Formula $L_{\mathcal{T}}$
+\end_inset
+
+ described in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amp_S"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_amp_T"
+
+\end_inset
+
+ respectively.
+ The calculations for particle production become much simpler to evaluate
+ after we rephrase the equations of motion as in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_eqmov_scalar"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_eqmov_tensor"
+
+\end_inset
+
+.
+ We define the occupation number as, 
+\begin_inset Formula 
+\begin{equation}
+\langle n_{\mathbf{k}}(t)\rangle=\frac{a^{4}A(t)}{2kc_{s}}\left[|\dot{\mathcal{R}}_{\mathbf{k}}|^{2}+\frac{k^{2}c_{s}^{2}}{a^{2}}|\mathcal{R}_{\mathbf{k}}|^{2}\right]-\frac{1}{2},\label{eq:IS_number}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+for the production of scalar fluctuations.
+ The tensor counterpart is defined in an analog way.
+ In contrast with the definitions in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Barnaby:2010ke"
+
+\end_inset
+
+, the last expression is not built from the time-dependent harmonic oscillators
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_eqmov_scalar"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_eqmov_tensor"
+
+\end_inset
+
+ in order to not make these quantities divergent in the limit where 
+\begin_inset Formula $\omega_{\mathcal{S}}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\omega_{\mathcal{T}}^{2}$
+\end_inset
+
+ vanish.
+ In Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sp_amps"
+
+\end_inset
+
+, we evaluate the dependence of the amplitudes with 
+\begin_inset Formula $k$
+\end_inset
+
+ in four different instants of time.
+ We evaluated the scalar and tensor power spectra in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_spectrum"
+
+\end_inset
+
+, showing that none of the spectra is scale invariant.
+\end_layout
+
+\begin_layout Standard
+We must remark that the amplitude of the tensor modes dominates over the
+ scalar amplitudes through most of the bouncing phase, as we can see in
+ figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sp_0"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sp_1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sp_2"
+
+\end_inset
+
+.
+ This is due to the evolution of the speed of sound, where the enhancement
+ of the scalar power at later times – as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sp_3"
+
+\end_inset
+
+ – coincides with the final decreasing phase of the speed of sound at 
+\begin_inset Formula $t\sim50t_{\mathrm{Pl}}$
+\end_inset
+
+.
+ Scalar and tensor amplitudes as depicted in these figures show a blue spectrum,
+ consistent in the high 
+\begin_inset Formula $k$
+\end_inset
+
+ limit with the results presented in 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Creminelli:2010ba"
+
+\end_inset
+
+.
+ The creation of particles in the scalar spectrum at later times is a visible
+ feature of the scalar curvature spectrum, and it persists with less intensity
+ as wavelengths become smaller.
+ In addition to this, it is also possible to observe small oscillations
+ in the tensor spectrum, which are evidence of particle production for these
+ modes.
+ We observe the evolution of the occupation number defined in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:IS_number"
+
+\end_inset
+
+ in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:n_k_t"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Here, the production of tensor fluctuations in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:tensor_nk"
+
+\end_inset
+
+ is much smaller than the oscillations seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:scalar_nk"
+
+\end_inset
+
+ in the same way the oscillations of the tensor amplitudes are smaller than
+ the corresponding oscillations for the scalar power in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sp_amps"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Conclusions
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acknowledgments
+\end_layout
+
+\end_inset
+
+ It is a pleasure to thank Slava Mukhanov for useful discussions.
+ The work of D.D.
+ was funded by the Undergraduate Research grant provided by the Natural
+ Sciences and Engineering Research Council of Canada.
+ A.F and J.G.
+ want to acknowledge the support of the Discovery Grants by the Natural
+ Sciences and Engineering Research Council of Canada, J.G was partially funded
+ by the Billy Jones scholarship granted by the Department of Physics at
+ Simon Fraser University and by the Perimeter Institute for Theoretical
+ Physics.
+ Research at the Perimeter Institute is supported by the Government of Canada
+ through the Department of Innovation, Science and Economic Development
+ Canada.
+ The work of A.V.
+ and S.R.
+ was supported by the funds from the European Regional Development Fund
+ and the Czech Ministry of Education, Youth and Sports (M
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+v{S}
+\end_layout
+
+\end_inset
+
+MT): Project CoGraDS - CZ.02.1.01/0.0/0.0/15_003/0000437.
+ A.V.
+ also acknowledges support from the J.
+ E.
+ Purkyn
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+v{e}
+\end_layout
+
+\end_inset
+
+ Fellowship of the Czech Academy of Sciences.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "IS_bounce"
+options "bibtotoc,utphys"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
